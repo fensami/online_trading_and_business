@@ -38,7 +38,7 @@ const Footer = () => {
                     <h4 className="font-bold text-gray-500 text-1xl pb-4">TRADE TYPES</h4>
                     <div className="flex flex-col text-slate-500 text-sm">
                         <a href="">CFDs</a>
-                        <a href="">Options</a>
+                        <a href="">Option</a>
                         <a href="">Multipliers</a>
                     </div>
                 </div>
