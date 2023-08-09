@@ -5,7 +5,7 @@ const UpCommingOther =async () => {
   await wait()
   return (
     <div className='mt-10'>
-      <h1>Comming soon...</h1>
+      <h1>Comming soon....</h1>
     </div>
   );
 };
