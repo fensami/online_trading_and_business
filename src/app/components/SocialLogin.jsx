@@ -8,6 +8,7 @@ const SocialLogin = () => {
             <div className="divider font-semibold">or log in with</div>
             {/* google login */}
             <div>
+
                 <button className='social-btn '>
                     <FcGoogle size={24} />
                     <span>Google</span>
