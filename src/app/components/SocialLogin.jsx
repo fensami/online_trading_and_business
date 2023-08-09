@@ -6,14 +6,14 @@ const SocialLogin = () => {
         <div>
             <div className="divider font-semibold">or log in with</div>
             {/* google login */}
-            <div className=" ">
+            <div>
                 <button className='social-btn '>
                     <FcGoogle size={24} />
                     <span>Google</span>
                 </button>
             </div>
-            {/* google login */}
-            <div className=" ">
+            {/* github login */}
+            <div>
                 <button className='social-btn bg-slate-400 text-white'>
                     <AiFillGithub size={24} />
                     <span>GitHub</span>
