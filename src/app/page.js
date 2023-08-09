@@ -1,8 +1,10 @@
-import Image from 'next/image'
+import UpCommingOther from "./HomePage/UpCommingOther";
 
 export default function Home() {
   return (
     <main className="">
+
+      <UpCommingOther></UpCommingOther>
 
     </main>
   )
