@@ -2,6 +2,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { AiFillGithub } from 'react-icons/ai';
 
 const SocialLogin = () => {
+
     return (
         <div>
             <div className="divider font-semibold">or log in with</div>
