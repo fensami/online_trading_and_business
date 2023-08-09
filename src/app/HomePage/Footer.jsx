@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaTelegramPlane } from
 import { FiInstagram } from 'react-icons/fi';
 
 
-const Footer =async () => {
+const Footer = () => {
    
     return (
         <div className="md:mx-16 sm:mx-8 mx-4">
