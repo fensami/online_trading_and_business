@@ -4,6 +4,7 @@ import { FiInstagram } from 'react-icons/fi';
 
 
 const Footer = () => {
+   
     return (
         <div className="md:mx-16 sm:mx-8 mx-4">
             <div className="py-6 ">
