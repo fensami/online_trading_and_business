@@ -6,7 +6,7 @@ const SubLogin = () => {
     return (
         <div className="grid md:grid-cols-2 gap-2 justify-between items-center lg:px-16 lg:mx-16 bg-cover mx-4 bg-center rounded-sm opacity-80 font-sans" style={{ backgroundImage: 'url("https://i.ibb.co/Q6k4RBV/hands-with-gift-box-204757-1481.jpg")' }}>
             {/* Your content goes here */}
-            <div className="bg-transparent  hover:bg-red-500 duration-700 p-6 shadow-md md:order-none order-last rounded-md my-8  ml-3 border-l border-r border-white">
+            <div className="bg-transparent  hover:bg-red-500 duration-700 p-6 shadow-md md:order-none order-last rounded-md my-8  ml-3">
                 <div className="text-white md:text-4xl text-2xl font-bold opacity-80">
                     <p className="md:py-2">Join over 2.5k </p>
                     <p >traders worldwide</p>
