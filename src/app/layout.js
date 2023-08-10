@@ -1,3 +1,5 @@
+
+
 import Footer from './HomePage/Footer'
 import './globals.css'
 import { Inter } from 'next/font/google'
