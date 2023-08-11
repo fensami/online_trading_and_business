@@ -1,5 +1,6 @@
 import CheckTradingSped from "./HomePage/CheckTradingSped";
 import SubLogin from "./HomePage/SubLogin";
+import TradeTypes from "./HomePage/TradeTypes";
 import UpCommingOther from "./HomePage/UpCommingOther";
 
  const Home = () => {
