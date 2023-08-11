@@ -1,5 +1,6 @@
 import CheckTradingSped from "./HomePage/CheckTradingSped";
 import SubLogin from "./HomePage/SubLogin";
+import TradeTypes from "./HomePage/TradeTypes";
 import UpCommingOther from "./HomePage/UpCommingOther";
 
  const Home = () => {
@@ -8,7 +9,7 @@ import UpCommingOther from "./HomePage/UpCommingOther";
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
-     
+     <TradeTypes></TradeTypes>
     </main>
   )
 }
