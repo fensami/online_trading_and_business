@@ -1,3 +1,4 @@
+import AnalysisSection from "./HomePage/AnalysisSection";
 import CheckTradingSped from "./HomePage/CheckTradingSped";
 import SubLogin from "./HomePage/SubLogin";
 import UpCommingOther from "./HomePage/UpCommingOther";
@@ -8,6 +9,7 @@ import UpCommingOther from "./HomePage/UpCommingOther";
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
+      <AnalysisSection></AnalysisSection>
      
     </main>
   )
