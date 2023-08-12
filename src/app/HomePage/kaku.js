@@ -4,7 +4,7 @@ const kaku = () => {
   return (
     <div>
       <h1>kaku</h1>
-      <p>kaku asdfsad 2jkasdkfhkas sdkjflaksjd</p>
+      <p>kaku asdfsad asdfasdf 2jkasdkfhkas sdkjflaksjd</p>
     </div>
   );
 };
