@@ -1,11 +1,16 @@
+import CheckTradingSped from "./HomePage/CheckTradingSped";
+import SubLogin from "./HomePage/SubLogin";
+import TradeTypes from "./HomePage/TradeTypes";
 import UpCommingOther from "./HomePage/UpCommingOther";
 
-export default function Home() {
+ const Home = () => {
   return (
-    <main className="">
-
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <CheckTradingSped></CheckTradingSped>
+      <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
-
+     
     </main>
   )
 }
+export default Home;
