@@ -5,6 +5,7 @@ import CheckTradingSped from "./HomePage/CheckTradingSped";
 import SubLogin from "./HomePage/SubLogin";
 import TradeTypes from "./HomePage/TradeTypes";
 import UpCommingOther from "./HomePage/UpCommingOther";
+import KakuPage from "./HomePage/kaku";
 
  const Home = () => {
   return (
@@ -14,6 +15,7 @@ import UpCommingOther from "./HomePage/UpCommingOther";
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
       <AnalysisSection></AnalysisSection>
+      <KakuPage></KakuPage>
      
     </main>
   )
