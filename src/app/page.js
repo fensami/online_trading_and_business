@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import UpCommingOther from "./HomePage/UpCommingOther";
 
 export default function Home() {
   return (
-    <main> 
-      <h1>hey, hello</h1>
+    <main>
+
+      <UpCommingOther></UpCommingOther>
+
+
     </main>
   )
 }
