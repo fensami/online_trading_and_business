@@ -4,9 +4,12 @@ const KakuPage = () => {
   return (
     <div>
       <h1>
-        kaku 1
-        
+        kaku
+
       </h1>
+      <p>
+        sayed vai
+      </p>
     </div>
   );
 };
