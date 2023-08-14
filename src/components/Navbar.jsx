@@ -26,7 +26,7 @@ const Navbar = () => {
         <button className="text-white hidden font-semibold md:block bg-red-500  px-4 py-2 rounded-2xl">
           Create Demo Account
         </button>
-        <button className="text-black font-bold">EN</button>
+        <button className=" font-bold">EN</button>
       </div>
       <div className="md:hidden flex items-center">
         <button

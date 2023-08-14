@@ -8,7 +8,7 @@ import Kaku2 from "./kaku2";
 
 const Home = () => {
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto bg-[#131720] text-white">
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
