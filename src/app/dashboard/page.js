@@ -2,7 +2,7 @@ import React from 'react';
 
 const DashboardPage = () => {
   return (
-    <div>
+    <div className='bg-[#212b39]'>
       
       DashboardPage
 

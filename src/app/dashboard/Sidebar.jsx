@@ -14,7 +14,7 @@ const dashboardLinks  =[
 
 const Sidebar = () => {
   return (
-  <div className='flex my-2 flex-col bg-slate-500 w-1/6 text-white p-5 gap-5'>
+  <div className='flex my-2 bg-[#212b39] flex-col bg-slate-500 w-1/6 text-white p-5 gap-5'>
 
 
 <p className='border p-3 rounded-xl'><Link href='/dashboard'>Dashboard</Link></p>
