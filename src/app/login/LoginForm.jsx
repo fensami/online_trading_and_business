@@ -68,7 +68,7 @@ const LoginForm = () => {
 
 
             </div>
-            <div className="form-control mt-6 md:w-1/4 w-2/4 mx-auto" >
+            <div className="form-control mt-3 md:w-1/4 w-2/4 mx-auto" >
                 <button className="social-btn hover:text-black hover:bg-green-300 duration-700" type="submit">
                     Sign In
                 </button>
