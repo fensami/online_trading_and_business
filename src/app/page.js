@@ -5,8 +5,8 @@ import CheckTradingSped from "./HomePage/CheckTradingSped";
 import SubLogin from "./HomePage/SubLogin";
 import TradeTypes from "./HomePage/TradeTypes";
 import UpCommingOther from "./HomePage/UpCommingOther";
-import KakuPage from "./HomePage/kaku";
 import Kaku2 from "./kaku2";
+<h1>hello</h1>
 
  const Home = () => {
   return (
