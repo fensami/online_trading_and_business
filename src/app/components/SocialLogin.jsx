@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillGithub } from 'react-icons/ai';
 
@@ -20,6 +21,7 @@ const SocialLogin = () => {
                     <span>GitHub</span>
                 </button>
             </div>
+            <div className="divider font-semibold">Haven't an account<a href='' className='text-primary'>Sign Up</a></div>
         </div>
     );
 };
