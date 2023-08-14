@@ -7,11 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-<<<<<<< HEAD
     "server": "json-server --watch src/promotion.json --port 5000"
-=======
-    "server": "json-server --watch src/Treders.json --port 5000"
->>>>>>> f4366493c5bc5c81541e58a2a28fb0812ff4eeb2
+     
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
