@@ -83,7 +83,7 @@ const SignUpForm = () => {
                 <input type="checkbox" name="remember" className="form-checkbox text-green-500 outline-none" />
                 <span class="ml-2 text-white">Remember me</span>
             </div>
-            <div className="form-control mt-6 md:w-1/4 w-2/4 mx-auto" >
+            <div className="form-control mt-3 md:w-1/4 w-2/4 mx-auto" >
                 <button className="social-btn hover:text-black hover:bg-green-300 duration-700" type="submit">
                     Sign Up
                 </button>
