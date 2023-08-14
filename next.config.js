@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    protocol: 'https',
-    domains: ['images.unsplash.com']
+      // protocol: 'https',
+      domains: ['images.unsplash.com', 'plus.unsplash.com'],
   }
 }
 

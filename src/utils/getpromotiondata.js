@@ -1,6 +1,6 @@
- 
+  
 const getpromotiondata = async () => {
-         const res = await fetch('promotion.json')
+         const res = await fetch('http://localhost:5000/promotions')
          return res.json();
 };
 
