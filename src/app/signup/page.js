@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CartImg from '@/assets/CartImg.png'
 import SocialLogin from "../components/SocialLogin";
-import Link from "next/link";
 import SignUpForm from "./SignUpForm";
 
 const SingUpPage = () => {

@@ -19,6 +19,7 @@ const Navbar = () => {
         <Link href="/markets" className="block hover:text-red-500 text-gray-800 my-2">Markets</Link>
         <Link href="/about" className="block hover:text-red-500 text-gray-800 my-2">About Us</Link>
         <Link href="/resource" className="block hover:text-red-500 text-gray-800 my-2">Resources</Link>
+        <Link href="/dashboard" className="block hover:text-red-500 text-gray-800 my-2">dashboard</Link>
       </div>
       <div className="flex items-center space-x-4">
         <button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button>
