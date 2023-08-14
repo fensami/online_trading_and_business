@@ -17,7 +17,7 @@ const Home = () => {
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
       <AnalysisSection></AnalysisSection>
-      <PromotionPage></PromotionPage>
+       
      
       <Kaku2></Kaku2>
 

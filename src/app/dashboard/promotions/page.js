@@ -1,9 +1,10 @@
+import PromotionPage from '@/components/Promotion';
 import React from 'react';
 
 const PromotionsPage = () => {
   return (
     <div>
-      PromotionsPage
+       <PromotionPage></PromotionPage>
     </div>
   );
 };
