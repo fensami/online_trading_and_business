@@ -3,7 +3,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div className="flex justify-between">
-      <article className="w-1/2">
+      <article className="w-1/2 p-6">
         <h1 className="text-5xl font-bold">One broker, countless trading opportunities</h1>
         <p className="mt-5 text-xl font-semibold">Get the widest range of markets, trades and platforms</p>
         <div className="text-2xl font-semibold">
