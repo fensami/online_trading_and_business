@@ -1,25 +1,26 @@
 import Image from "next/image";
 import CartImg from '@/assets/CartImg.png'
-import LoginForm from "./LoginForm";
 import SocialLogin from "../components/SocialLogin";
+import Link from "next/link";
+import SignUpForm from "./SignUpForm";
 
-const LoginPage = () => {
+const SingUpPage = () => {
     return (
-        <div className=" md:flex gap-4 items-center md:mx-12 mx-2  bg-gray-800 py-6 md:px-6 px-4 shadow-lg ">
+        <div className=" md:flex gap-4 items-center md:mx-12 mx-4 bg-gray-800 p-6 shadow-lg ">
             {/* svg image section */}
             <div className="md:w-5/12 p-6 md:p-7 bg-gradient-to-tr from-green-500 to-green-700 rounded-lg text-white ">
                 <p href="/" className="text-2xl font-semibold ">Logo</p>
                 <h2 className="text-3xl font-bold my-4 ">Welcome</h2>
-                <p>Create an account to enjoy all the services without any ads for free!</p>
+                <p>Already Have An Account? Sign In</p>
                 <div className="mt-4">
-                    <a href='/signup' className="bg-green-400 hover:bg-green-500 text-black py-2 px-6 rounded-lg no-underline focus:outline-none shadow-md  opacity-75">Sign up</a>
+                    <a href='/login' className="bg-green-400 hover:bg-green-500 text-black py-2 px-6 rounded-lg no-underline focus:outline-none shadow-md  opacity-75">Sign in</a>
                 </div>
-                <Image className="h-64 md:h-full" src={CartImg} alt="" />
+                <Image src={CartImg} alt="" />
             </div>
             {/* login form*/}
-            <div className="md:w-7/12 border border-gray-600  rounded-lg my-4">
-                <div className=" text-white text-center">
-                    <h2 className=" text-3xl font-semibold  my-4">Sign In</h2>
+            <div className="md:w-7/12 border border-gray-600  rounded-lg">
+                <div className="text-center text-white">
+                    <h2 className="text-3xl font-semibold  my-4">Sign Up</h2>
                     <SocialLogin />
                 </div>
                 <div className=" mt-4 text-white flex gap-3 mx-8 items-center">
@@ -27,10 +28,10 @@ const LoginPage = () => {
                     <div className=" text-white">OR</div>
                     <div className=" w-full h-[1px]  bg-gray-500"></div>
                 </div>
-                <LoginForm />
+                <SignUpForm />
             </div>
         </div>
     );
 };
 
-export default LoginPage;
+export default SingUpPage;
