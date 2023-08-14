@@ -19,7 +19,7 @@ const Home = () => {
       <AnalysisSection></AnalysisSection>
        
      
-      <Kaku2></Kaku2>
+       
 
     </main>
   )
