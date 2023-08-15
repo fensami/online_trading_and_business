@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import Image from "next/image";
-import img from "../../public/e2.jpg"
+import img from "../assets/e2.jpg"
 
 const NotFound = () => {
     return (
