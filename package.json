@@ -14,10 +14,14 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+<<<<<<< HEAD
     "@visx/group": "^3.3.0",
     "@visx/mock-data": "^3.3.0",
     "@visx/scale": "^3.3.0",
     "@visx/shape": "^3.3.0",
+=======
+    "@ramonak/react-progress-bar": "^5.0.3",
+>>>>>>> a5d2ec2bfd2d5f75b5900a435b5810356cb9d4eb
     "autoprefixer": "10.4.14",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
