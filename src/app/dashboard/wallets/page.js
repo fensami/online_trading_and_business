@@ -1,9 +1,10 @@
+import Wallets from '@/components/Wallets';
 import React from 'react';
 
 const WalletsPage = () => {
   return (
-    <div>
-      WalletsPage
+    <div className='w-full'>
+        <Wallets></Wallets>
     </div>
   );
 };
