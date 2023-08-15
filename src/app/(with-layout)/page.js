@@ -1,9 +1,9 @@
 "use client"
-import SubLogin from "../Home/SubLogin";
-import AnalysisSection from "../HomePage/AnalysisSection";
-import Banner from "../HomePage/Banner";
-import CheckTradingSped from "../HomePage/CheckTradingSped";
-import UpCommingOther from "../HomePage/UpCommingOther";
+import SubLogin from "./Home/SubLogin";
+import AnalysisSection from "./HomePage/AnalysisSection";
+import Banner from "./HomePage/Banner";
+import CheckTradingSped from "./HomePage/CheckTradingSped";
+import UpCommingOther from "./HomePage/UpCommingOther";
 // import PromotionPage from "@/components/Promotion";
 // import AnalysisSection from "./HomePage/AnalysisSection";
 // import Banner from "./HomePage/Banner";
