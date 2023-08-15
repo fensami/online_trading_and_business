@@ -7,7 +7,7 @@ import TableDashboard from './tableDashboard';
 
 const DashboardPage = () => {
   return (
-    <div className='p-3 container top-0 border'>
+    <div className='p-3 container border'>
       
       DashboardPage
       <DashboardCard></DashboardCard>
