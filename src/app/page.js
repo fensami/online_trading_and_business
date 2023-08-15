@@ -1,11 +1,11 @@
 "use client"
 import PromotionPage from "@/components/Promotion";
-import AnalysisSection from "./HomePage/AnalysisSection";
-import Banner from "./HomePage/Banner";
+import AnalysisSection from "./(with-layout)/HomePage/AnalysisSection";
+import Banner from "./(with-layout)/HomePage/Banner";
 // import Banner from "./HomePage/Banner";
-import CheckTradingSped from "./HomePage/CheckTradingSped";
-import SubLogin from "./HomePage/SubLogin";
-import UpCommingOther from "./HomePage/UpCommingOther";
+import CheckTradingSped from "./(with-layout)/HomePage/CheckTradingSped";
+import SubLogin from "./(with-layout)/HomePage/SubLogin";
+import UpCommingOther from "./(with-layout)/HomePage/UpCommingOther";
 import Wallets from "@/components/Wallets";
  
  
