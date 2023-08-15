@@ -9,7 +9,7 @@ const PromotionCard = ({promotion}) => {
         return (
                 <div>
                    <div className="card bg-slate-500 card-compact h-[450px]   shadow-xl">
-  <figure> <Image width={600} height={400} src={image}></Image> </figure>
+  <figure> <Image width={600} height={400} src={image} alt=''></Image> </figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     <p>{description}</p>

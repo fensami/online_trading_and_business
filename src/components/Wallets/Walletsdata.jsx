@@ -8,7 +8,7 @@ import getWalletsData from '@/utils/getWalletsData';
 const Walletsdata = async () => {
         const walletsdata = await getWalletsData()
         return (
-                <>
+                <div>
 
 <div className="overflow-x-auto">
   <table className="table">
@@ -31,7 +31,7 @@ const Walletsdata = async () => {
   </table>
 </div>   
                         
-                </>
+                </div>
         );
 };
 
