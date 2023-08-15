@@ -4,6 +4,7 @@ const Kaku2 = () => {
   return (
     <div>
       kaku2
+      kaki 2
     </div>
   );
 };
