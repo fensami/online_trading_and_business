@@ -14,7 +14,7 @@ const dashboardLinks  =[
 
 const Sidebar = () => {
   return (
-  <div>
+  <div >
 
 <div className="drawer lg:drawer-open">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -31,7 +31,7 @@ const Sidebar = () => {
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
 
-    <div className='flex my-2 bg-[#212b39] flex-col text-white p-5 gap-5'>
+    <div className='flex my-2 w-52 bg-[#212b39] flex-col text-white p-4 gap-5'>
 
 
 <p className='border p-3 rounded-xl'><Link href='/dashboard'>Dashboard</Link></p>
