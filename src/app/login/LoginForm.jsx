@@ -1,7 +1,10 @@
 "use client";
+import useAuth from "@/hooks/useAuth";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 const LoginForm = () => {
+    const {signIn} = useAuth();
 
     const {
         register,
@@ -11,6 +14,13 @@ const LoginForm = () => {
 
     const onSubmit = async (data) => {
         console.log(data);
+        const {email, password} = data;
+        try {
+            const user = await signIn(email, password);
+            toast.success("User signed In successfully")
+        } catch (error) {
+            toast.error(error.message || "User not sign in")
+        }
     };
 
     return (
