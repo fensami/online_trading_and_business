@@ -23,28 +23,25 @@ const data02 = [
 const DashboardTotalBalance = () => {
   return (
     <div className='py-10 w-full px-5 bg-[#171f2a] my-5 rounded-lg'>
-       <>
-       <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={300} height={300}>
-          <Pie
-            dataKey="value"
-            isAnimationActive={false}
-            data={data01}
-            cx="50%"
-            cy="50%"
-            outerRadius={80}
-            fill="#8884d8"
-            label
-          />
-          <Pie dataKey="value" data={data02} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
-          <Tooltip />
-        </PieChart>
-       {/* <div>hello</div> */}
-      </ResponsiveContainer>
-       </>
-       {/* <div>hello</div> */}
+      <>
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart width={300} height={300}>
+            <Pie
+              dataKey="value"
+              isAnimationActive={false}
+              data={data01}
+              cx="50%"
+              cy="50%"
+              outerRadius={80}
+              fill="#8884d8"
+              label
+            />
+            <Pie dataKey="value" data={data02} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
+            <Tooltip />
+          </PieChart>
+        </ResponsiveContainer>
+      </>
 
-      {/* <p>Balance</p> */}
     </div>
   );
 };
