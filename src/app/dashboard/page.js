@@ -7,9 +7,8 @@ import TableDashboard from './tableDashboard';
 
 const DashboardPage = () => {
   return (
-    <div className='p-3 container border'>
+    <div className='p-3 container'>
       
-      DashboardPage
       <DashboardCard></DashboardCard>
       {/* <Chart></Chart> */}
       <div className='md:flex gap-5'>
