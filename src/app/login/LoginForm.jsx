@@ -1,7 +1,14 @@
 "use client";
+import useAuth from "@/hooks/useAuth";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 const LoginForm = () => {
+    const {signIn} = useAuth();
+    const search = useSearchParams();
+    const from = search.get("redirectUrl") || "/";
+    const { replace } = useRouter();
 
     const {
         register,
@@ -9,8 +16,15 @@ const LoginForm = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = async (data) => {
+    const onSubmit = async(data) => {
         console.log(data);
+        try {
+            const user = await signIn(data.email, data.password);
+            toast.success("User signed In successfully")
+            replace(from)
+        } catch (error) {
+            toast.error(error.message || "User not sign in")
+        }
     };
 
     return (
