@@ -7,14 +7,19 @@ import useAuth from '@/hooks/useAuth';
 import { toast } from 'react-hot-toast';
 import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import app from '@/firebase/firebase.config';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const SocialLogin = () => {
     const {googleLogin} = useAuth();
     const auth = getAuth(app);
+    const search = useSearchParams();
+    const from = search.get("redirectUrl") || "/";
+    const { replace } = useRouter();
     
     const handleGoogleLogin = async () => {
         try {
             const user = await googleLogin()
+            replace(from)
         } catch (error) {
             toast.error(error.message || "User not signed in");
         }
@@ -25,6 +30,7 @@ const SocialLogin = () => {
         signInWithPopup(auth, provider)
         .then((re) => {
             console.log(re)
+            replace(from)
         })
         .catch((err) => {
             console.log(err.message)

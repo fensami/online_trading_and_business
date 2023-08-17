@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
       <div className="md:hidden flex items-center">
         <button
-          className="text-black"
+          className="text-white"
           onClick={toggleMenu}
         >
           {menuOpen ? (
@@ -71,6 +71,7 @@ const Navbar = () => {
         <Link href="/markets" className="block hover:text-red-500  my-2">Markets</Link>
         <Link href="/about" className="block hover:text-red-500  my-2">About Us</Link>
         <Link href="/resource" className="block hover:text-red-500  my-2">Resources</Link>
+        <Link href="/dashboard" className="block hover:text-red-500  my-2">dashboard</Link>
         {
           user?
           <Link href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link>:

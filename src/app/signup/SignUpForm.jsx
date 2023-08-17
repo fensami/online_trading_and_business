@@ -2,7 +2,7 @@
 import useAuth from "@/hooks/useAuth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-
+import {useRouter, useSearchParams} from "next/navigation";
 const SignUpForm = () => {
 const {createUser, updateUserData} = useAuth();
     const {
@@ -13,6 +13,10 @@ const {createUser, updateUserData} = useAuth();
         setValue,
     } = useForm();
 
+    const search = useSearchParams();
+    const from = search.get("redirectUrl") || "/";
+    const { replace } = useRouter();
+
 
     const onSubmit = (data) => {
         console.log(data);
@@ -22,6 +26,7 @@ const {createUser, updateUserData} = useAuth();
             console.log(loggedUser);
             updateUserData(result.user, data.name)
             toast.success("User signed up successfully");
+            replace(from);
         })
         .catch(error => {
             toast.error(error.message || "User Create failed")
