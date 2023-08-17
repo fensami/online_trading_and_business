@@ -36,7 +36,14 @@ const Navbar = () => {
       </div>
       <div className="flex items-center space-x-4">
         {
-          user? <Link href="/login"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link> :
+          user? 
+          <div className='flex justify-center items-center gap-5'>
+            {
+            user.displayName ? <h3 className='font-semibold'>{user.displayName}</h3> :
+            <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" />
+            }
+            <Link className='hidden md:block' href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link>
+          </div> :
           <Link href="/login"><button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button></Link>
         }
         <button className="text-white hidden font-semibold md:block bg-red-500  px-4 py-2 rounded-2xl">
@@ -57,13 +64,18 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden absolute top-16 right-0 bg-white p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? 'transform translate-x-0' : 'transform translate-x-full'
+        className={`md:hidden absolute -top-[133px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? 'transform translate-y-full' : '-transform -translate-y-24'
           }`}
       >
         <Link href="/trades" className="block hover:text-red-500  my-2">Trades</Link>
         <Link href="/markets" className="block hover:text-red-500  my-2">Markets</Link>
         <Link href="/about" className="block hover:text-red-500  my-2">About Us</Link>
         <Link href="/resource" className="block hover:text-red-500  my-2">Resources</Link>
+        {
+          user?
+          <Link href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link>:
+          <Link href="/login"><button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button></Link>        
+          }
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 
 const SignUpForm = () => {
-const {createUser} = useAuth();
+const {createUser, updateUserData} = useAuth();
     const {
         register,
         handleSubmit,
@@ -20,8 +20,13 @@ const {createUser} = useAuth();
         .then(result => {
             const loggedUser = result.user;
             console.log(loggedUser);
+            updateUserData(result.user, data.name)
             toast.success("User signed up successfully");
         })
+        .catch(error => {
+            toast.error(error.message || "User Create failed")
+        })
+
     };
 
     return (

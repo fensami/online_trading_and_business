@@ -1,18 +1,35 @@
+"use client"
+
 /* eslint-disable react/no-unescaped-entities */
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillGithub } from 'react-icons/ai';
 import useAuth from '@/hooks/useAuth';
 import { toast } from 'react-hot-toast';
+import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
+import app from '@/firebase/firebase.config';
 
 const SocialLogin = () => {
     const {googleLogin} = useAuth();
-
+    const auth = getAuth(app);
+    
     const handleGoogleLogin = async () => {
         try {
             const user = await googleLogin()
         } catch (error) {
             toast.error(error.message || "User not signed in");
         }
+    }
+
+    const signInWithFacebook = () => {
+        const provider = new FacebookAuthProvider();
+        signInWithPopup(auth, provider)
+        .then((re) => {
+            console.log(re)
+        })
+        .catch((err) => {
+            console.log(err.message)
+            toast.error(err.message || "Facebook login Failed")
+        })
     }
     return (
         <div className='w-full mx-auto  '>
@@ -26,7 +43,7 @@ const SocialLogin = () => {
                 </div>
                 {/* github login */}
                 <div className='inline-block'>
-                    <button className='social-btn  hover:text-black hover:bg-green-300 duration-700'>
+                    <button onClick={signInWithFacebook} className='social-btn  hover:text-black hover:bg-green-300 duration-700'>
                         <AiFillGithub size={24} />
                         <span>Sign In With Facebook</span>
                     </button>

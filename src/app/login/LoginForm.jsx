@@ -12,11 +12,10 @@ const LoginForm = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = async (data) => {
+    const onSubmit = async(data) => {
         console.log(data);
-        const {email, password} = data;
         try {
-            const user = await signIn(email, password);
+            const user = await signIn(data.email, data.password);
             toast.success("User signed In successfully")
         } catch (error) {
             toast.error(error.message || "User not sign in")
