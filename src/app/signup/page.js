@@ -4,6 +4,7 @@ import SocialLogin from "../components/SocialLogin";
 import SignUpForm from "./SignUpForm";
 
 const SingUpPage = () => {
+    
     return (
         <div className=" md:flex gap-4 items-center md:mx-12 mx-4 bg-gray-800 p-4 shadow-lg ">
             {/* svg image section */}
