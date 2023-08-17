@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
+import Activities from '@/components/Activities';
 import React from 'react';
 
 const ActivitiesPage = () => {
   return (
     <div>
-      ActivitiesPage
+      <Activities></Activities>
     </div>
   );
 };
