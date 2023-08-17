@@ -13,7 +13,7 @@ const LoginForm = () => {
         console.log(data);
     };
 
-    return (
+        return (
         <form onSubmit={handleSubmit(onSubmit)} className="card-body text-white">
             <div className="form-control">
                 <label htmlFor="email" className="font-semibold mb-2">
