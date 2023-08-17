@@ -1,8 +1,9 @@
+import Prices from "@/components/Prices";
 
 const PricePage = () => {
   return (
     <div>
-      PricePage
+      <Prices></Prices>
     </div>
   );
 };
