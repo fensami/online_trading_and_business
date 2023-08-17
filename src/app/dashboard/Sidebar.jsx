@@ -3,12 +3,13 @@ import Link from 'next/link';
 import React from 'react';
 import { FaExchangeAlt } from 'react-icons/fa';
 import { MdDashboardCustomize } from 'react-icons/md';
-import { GiPriceTag,GiCrossedChains } from 'react-icons/gi';
+import { GiPriceTag,GiCrossedChains,GiHamburgerMenu } from 'react-icons/gi';
 import { LiaWalletSolid } from 'react-icons/lia';
 import { MdOutlinePercent } from 'react-icons/md';
 import { TbActivityHeartbeat } from 'react-icons/tb';
 import { MdOutlineNotificationsActive } from 'react-icons/md';
 import { TbSettings,TbBrandOauth } from 'react-icons/tb';
+// import {GiHamburgerMenu } from 'react-icons/tb';
 
 
 // import { GiCrossedChains } from 'react-icons/tb';
@@ -25,26 +26,30 @@ const dashboardLinks  =[
 
 const Sidebar = () => {
   return (
-  <div className='bg-[#212b39]'>
+  <div className='md:bg-[#212b39]'>
    
 
-<p className='text-center mt-5 text-2xl font-bold'>OTBA</p>
+
 <div className="drawer lg:drawer-open">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content flex flex-col items-center justify-center">
     {/* Page content here */}
-    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">
-    <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+    <label htmlFor="my-drawer-2" className=" lg:hidden">
+    <GiHamburgerMenu className='text-2xl absolute'></GiHamburgerMenu>
+    {/* <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg> */}
   
   {/* close icon */}
 
     </label>
   
-  </div> 
+  </div>
+   
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
 
     <div className='flex my-2 w-52  flex-col text-white p-4 gap-5'>
+
+    <p className='text-center mt-5 text-2xl font-bold'>OTBA</p>
 
 
 <p className='border p-3 rounded-xl'><Link href='/dashboard' className='flex gap-2 items-center ' ><MdDashboardCustomize></MdDashboardCustomize> Dashboard</Link></p>
