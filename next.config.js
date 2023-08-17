@@ -2,9 +2,12 @@
 const nextConfig = {
   images: {
       // protocol: 'https',
-      domains: ['images.unsplash.com', 'plus.unsplash.com'],
+      domains: ['images.unsplash.com','localhost', 'plus.unsplash.com'],
+ 
+      
   }
      
 }
+ 
 
-module.exports = nextConfig
+module.exports = nextConfig;
