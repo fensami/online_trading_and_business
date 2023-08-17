@@ -50,6 +50,7 @@
        "wallets": [
         {
           "coin_name": "Bitcoin(BTC)",
+          "id":1,
           "order": 476.98,
           "available_balance": 245.5,
           "total_balance": 554.0,
@@ -59,6 +60,7 @@
         },
         {
           "coin_name": "Ethereum (BNB)",
+          "id":2,
           "order": 77.445,
           "available_balance": 70.07,
           "total_balance": 80.0,
@@ -68,6 +70,7 @@
         },
         {
           "coin_name": "Cardano(DTC)",
+          "id":3,
           "order": 55.63,
           "available_balance": 10.0,
           "total_balance": 70.0,
@@ -77,6 +80,7 @@
         },
         {
           "coin_name": "Solana(BTC)",
+          "id":4,
           "order": 45.04,
           "available_balance": 50.0,
           "total_balance": 20.0,
@@ -86,6 +90,7 @@
         },
         {
           "coin_name": "Binance Coin",
+          "id":5,
           "order": 54.85,
           "available_balance": 92.0,
           "total_balance": 26.0,
@@ -95,6 +100,7 @@
         },
         {
           "coin_name": "XRP(DOGE)",
+          "id":6,
           "order": 45.6,
           "available_balance": 50.0,
           "total_balance": 80.0,
@@ -104,6 +110,7 @@
         },
         {
           "coin_name": "Polkadot(DGB)",
+          "id":7,
           "order": 76.99,
           "available_balance": 75.76,
           "total_balance": 55.70,
@@ -113,6 +120,7 @@
         },
         {
           "coin_name": "Dogecoin(DOGE)",
+          "id":8,
           "order": 67.78,
           "available_balance": 50.0,
           "total_balance": 75.0,
@@ -122,6 +130,7 @@
         },
         {
           "coin_name": "Avalanche(TRN)",
+          "id":9,
           "order": 46.99,
           "available_balance": 46.0,
           "total_balance": 79.0,
@@ -131,6 +140,7 @@
         },
         {
           "coin_name": "Chainlink(DGB)",
+          "id":10,
           "order": 77.10,
           "available_balance": 20.0,
           "total_balance": 70.0,

@@ -1,12 +1,12 @@
  
 import React from 'react';
 import WalletTable from './WalletTable';
-import getWalletsData from '@/utils/getWalletsData';
+import dataget from '@/utils/dataget';
  
  
 
 const Walletsdata = async () => {
-        const walletsdata = await getWalletsData()
+        const walletsdata = await dataget();
         return (
                 <div>
 
