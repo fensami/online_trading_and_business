@@ -3,6 +3,7 @@ import SubLogin from "../Home/SubLogin";
 import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
+import OfferService from "../HomePage/OfferService";
 import UpCommingOther from "../HomePage/UpCommingOther";
 // import PromotionPage from "@/components/Promotion";
 // import AnalysisSection from "./HomePage/AnalysisSection";
@@ -22,6 +23,7 @@ const Home = () => {
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
+      <OfferService></OfferService>
       <UpCommingOther></UpCommingOther>
       <AnalysisSection></AnalysisSection>
        
