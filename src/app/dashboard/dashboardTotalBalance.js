@@ -22,7 +22,7 @@ const data02 = [
 
 const DashboardTotalBalance = () => {
   return (
-    <div className='py-10 w-full px-5 bg-[#171f2a] my-5 rounded-lg'>
+    <div className='py-10 md:w-1/2 w-full px-5 bg-[#171f2a] my-5 rounded-lg'>
       <>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart width={300} height={300}>
