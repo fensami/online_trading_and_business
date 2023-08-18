@@ -49,7 +49,7 @@ const Sidebar = () => {
 
     <div className='flex my-2 w-52  flex-col text-white p-4 gap-5'>
 
-    <p className='text-center mt-5 text-2xl font-bold'>OTBA</p>
+    <Link href='/' className='text-center mt-5 text-2xl font-bold'>OTBA</Link>
 
 
 <p className='border p-3 rounded-xl'><Link href='/dashboard' className='flex gap-2 items-center ' ><MdDashboardCustomize></MdDashboardCustomize> Dashboard</Link></p>

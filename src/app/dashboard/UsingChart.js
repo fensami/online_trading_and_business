@@ -88,7 +88,7 @@ const data = [
 
 const UsingChart = () => {
   return (
-   <div className='text-white bg-[#171f2a] my-5 rounded-lg px-5'>
+   <div className='text-white overflow-auto md:w-1/2 bg-[#171f2a] my-5 rounded-lg px-5'>
     <div className="flex items-center justify-between">
       <h1 className="my-10 px-5">Monthly Overall Groowth</h1>
 

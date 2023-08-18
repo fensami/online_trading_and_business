@@ -6,7 +6,7 @@ import { SiDogecoin, SiBinance } from 'react-icons/si';
 
 const DashboardCard = () => {
   return (
-    <div className='md:flex  justify-between gap-5 '>
+    <div className='md:flex grid grid-cols-2 justify-between gap-5 '>
       <article className='bg-[#171f2a] rounded-xl w-60 flex justify-between items-center px-5 py-3'>
         <div className='mt-2'>
         <h1 className='text-xl font-semibold'>Bitcoin</h1>
@@ -31,7 +31,7 @@ const DashboardCard = () => {
       <article className='bg-[#171f2a] rounded-xl w-60 flex justify-between items-center px-5 py-3'>
         <div className='mt-2'>
         <h1 className='text-xl font-semibold'>Binance</h1>
-        <p className='my-3 text-xl font-semibold'>$3200</p>
+        <p className='my-3 text-xl font-semibold'>$3100</p>
         </div>
         <SiBinance className='text-5xl'></SiBinance>
       </article>

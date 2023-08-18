@@ -4,11 +4,14 @@ const nextConfig = {
       // protocol: 'https',
       domains: ['images.unsplash.com', 'plus.unsplash.com', 'cryptdash.vercel.app','localhost']
       
- 
-      
   }
      
 }
  
 
 module.exports = nextConfig;
+// module.exports = {
+  // Your modified configuration settings
+  // someConfig: false,
+  // anotherConfig: true,
+// };

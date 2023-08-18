@@ -2,7 +2,7 @@ import React from 'react';
 
 const TableDashboard = () => {
   return (
-    <div className='w-3/4 bg-[#171f2a] p-2'>
+    <div className='md:w-3/4 w-full bg-[#171f2a] p-2'>
       <div className="overflow-x-auto">
   <table className="table table-xs">
     <thead className='text-white'>
