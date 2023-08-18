@@ -11,7 +11,7 @@ const DashboardPage = () => {
       
       <DashboardCard></DashboardCard>
       {/* <Chart></Chart> */}
-      <div className='md:flex gap-5'>
+      <div className='md:flex w-full  gap-5'>
       <UsingChart></UsingChart>
       {/* <dashboardTotalBalance></dashboardTotalBalance> */}
       <DashboardTotalBalance></DashboardTotalBalance>
@@ -19,7 +19,7 @@ const DashboardPage = () => {
 
       </div>
 
-      <div className='flex gap-5'>
+      <div className='md:flex gap-5'>
       <TableDashboard></TableDashboard>
       <RecentTransaction></RecentTransaction>
       </div>

@@ -7,7 +7,7 @@ export const metadata = {
 
 const DashboardLayout = ({children}) => {
   return (
-    <div className='flex container mx-auto border bg-[#131720] text-white'>
+    <div className='flex container mx-auto border bg-[#131720] text-slate-300'>
       <Sidebar></Sidebar>
       {children}
     </div>
