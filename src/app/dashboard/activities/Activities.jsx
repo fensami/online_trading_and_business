@@ -3,12 +3,12 @@ import React from 'react';
 
 const Activities = () => {
     return (
-        <div>
+        <div className='bg-[#171f2a] mx-5 py-2 my-5'>
             <div className="overflow-x-auto md:mx-16 md:my-16">
                 <div className='flex justify-between mb-4'>
                     <p className='font-bold'>History</p>
                     <div className='flex justify-between gap-4'>
-                        <p className='bg-green-500 rounded p-2'>All</p>
+                        <p className=' rounded p-2'>All</p>
                         <p className='border-2 border-orange-400 rounded-lg p-2'>Withdraw</p>
                         <p className='border-2 border-orange-400 rounded-lg p-2'>Withdraws</p>
                         <p className='border-2 border-orange-400 rounded-lg p-2'>All Time</p>
@@ -27,6 +27,7 @@ const Activities = () => {
                             <td></td>
                             <td className='text-center'>Amount</td>
                         </tr>
+                        {/* <hr className='text-white'></hr> */}
                     </thead>
                     <tbody>
                         <tr>

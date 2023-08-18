@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import Activities from '@/components/Activities';
+import Activities from '@/app/dashboard/activities/Activities';
 import React from 'react';
 
 const ActivitiesPage = () => {
   return (
-    <div>
+    <div className='w-full'>
       <Activities></Activities>
     </div>
   );
