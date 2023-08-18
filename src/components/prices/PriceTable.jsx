@@ -54,20 +54,20 @@ const PriceTable = ({pricedata,index}) => {
         return (
                 <> 
       <tr> 
-        <td>
-                <div className='flex items-center gap-3'>
-                <FaStar></FaStar> 
-                {index + 1}
-                </div>
-        </td>
+                  <td>
+                          <div className='flex items-center gap-3'>
+                          <FaStar></FaStar> 
+                          {index + 1}
+                          </div>
+                  </td>
         
-        <td className='flex gap-1 mt-3 items-center'> <Image className='rounded-full' height={30} width={30} src= {image} alt=''></Image> {coin_name}</td>
-        <td>${price}</td>
-        <td className='text-orange-300'>{market}</td>
-        <td>${available_balance}</td>
-        <td>${total_balance}</td>
-        <td className=' '>
-        <AreaChart
+                    <td className='flex gap-1 mt-3 items-center'> <Image className='rounded-full' height={30} width={30} src= {image} alt=''></Image> {coin_name}</td>
+                    <td>${price}</td>
+                    <td className='text-orange-300'>{market}</td>
+                    <td>${available_balance}</td>
+                    <td>${total_balance}</td>
+                    <td className=' '>
+                   <AreaChart
                                 width={100}
                                 height={50}
                                 data={dataa}
@@ -79,14 +79,15 @@ const PriceTable = ({pricedata,index}) => {
                                 }}
                                 >
                                 <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-                       </AreaChart>
-        </td>
-        <td> 
-      <button className='bg-[#171f2a] px-3 py-1 border border-slate-600 rounded hover:bg-green-500'>Trade</button>
-        </td>
+                    </AreaChart>
+                  </td>
+                    <td> 
+                  <button className='bg-[#171f2a] px-3 py-1 border border-slate-600 rounded hover:bg-green-500'>Trade</button>
+                    </td>
          
-      </tr>  
-                </>
+        </tr>  
+      </>
+      
         );
 };
 
