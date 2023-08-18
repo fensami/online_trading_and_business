@@ -10,7 +10,6 @@ const Activities = () => {
                     <div className='flex justify-between gap-4'>
                         <p className=' rounded p-2'>All</p>
                         <p className='border-2 border-orange-400 rounded-lg p-2'>Withdraw</p>
-                        <p className='border-2 border-orange-400 rounded-lg p-2'>Withdraws</p>
                         <p className='border-2 border-orange-400 rounded-lg p-2'>All Time</p>
                     </div>
                 </div>

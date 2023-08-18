@@ -5,6 +5,7 @@ const ScanSection = () => {
     return (
         <div >
 <Image width={90} height={90} src={ScanImg} alt=""/>
+<h2 className="text-2xl font-semibold">Scan</h2>
         </div>
     );
 };
