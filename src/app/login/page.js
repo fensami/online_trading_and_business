@@ -1,22 +1,34 @@
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
-import SocialLogin from '../components/SocialLogin';
+import Image from "next/image";
+import CartImg from '@/assets/CartImg.png'
+import LoginForm from "./LoginForm";
+import SocialLogin from "../components/SocialLogin";
 
 const LoginPage = () => {
     return (
-        <div className="lg:w-5/12 md:w-6/12 md:mx-auto mx-6 border-red-400 border-l border-r rounded-xl p-6 my-12  ">
-            <h3 className="text-xl font-semibold">Welcome!</h3>
-            <p className="text-gray-600 my-2">Log in to continue.</p>
-            <form>
-                <input className="login-input" type="text" placeholder="Email" required />
-                <span className='relative'>
-                    <input className="login-input" type="password" placeholder="Password" required />
-                    <AiOutlineEyeInvisible className='lg:absolute top-[52px] left-[445px] lg:block hidden' />
-                    <p className='lg:hidden block text-xs cursor-pointer'>Show password</p>
-                </span>
-                <p className='text-red-500 hover:underline text-sm mt-2'>Forget password?</p>
-                <button type='submit' className='bg-red-500 hover:bg-red-600 text-white font-semibold mt-10 py-2 font-mono w-full rounded-full'>Log in</button>
-            </form>
-            <SocialLogin />
+        <div className=" md:flex gap-4 items-center container mx-auto  bg-[#131720] py-4 md:px-52  px-4 shadow-lg ">
+            {/* svg image section */}
+            <div className=" p-6 md:p-7 bg-gradient-to-tr from-green-600 to-green-900 rounded-lg text-white ">
+                <p href="/" className="text-2xl font-semibold ">Logo</p>
+                <h2 className="text-3xl font-bold my-2 ">Welcome</h2>
+                <p>Create an account to enjoy all the services without any ads for free!</p>
+                <div className="mt-2">
+                    <a href='/signup' className="bg-green-400 hover:bg-green-500 text-black py-2 px-6 rounded-lg no-underline focus:outline-none shadow-md  opacity-75">Sign up</a>
+                </div>
+                <Image className="h-96 bg-opacity-95" src={CartImg} alt="" />
+            </div>
+            {/* login form*/}
+            <div className="md:w-7/12 border border-gray-600  rounded-lg my-4">
+                <div className=" text-white text-center">
+                    <h2 className=" text-3xl font-semibold  my-4">Sign In</h2>
+                    <SocialLogin />
+                </div>
+                <div className=" mt-4 text-white flex gap-3 mx-8 items-center">
+                    <div className=" w-full h-[1px] bg-gray-500"></div>
+                    <div className=" text-white">OR</div>
+                    <div className=" w-full h-[1px]  bg-gray-500"></div>
+                </div>
+                <LoginForm />
+            </div>
         </div>
     );
 };

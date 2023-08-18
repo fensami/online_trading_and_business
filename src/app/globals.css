@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 
-a {
-  padding: 5px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a:hover {
+/* a {
+  padding: 5px 0px;
+} */
+
+/* a:hover {
   text-decoration: underline;
   transition: transform 0.3s;
   color: red;
-}
+} */
+
+
 
 .login-input {
   border: 1px solid gray;
@@ -24,16 +32,15 @@ a:hover {
 }
 
 .social-btn {
-  width: 100%;
-  border-radius: 9999px;
+  border-radius: 10px;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid rgb(24, 208, 24);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: white;
   font-weight: 600;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 7px 0px;
-  margin: 10px 0;
+  padding: 7px 10px;
+  margin: 5px 0;
 }
