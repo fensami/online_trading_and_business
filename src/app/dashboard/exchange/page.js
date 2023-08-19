@@ -1,5 +1,5 @@
 
-import CandlestickPriceChart from "./candlestickData";
+import CandlestickPriceChart from "./CandlestickData";
 import DeepChart from "./DeepChart";
 import Dropdown from "./Dropdown";
 import PriceDropdown from "./PriceDropdown";
