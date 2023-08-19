@@ -7,7 +7,7 @@ const SubLogin = () => {
         // main div
         <div className="grid md:grid-cols-2 gap-2 justify-between items-center lg:px-16 lg:mx-16 bg-cover mx-4 bg-center rounded-sm opacity-80 font-sans" style={{ backgroundImage: 'url("https://i.ibb.co/Q6k4RBV/hands-with-gift-box-204757-1481.jpg")' }}>
             {/* Your content goes here */}
-            <div className="bg-transparent  hover:bg-red-500 duration-700 p-6 shadow-md md:order-none order-last rounded-md my-8  ml-3">
+            <div className="bg-transparent   duration-700 p-6 shadow-md md:order-none order-last rounded-md my-8  ml-3">
                 <div className="text-white md:text-4xl text-2xl font-bold opacity-80">
                     <p className="md:py-2">Join over 2.5k </p>
                     <p >traders worldwide</p>
@@ -16,7 +16,7 @@ const SubLogin = () => {
                 <form>
                     <div className="flex justify-start gap-4 items-center  ">
                         <input className="outline-none border h-10 w-3/4 px-2 bg-transparent" type="text" placeholder="Email Address" />
-                        <button className="bg-gray-400  font-semibold text-white h-10 w-1/4" type="submit">Sign Up</button>
+                        <button className="bg-gray-400  font-semibold text-black h-10 w-1/4" type="submit">Sign Up</button>
                     </div>
                     <div className="flex gap-2 mt-2">
                         <input type="checkbox" name="" id="" />

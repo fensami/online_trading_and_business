@@ -3,6 +3,7 @@ import useAuth from "@/hooks/useAuth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import {useRouter, useSearchParams} from "next/navigation";
+import Link from "next/link";
 const SignUpForm = () => {
 const {createUser, updateUserData} = useAuth();
     const {
@@ -106,6 +107,7 @@ const {createUser, updateUserData} = useAuth();
                     Sign Up
                 </button>
             </div>
+            <div className="divider font-semibold">Have not an account<Link href='/login' className='text-primary'>Sign Up</Link></div>
         </form>
     );
 };
