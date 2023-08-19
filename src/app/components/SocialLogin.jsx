@@ -8,6 +8,7 @@ import { toast } from 'react-hot-toast';
 import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import app from '@/firebase/firebase.config';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
 const SocialLogin = () => {
     const {googleLogin} = useAuth();
@@ -42,20 +43,20 @@ const SocialLogin = () => {
             {/* google login */}
             <div className="flex-col gap-4 justify-center md:flex-row md:gap-10 md:justify-center">
                 <div className='inline-block mx-4'>
-                    <button onClick={handleGoogleLogin} className='social-btn  hover:text-black hover:bg-green-300 duration-700 '>
+                    <button onClick={handleGoogleLogin} className='social-btn    duration-700 '>
                         <FcGoogle size={24} />
                         <span> Sign In With Google</span>
                     </button>
                 </div>
                 {/* github login */}
                 <div className='inline-block'>
-                    <button onClick={signInWithFacebook} className='social-btn  hover:text-black hover:bg-green-300 duration-700'>
+                    <button onClick={signInWithFacebook} className='social-btn  duration-700'>
                         <AiFillGithub size={24} />
                         <span>Sign In With Facebook</span>
                     </button>
                 </div>
             </div>
-            <div className="divider font-semibold">Haven't an account<a href='' className='text-primary'>Sign Up</a></div>
+           
         </div>
     );
 };
