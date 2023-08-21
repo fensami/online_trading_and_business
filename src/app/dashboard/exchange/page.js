@@ -1,5 +1,5 @@
 
-import CandlestickPriceChart from "./candlestickData";
+import CandlestickPriceChart from "./CandlestickData";
 import DeepChart from "./DeepChart";
 import Dropdown from "./Dropdown";
 import PriceDropdown from "./PriceDropdown";
@@ -12,7 +12,8 @@ const ExchangePage = () => {
 
   return (
     <div className="m-6 w-full text-gray-300">
-      <header className="bg-[#171f2a] w-full md:flex items-center justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
+      <header className="
+       w-full md:flex items-center justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
         <div className="   border-r  border-gray-700 pr-20">
           <Dropdown />
           <div className="mt-6">
