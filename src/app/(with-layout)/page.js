@@ -4,28 +4,20 @@ import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
 import OfferService from "../HomePage/OfferService";
+import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
-// import PromotionPage from "@/components/Promotion";
-// import AnalysisSection from "./HomePage/AnalysisSection";
-// import Banner from "./HomePage/Banner";
 
-// import Banner from "./HomePage/Banner";
-
-// import CheckTradingSped from "./HomePage/CheckTradingSped";
-// import SubLogin from "./HomePage/SubLogin";
-// import UpCommingOther from "./HomePage/UpCommingOther";
- 
-// import Kaku2 from "./kaku2";
 
 const Home = () => {
   return (
-    <main className="container mx-auto bg-[#131720] text-white">
+    <main className=" bg-[#131720] text-white">
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
       <OfferService></OfferService>
       <UpCommingOther></UpCommingOther>
       <AnalysisSection></AnalysisSection>
+      <TradeTypes></TradeTypes>
        
      
        
