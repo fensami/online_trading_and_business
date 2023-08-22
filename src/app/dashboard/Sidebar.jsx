@@ -22,7 +22,7 @@ const dashboardLinks  =[
 const Sidebar = () => {
   return (
   <div>
-    <div className='md:bg-[#212b39]'>
+    <div className=' bg-[#131720] w-full'>
    
 
 
