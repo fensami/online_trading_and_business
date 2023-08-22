@@ -12,10 +12,7 @@ const PromotionCard = () => {
 
         useEffect(()=> {
           const getPromoton = async()=> {
-            fetch('http://localhost:3000/api/promotion',{
-              method: "GET",
-              body: JSON.stringify()
-            })
+            fetch('http://localhost:3000/api/promotion')
             .then((res) => res.json())
             .then((data) => {
               setPromotions(data)

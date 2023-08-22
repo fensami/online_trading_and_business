@@ -1,10 +1,12 @@
-import Wallets from '@/components/Wallets';
-import React from 'react';
+// import Wallets from '@/components/Wallets';
+import WalletTable from '@/components/Wallets/WalletTable';
+// import React from 'react';
 
 const WalletsPage = () => {
   return (
     <div className='w-full'>
-        <Wallets></Wallets>
+        {/* <Wallets></Wallets> */}
+        <WalletTable></WalletTable>
     </div>
   );
 };
