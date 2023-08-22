@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import React from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
-import Walletsdata from './wallets/Walletsdata';
 import logo from '../../public/Bitcoin.png'
 
     const Wallets = () => {
