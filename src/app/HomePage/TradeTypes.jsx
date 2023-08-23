@@ -5,6 +5,7 @@ import React from 'react';
 import {FaArrowRight } from 'react-icons/fa';
 const TradeTypes = () => {
     return (
+        <>
         <div className='bg-gray-600 text-center text-white md:p-24 px-2 py-10'>
             <h1 className='text-4xl md:text-5xl font-semibold tex mb-5'>Trade types</h1>
             <p className='text-lg'>Trade the way you want with 3 exciting trade types.</p>
@@ -42,6 +43,7 @@ const TradeTypes = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
