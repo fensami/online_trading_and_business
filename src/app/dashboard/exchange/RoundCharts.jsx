@@ -25,7 +25,7 @@ const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#d0ed57', '#ff7300', '#00C49F'
 
 const PieChartExample = () => {
     return (
-        <ResponsiveContainer width="100%" height={210}>
+        <ResponsiveContainer className='chart-container' width="100%" height={210}>
             <PieChart>
                 <Pie data={data01} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80}>
                     {data01.map((entry, index) => (
