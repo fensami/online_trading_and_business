@@ -1,12 +1,8 @@
-import PromotionPage from '@/components/Promotion';
-import PromotionCard from '@/components/PromotionCard';
-import React from 'react';
+import PromotionCard from "@/components/promotionCard";
 
 const PromotionsPage = () => {
   return (
     <div>
-       {/* <PromotionPage></PromotionPage> */}
-       hello
        <PromotionCard></PromotionCard>
     </div>
   );

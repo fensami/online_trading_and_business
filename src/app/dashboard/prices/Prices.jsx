@@ -1,11 +1,10 @@
 'use client'
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
-import logoB from '../../public/Bitcoin.png';
-import binance from '../../public/binance.png'
-import dugecoin from '../../public/dugecoin.png'
-import PriceData from './prices/PriceData';
+import logoB from '../../../../public/Bitcoin.png';
+import binance from '../../../../public/binance.png'
+import dugecoin from '../../../../public/dugecoin.png'
+import PriceData from './PriceData';
 
  
  
@@ -121,7 +120,7 @@ const Prices = () => {
                 </div> 
                 
        </div>  
-            <PriceData></PriceData>   
+            {/* <PriceData></PriceData>    */}
                </div>
         );
 };

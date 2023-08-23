@@ -1,15 +1,9 @@
  
 import React from 'react';
-import WalletTable from './WalletTable';
-// import dataget from '@/utils/dataget';
+import WalletTable from './WalletTable'; 
 
 
-
- 
- 
-
-const Walletsdata = async () => {
-        // const walletsdata = await dataget();
+const Walletsdata =  () => {
 
        const wallets = [
           {
@@ -139,6 +133,5 @@ const Walletsdata = async () => {
 </div>                  
          </div>
         );
-};
-
+}; 
 export default Walletsdata;

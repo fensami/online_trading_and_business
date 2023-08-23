@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { FaStar, FaStarOfDavid, FaStarOfLife } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import { Area, AreaChart } from 'recharts';
 
 
@@ -90,5 +90,5 @@ const PriceTable = ({pricedata,index}) => {
       
         );
 };
-
+   
 export default PriceTable;

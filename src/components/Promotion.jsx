@@ -1,5 +1,8 @@
 // import getpromotiondata from '@/utils/getpromotiondata';
-import PromotionCard from './PromotionCard';
+
+import PromotionCard from "./promotionCard";
+
+ 
   
  
 const PromotionPage = async () => {
