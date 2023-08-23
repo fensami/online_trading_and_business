@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import React from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
-import logo from '../../public/Bitcoin.png'
+import logo from '../../../../public/Bitcoin.png'
+import Walletsdata from './Walletsdata';
 
     const Wallets = () => {
 
@@ -50,7 +51,7 @@ import logo from '../../public/Bitcoin.png'
                         </div>   
                          <div className='mt-12 bg-[#212b39] md:mx-12 rounded-lg md:px-12 py-8'>
                                 <h1 className='text-2xl font-bold mb-4'>Today s Cryptocurrency Prices</h1>
-                         {/* <Walletsdata></Walletsdata> */}
+                         <Walletsdata></Walletsdata>
                          </div>
                 </div>
         );

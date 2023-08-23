@@ -1,9 +1,11 @@
 'use client'
 import Image from 'next/image';
-import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart} from 'recharts';
 import logoB from '../../../../public/Bitcoin.png';
 import binance from '../../../../public/binance.png'
 import dugecoin from '../../../../public/dugecoin.png'
+import PriceData from './PriceData';
+ 
 
  
  
@@ -57,10 +59,10 @@ import dugecoin from '../../../../public/dugecoin.png'
 const Prices = () => {
         return (
                 <div className='mt-12'>
-       <div className=' md:flex'>
+       <div className='grid grid-cols-1 md:grid-cols-3'>
 
-                <div className='md:px-10 md:py-8 py-6 px-8 ml-10 md:mx-8 bg-[#171f2a] my-6'>
-                    <div className='flex justify- items-center'>
+                <div className='md:px-10 mx-auto md:py-8 py-6 px-12 ml-20 md:ml-8 bg-[#171f2a] my-6'>
+                    <div className='flex items-center'>
                           <h1>| Bitcoin <br /> <span className='text-xl text-orange-500 font-semibold'>$3040.5806</span></h1> 
                            <Image src={logoB} width={40} height={40} alt=''></Image>  
                      </div>
@@ -79,8 +81,8 @@ const Prices = () => {
                                 <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
                        </AreaChart>
                 </div> 
-                <div className='md:px-10 md:py-8 py-6 px-8 ml-10 md:mx-8 bg-[#171f2a] my-6'>
-                <div className='flex justify-between items-center'>
+                <div className='md:px-10 md:py-8 mx-auto py-6 px-12 ml-20   bg-[#171f2a] my-6'>
+                <div className='flex  items-center'>
                           <h1>| Dugecoin <br /> <span className='text-xl text-orange-500 font-semibold'>$6670.5603</span></h1> 
                            <Image className='rounded-full' src={dugecoin} width={40} height={40} alt=''></Image>  
                      </div>   
@@ -98,8 +100,8 @@ const Prices = () => {
                                 <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
                        </AreaChart>
                 </div> 
-                <div className='md:px-10 md:py-8 py-6 px-8 ml-10 md:mx-8 bg-[#171f2a] my-6'>
-                <div className='flex justify-between items-center'>
+                <div className='md:px-10 md:py-8 mx-auto py-6 px-12 ml-20    bg-[#171f2a] my-6'>
+                <div className='flex items-center'>
                           <h1>| Binance <br /> <span className='text-xl text-orange-500 font-semibold'>$7404.5845</span></h1> 
                            <Image className='rounded-full' src={binance} width={40} height={40} alt=''></Image>  
                      </div>   
@@ -119,7 +121,7 @@ const Prices = () => {
                 </div> 
                 
        </div>  
-            {/* <PriceData></PriceData>    */}
+            <PriceData></PriceData>   
                </div>
         );
 };
