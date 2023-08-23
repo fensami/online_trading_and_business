@@ -107,7 +107,7 @@ const {createUser, updateUserData} = useAuth();
                     Sign Up
                 </button>
             </div>
-            <div className="divider font-semibold">Have not an account<Link href='/login' className='text-primary'>Sign Up</Link></div>
+            <div className="divider font-semibold">Have  an account<Link href='/login' className='text-primary'>Sign in</Link></div>
         </form>
     );
 };

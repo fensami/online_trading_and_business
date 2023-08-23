@@ -1,9 +1,10 @@
-import PromotionCard from "@/components/promotionCard";
+ 
+import Promotion from "./Promotion";
 
 const PromotionsPage = () => {
   return (
     <div>
-       <PromotionCard></PromotionCard>
+        <Promotion></Promotion>
     </div>
   );
 };

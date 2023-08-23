@@ -14,7 +14,7 @@ const SingUpPage = () => {
                 <h2 className="text-3xl font-bold my-4 ">Welcome</h2>
                 <p>Already Have An Account? Sign In</p>
                 <div className="mt-4">
-                    <a href='/login' className=" text-black py-2 px-6 rounded-lg no-underline focus:outline-none shadow-md  opacity-75">Sign in</a>
+                    <a href='/login' className="bg-green-400 text-black py-2 px-6 rounded-lg no-underline focus:outline-none shadow-md  opacity-75">Sign in</a>
                 </div>
                 <Image className="h-96 opacity-95" src={CartImg} alt="" />
             </div>
