@@ -1,4 +1,5 @@
 "use client"
+import  './exchange.css'
 import {
     ComposedChart,
     Bar,
@@ -23,17 +24,19 @@ const data = [
 
 const ResponsiveChart = () => {
     return (
-        <ResponsiveContainer width="100%" height={300}>
-            <ComposedChart data={data}>
-                <XAxis dataKey="name" />
-                <Tooltip />
-                <Legend />
-                <CartesianGrid stroke="green" />
-                <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" />
-                <Bar dataKey="pv" barSize={20} fill="#10b981" />
-                <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-            </ComposedChart>
-        </ResponsiveContainer>
+        <div className="chart-container">
+            <ResponsiveContainer width="100%" height={300}>
+                <ComposedChart data={data}>
+                    <XAxis dataKey="name" />
+                    <Tooltip />
+                    <Legend />
+                    <CartesianGrid stroke="green" />
+                    <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" />
+                    <Bar dataKey="pv" barSize={20} fill="#10b981" />
+                    <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+                </ComposedChart>
+            </ResponsiveContainer>
+        </div>
     );
 };
 
