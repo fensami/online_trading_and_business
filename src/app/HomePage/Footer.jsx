@@ -6,7 +6,7 @@ import { FiInstagram } from 'react-icons/fi';
 const Footer = () => {
    
     return (
-        <div className=" p-3 container mx-auto bg-[#212b39] text-white">
+        <div className="p-3 container mx-auto bg-[#212b39] text-white">
             <div className="py-6 ">
                 <hr />
             </div>

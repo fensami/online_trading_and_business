@@ -4,6 +4,7 @@ import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
 import OfferService from "../HomePage/OfferService";
+import OtherSection from "../HomePage/OtherSection";
 import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
 
@@ -14,10 +15,11 @@ const Home = () => {
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
+      <OtherSection></OtherSection>
       <OfferService></OfferService>
+      <TradeTypes></TradeTypes>
       <UpCommingOther></UpCommingOther>
       <AnalysisSection></AnalysisSection>
-      <TradeTypes></TradeTypes>
        
      
        
