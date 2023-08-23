@@ -1,5 +1,4 @@
- 
-import WalletTable from '@/app/dashboard/wallets/WalletTable';
+  
 import Wallets from './Wallets';
 import React from 'react';
 
