@@ -114,7 +114,7 @@ const Walletsdata =  () => {
 <div className="overflow-x-auto">
   <table className="table">
     <thead>
-      <tr className='text-white text-xl'>
+      <tr className='text-white'>
         <th>Asset</th>
         <th>On Order</th>
         <th>Available Balance</th>
@@ -124,8 +124,8 @@ const Walletsdata =  () => {
     </thead>
     <tbody>
       {
-        wallets.map((wallete, i) => <WalletTable key={i}
-        walletedata = {wallete}
+        wallets.map((wallete, i) => <WalletTable key={wallete.id}
+        wallete = {wallete}
         ></WalletTable>)
       } 
     </tbody>
