@@ -10,9 +10,9 @@ const DashboardPage = () => {
       
       <DashboardCard></DashboardCard>
      
-      <div className='md:flex w-full h-[600px] my-3  gap-5'>
+      <div className='md:flex w-full my-3  gap-5'>
       <UsingChart></UsingChart>
-      <div className="md:w-5/12 bg-[#171f2a] rounded-md shadow-md p-4">
+      {/* <div className="md:w-5/12 bg-[#171f2a] rounded-md shadow-md p-4">
             <PieChartExample />
             <div className="text-center">
               <h3 className="text-1xl font-semibold text-gray-300 mb-4">Total Balance</h3>
@@ -20,13 +20,13 @@ const DashboardPage = () => {
               <p className="text-[#10b981]">11,032.24 USD</p>
               <button className="btn btn-success btn-xs text-white my-2">WithDraw</button>
             </div>
-          </div>
+          </div> */}
      
       
 
       </div>
 
-      <div className='flex gap-5 justify-around'>
+      <div className='grid gap-5 md:grid-cols-2'>
       <TableDashboard></TableDashboard>
       <RecentTransaction></RecentTransaction>
       </div>

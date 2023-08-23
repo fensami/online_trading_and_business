@@ -7,7 +7,7 @@ export const metadata = {
 
 const DashboardLayout = ({children}) => {
   return (
-    <div className='flex bg-[#131720] text-slate-300'>
+    <div className='flex bg-[#131720] text-slate-300 h-full w-full'>
       <Sidebar></Sidebar>
       {children}
     </div>

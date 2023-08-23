@@ -12,7 +12,7 @@ const PromotionCard = () => {
 
         useEffect(()=> {
           const getPromoton = async()=> {
-            fetch('http://localhost:3000/api/promotion')
+            fetch('https://online-trading-and-business-fensami.vercel.app/api/promotion')
             .then((res) => res.json())
             .then((data) => {
               setPromotions(data)
