@@ -9,10 +9,10 @@ const MarketPage = () => {
     return (
         <div className="bg-[#131720] py-5 ">
 
-<div className="grid md:grid-cols-4 grid-cols-1 gap-5  md:mx-5">
+<div className="grid md:grid-cols-4 grid-cols-1 gap-5  md:mx-5 text-slate-300">
             
             <article className="bg-[#171f2a] px-4 py-3 rounded-lg">
-             <h1 className="text-3xl font-bold mb-2 text-slate-500">Forex</h1>
+             <h1 className="text-3xl font-bold mb-2">Forex</h1>
              <p>Benefit from round-the-clock trading hours (Monday to Friday), high liquidity, low barriers to entry, a wide range of offerings, and opportunities to trade on world events.</p>
             </article>
 

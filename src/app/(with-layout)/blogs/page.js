@@ -5,7 +5,8 @@ export const metadata = {
 
 const BlogsPage = () => {
   return (
-    <div className="bg-[#131720]">
+    <div className="bg-[#131720] text-slate-300">
+      <h1 className="text-center text-5xl font-bold py-5">Blogs</h1>
 
       <article className="bg-[#171f2a]">
         <h1>Name : Mahmud Priom</h1>
