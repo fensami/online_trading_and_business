@@ -29,7 +29,7 @@ export default function TradingViewWidget() {
         new window.TradingView.widget({
           autosize: true,
           symbol: 'NASDAQ:AAPL',
-          interval: '1S', // Use '1S' for second-by-second interval
+          interval: '1S', 
           timezone: 'Etc/UTC',
           theme: 'Dark',
           style: '1',
