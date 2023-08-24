@@ -1,6 +1,9 @@
 "use client"
 // TradingViewWidget.jsx
-import React, { useEffect, useRef, memo } from 'react';
+export const metadata = {
+title: 'Forex | OTAB',
+}
+import { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
   const container = useRef();
@@ -66,7 +69,8 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div className="tradingview-widget-container overflow-auto container mx-auto md:w-full w-[300px]" ref={container}>
+      <h1 className='text-4xl font-bold text-center my-5'>This The Forex Update</h1>
       <div className="tradingview-widget-container__widget"></div>
       {/* <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span className="blue-text">Track all markets on TradingView</span></a></div> */}
       <div>
