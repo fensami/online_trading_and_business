@@ -43,7 +43,7 @@ const Sidebar = () => {
      <div className="drawer-side">
        <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
    
-       <div className='flex my-2 w-52  flex-col text-white p-4 gap-5'>
+       <div className='flex my-2 w-52  flex-col bg-[#212b39] text-white p-4 gap-5'>
    
        <Link href='/' className='text-center mt-5 text-2xl font-bold'>OTAB</Link>
          

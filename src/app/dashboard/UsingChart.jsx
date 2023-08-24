@@ -16,37 +16,37 @@ import {
 
 const data = [
   {
-    name: "Page A",
+    name: "January",
     uv: 590,
     pv: 800,
     amt: 1400
   },
   {
-    name: "Page B",
+    name: "February",
     uv: 868,
     pv: 967,
     amt: 1506
   },
   {
-    name: "Page C",
+    name: "March",
     uv: 1397,
     pv: 1098,
     amt: 989
   },
   {
-    name: "Page D",
+    name: "April",
     uv: 1480,
-    pv: 1200,
+    pv: 200,
     amt: 1228
   },
   {
-    name: "Page E",
+    name: "May",
     uv: 1520,
     pv: 1108,
     amt: 1100
   },
   {
-    name: "Page F",
+    name: "June",
     uv: 1400,
     pv: 680,
     amt: 1700
@@ -54,100 +54,19 @@ const data = [
 ];
 
 
-// import {
-//   LineChart,
-//   Line,
-//   XAxis,
-//   YAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   Legend
-// } from "recharts";
-
-// const data = [
-//   {
-//     name: "January",
-//     uv: 4000,
-//     pv: 2400,
-//     amt: 2400
-//   },
-//   {
-//     name: "February",
-//     uv: 3000,
-//     pv: 1398,
-//     amt: 2210
-//   },
-//   {
-//     name: "March",
-//     uv: 2000,
-//     pv: 9800,
-//     amt: 2290
-//   },
-//   {
-//     name: "April",
-//     uv: 2780,
-//     pv: 3908,
-//     amt: 2000
-//   },
-//   {
-//     name: "May",
-//     uv: 1890,
-//     pv: 4800,
-//     amt: 2181
-//   },
-//   {
-//     name: "June",
-//     uv: 2390,
-//     pv: 3800,
-//     amt: 2500
-//   },
-//   {
-//     name: "July",
-//     uv: 3490,
-//     pv: 400,
-//     amt: 2100
-//   },
-//   {
-//     name: "August",
-//     uv: 3490,
-//     pv: 400,
-//     amt: 2100
-//   },
-//   {
-//     name: "September",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 2100
-//   },
-//   {
-//     name: "Octobor",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 2100
-//   },
-//   {
-//     name: "November",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 2100
-//   },
-//   {
-//     name: "December",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 2100
-//   }
-// ];
-
-
 const UsingChart = () => {
 
   
 
   return (
-    <div className="md:w-1/2 w-[300px]">
+    <div className="bg-[#171f2a] md:w-full w-[350px] px-4">
       <div>
-        <h1>This is the Monthly overview chart</h1>
+        <h1>Monthly Overall Growth</h1>
+        <article className="flex gap-3 justify-between">
+          <button>Week</button>
+          <button>Month</button>
+          <button>Year</button>
+        </article>
       </div>
     <div style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer>

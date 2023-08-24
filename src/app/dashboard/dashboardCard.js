@@ -6,7 +6,7 @@ import { SiDogecoin, SiBinance } from 'react-icons/si';
 
 const DashboardCard = () => {
   return (
-    <div className='grid md:grid-cols-4 border grid-cols-1 gap-4 will-change-auto'>
+    <div className='grid md:grid-cols-4  w-[1100px] mx-auto grid-cols-1 gap-4'>
       <article className='bg-[#171f2a] rounded-xl md:w-60 w-[300px] flex justify-between items-center px-5 py-3'>
         <div className='mt-2'>
         <h1 className='text-xl font-semibold'>Bitcoin</h1>
