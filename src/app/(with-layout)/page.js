@@ -6,8 +6,6 @@ import CheckTradingSped from "../HomePage/CheckTradingSped";
 import OfferService from "../HomePage/OfferService";
 import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
-
-
 const Home = () => {
   return (
     <main className=" bg-[#131720] text-white">

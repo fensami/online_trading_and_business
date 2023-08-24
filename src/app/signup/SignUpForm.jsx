@@ -4,8 +4,9 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import {useRouter, useSearchParams} from "next/navigation";
 import Link from "next/link";
+import createJWT from "@/utils/createJWT";
 const SignUpForm = () => {
-const {createUser, updateUserData} = useAuth();
+const {createUser, profileUpdate} = useAuth();
     const {
         register,
         handleSubmit,
@@ -19,19 +20,34 @@ const {createUser, updateUserData} = useAuth();
     const { replace } = useRouter();
 
 
-    const onSubmit = (data) => {
-        console.log(data);
-        createUser(data.email, data.password)
-        .then(result => {
-            const loggedUser = result.user;
-            console.log(loggedUser);
-            updateUserData(result.user, data.name)
+    const onSubmit = async (data) => {
+        try {
+            await createUser(email, password);
+            await createJWT({ email });
+            await profileUpdate({
+              displayName: data.name,
+            });
+            const response = await fetch("http://localhost:3000/api/add-user", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ userName: data.name, email: data.email }),
+              });
+            
+              if (response.ok) {
+                const data = await response.json();
+                console.log("Data added:", data);
+              } else {
+                console.error("Failed to add data");
+              }
             toast.success("User signed up successfully");
             replace(from);
-        })
-        .catch(error => {
+        } catch (error) {
             toast.error(error.message || "User Create failed")
-        })
+        }
+            
+
 
     };
 

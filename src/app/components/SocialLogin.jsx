@@ -9,6 +9,7 @@ import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import app from '@/firebase/firebase.config';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import createJWT from '@/utils/createJWT';
 
 const SocialLogin = () => {
     const {googleLogin} = useAuth();
@@ -19,7 +20,8 @@ const SocialLogin = () => {
     
     const handleGoogleLogin = async () => {
         try {
-            const user = await googleLogin()
+            const {user} = await googleLogin()
+            createJWT({email: user.email})
             replace(from)
         } catch (error) {
             toast.error(error.message || "User not signed in");
