@@ -17,3 +17,19 @@
         height: 100%;;
     }
 }
+
+.chart-wrapper {
+    background-color: black;	
+    padding: 20px; 
+  }
+  .chart-wrapper {
+    padding-top: 10px;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .XAxis {
+        display: none;
+    }
+  }
