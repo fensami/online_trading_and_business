@@ -2,6 +2,9 @@
 
 import Prices from "./Prices";
 
+export const metadata = {
+  title: 'Prices | OTAB',
+}
  
 
 const PricePage = () => {

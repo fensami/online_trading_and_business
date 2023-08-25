@@ -16,12 +16,12 @@ const Home = () => {
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
       <SubLogin></SubLogin>
+      <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>
       <OfferService></OfferService>
-      <TradeTypes></TradeTypes>
-      <UpCommingOther></UpCommingOther>
-      {/* <SliderOffer></SliderOffer> */}
       <AnalysisSection></AnalysisSection>
+      <TradeTypes></TradeTypes>
+      {/* <SliderOffer></SliderOffer> */}
        
      
        

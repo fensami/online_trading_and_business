@@ -8,6 +8,9 @@ const SidebarLink = () => {
    <div className='border p-3 rounded-xl'><Link href='/dashboard' className='flex gap-2 items-center ' > Dashboard</Link></div>
    
    <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/exchange'>  Exchange</Link></div>
+
+   <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/forex'>  Forex</Link></div>
+   <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/marketsOverviews'>  Markets Overview</Link></div>
    
     <div className='border p-3 rounded-xl'>
    <Link href='/dashboard/prices' className='flex gap-2 items-center'>  Prices</Link>
