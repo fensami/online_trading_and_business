@@ -15,7 +15,7 @@ const UpCommingOther = async () => {
   // await wait()
   return (
     <div className='mt-24 mb-24'>
-      <div className='flex justify-center mb-24'><h1 className='text-5xl font-bold'>Comming soon Offer</h1><span className="loading loading-dots loading-lg"></span></div>
+      <div className='flex justify-center mb-24'><h1 className='md:text-5xl text-4xl font-bold'>Comming soon Offer</h1><span className="loading loading-dots loading-lg"></span></div>
       <div className="h-96 carousel carousel-vertical rounded-box grid justify-items-center gap-4">
       <div className="carousel-item h-full">
           <Image width={700} height={300} src={img4} />
