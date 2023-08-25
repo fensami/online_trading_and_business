@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 'use client' 
-import React from 'react';
+
  
 import Image from "next/image";
 import { FaArrowRight } from 'react-icons/fa';
