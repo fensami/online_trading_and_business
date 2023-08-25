@@ -1,19 +1,19 @@
-
-import CandlestickPriceChart from "./CandlestickData";
-import DeepChart from "./DeepChart";
 import Dropdown from "./Dropdown";
 import PriceDropdown from "./PriceDropdown";
 import RoundCharts from "./RoundCharts";
+import ChartSection from "./chartSection";
 import TablePriceDeep from "./TablePriceDeep";
 
+export const metadata = {
+  title: 'Exchange | OTAB'}
 
 
 const ExchangePage = () => {
 
   return (
-    <div className="m-6 w-full text-gray-300">
+    <div className="m-6  w-full text-gray-300">
       <header className="
-       w-full md:flex items-center justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
+       w-full grid lg:grid-cols-3 grid-cols-2  gap-4 items-center lg:justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
         <div className="   border-r  border-gray-700 pr-20">
           <Dropdown />
           <div className="mt-6">
@@ -48,15 +48,10 @@ const ExchangePage = () => {
       <main className="my-6 rounded-md shadow-md">
         {/* chart section */}
         <div className="grid w-full md:flex  gap-6">
-          <div className="md:w-7/12 bg-[#171f2a] rounded-md shadow-md p-4">
-            <div className="flex gap-4 mb-4 ">
-              <button className="btn btn-success btn-sm text-white ">Deep Chart</button>
-              <button className="btn btn-success btn-sm text-white btn-outline">Price Chart</button>
-            </div>
-            <DeepChart />
-            {/* <candlestickData /> */}
+          <div className="md:w-7/12  w-[100%] bg-[#171f2a] rounded-md shadow-md p-4">
+           <ChartSection/>
           </div>
-          <div className="md:w-5/12 bg-[#171f2a] rounded-md shadow-md p-4">
+          <div className="md:w-5/12  w-[100%] bg-[#171f2a] rounded-md shadow-md p-4">
             <RoundCharts />
             <div className="text-center">
               <h3 className="text-1xl font-semibold text-gray-300 mb-4">Total Balance</h3>
@@ -69,16 +64,16 @@ const ExchangePage = () => {
         {/* table section */}
         <div className="grid w-full md:flex  gap-6 mt-6">
           <div className="md:w-7/12 bg-[#171f2a] rounded-md shadow-md p-4">
-            <div className=" mb-4 flex justify-between items-center">
+            <div className=" mb-4 md:flex justify-between items-center">
               <span>
-                <h1 className="text-[28px] font-semibold">Market trades</h1>
+                <h1 className="md:text-[28px] text-[20px] text-center font-semibold">Market trades</h1>
               </span>
-              <span className="flex gap-4">
+              {/* <span className="flex gap-4 justify-center mt-2">
                 <button className="btn btn-success btn-sm text-white ">Deep Chart</button>
                 <button className="btn btn-success btn-sm text-white btn-outline">Price Chart</button>
-              </span>
+              </span> */}
             </div>
-            <TablePriceDeep />
+            {/* <TablePriceDeep /> */}
           </div>
           <div className="md:w-5/12 bg-[#171f2a] rounded-md shadow-md p-4">
             <div className=" grid grid-cols-2 gap-4">
