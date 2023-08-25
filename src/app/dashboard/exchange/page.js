@@ -5,6 +5,8 @@ import RoundCharts from "./RoundCharts";
 import ChartSection from "./chartSection";
 import TablePriceDeep from "./TablePriceDeep";
 
+export const metadata = {
+  title: 'Exchange | OTAB'}
 
 
 const ExchangePage = () => {
