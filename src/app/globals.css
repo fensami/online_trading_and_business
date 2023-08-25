@@ -9,17 +9,6 @@
   box-sizing: border-box;
 }
 
-/* a {
-  padding: 5px 0px;
-} */
-
-/* a:hover {
-  text-decoration: underline;
-  transition: transform 0.3s;
-  color: red;
-} */
-
-
 
 .login-input {
   border: 1px solid gray;
@@ -47,19 +36,7 @@
 
 
 
-.table-responsive {
-  overflow-x: auto;
-}
 
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-
-.table td {
-  vertical-align: middle;
-}
 
 
 
