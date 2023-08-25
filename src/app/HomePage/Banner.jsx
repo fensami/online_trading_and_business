@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
@@ -6,10 +7,26 @@ const Banner = () => {
       <article className="w-1/2 p-6">
         <h1 className="text-5xl font-bold">One broker, countless trading opportunities</h1>
         <p className="mt-5 text-xl font-semibold">Get the widest range of markets, trades and platforms</p>
-        <div className="text-2xl font-semibold">
-        <p>Cryptocurrencies</p>
-        <p>Stocks & indices|</p>
-        <p>Commodities</p>
+        <div className="text-2xl mt-6 font-bold">
+      
+        <TypeAnimation className="mt-5 text-slate-400 "
+  sequence={[
+     
+    'Cryptocurrencies',
+    1000,
+    'Stocks & indices',
+    1000,
+    'Commodities',
+    1000,
+    'Exchenge Balance',
+    1000,
+    'Todays Price Trading',
+    1000,
+  ]}
+  speed={50}
+  style={{ fontSize: '2em' }}
+  repeat={Infinity}
+/>   
         </div>
       </article>
       <article>
