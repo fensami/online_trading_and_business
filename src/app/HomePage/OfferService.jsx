@@ -9,7 +9,7 @@ const OfferService = () => {
     return (
         <div className='text-center container mx-auto flex-1 mb-24'>
             <p className='text-red-400 mt-12'>OUR SERVICE PLANE</p>
-            <h1 className='text-4xl font-bold mt-4'>The Best service We Offer</h1>
+            <h1 className='text-4xl md:text-5xl font-bold mt-4'>The Best service We Offer</h1>
             <p className='mt-4'>Join us in embracing the digital revolution and explore a world of endless possibilities with<br/>our all-encompassing cryptocurrency service offer.</p>
             <article className='grid justify-items-center md:grid-cols-3 grid-cols-1 gap-4 mt-12 p-8'>
                 <div className='grid justify-items-center border-2 shadow-md shadow-red-50 hover:bg-red-600 rounded-lg p-4'>
