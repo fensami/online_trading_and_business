@@ -6,7 +6,7 @@ import DeviceHistory from "./ProfileComponents/DeviceHistory";
 import ScanSection from "./ProfileComponents/ScanSection";
 
 const ProfileDataSecurity = () => {
-  const [activeTab, setActiveTab] = useState("profile"); // Initialize the active tab
+  const [activeTab, setActiveTab] = useState("profile"); 
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);

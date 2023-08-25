@@ -10,7 +10,7 @@ const [wallets, setWallets] = useState([])
 
         useEffect(()=> {
           const getWallets = async()=> {
-            fetch('http://localhost:3000/api/wallets')
+            fetch('https://online-trading-and-business-fensami.vercel.app/api/wallets')
             .then((res) => res.json())
             .then((data) => {
                 setWallets(data)

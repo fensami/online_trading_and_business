@@ -1,3 +1,4 @@
+ 
 {
   "name": "online_trading_and_business",
   "version": "0.1.0",
@@ -6,8 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "server": "json-server --watch src/promotion.json --port 5000"
+    "lint": "next lint"
+   
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -45,3 +46,4 @@
     "prettier": "3.0.2"
   }
 }
+
