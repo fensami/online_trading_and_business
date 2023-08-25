@@ -2,7 +2,7 @@
 
 import { MongoClient } from "mongodb";
 
-const url ='mongodb+srv://buisnessAndTrade:cSsN1ygo0cG8rU9D@cluster0.ndjcfbs.mongodb.net/?retryWrites=true&w=majority'
+const url = process.env.MONGO_DB
 
 const mongoClient = new MongoClient(url,{})
 
