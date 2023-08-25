@@ -21,32 +21,19 @@ const TablePriceDeep = () => {
       Amount: "2473 BTC",
       Total: "$166.67",
     },
-    {
-      id: 4,
-      Time: "10:00",
-      Price: "$241.68",
-      Amount: "75,973 BTC",
-      Total: "$7486.67",
-    },
-    {
-      id: 5,
-      Time: "13:00",
-      Price: "$224.68",
-      Amount: "5473 BTC",
-      Total: "$1286.67",
-    },
+   
   ];
 
   return (
     <div className="table-responsive">
-      <table className="table">
-        {/* <!-- head --> */}
-        <thead className="bg-gray-700">
-          <tr className="text-white">
-            <th>Time</th>
-            <th>Price (USDT)</th>
-            <th>Amount (BTC)</th>
-            <th>Total (USDT)</th>
+      <table className="table w-full  text-left ">
+        {/* Head */}
+        <thead className="text-[18px] font-bold">
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Price (USDT)</th>
+            <th scope="col">Amount (BTC)</th>
+            <th scope="col">Total (USDT)</th>
           </tr>
         </thead>
         <tbody>
