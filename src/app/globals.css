@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
-
-/* a {
-  padding: 5px 0px;
-} */
-
-/* a:hover {
-  text-decoration: underline;
-  transition: transform 0.3s;
-  color: red;
-} */
+} 
 
 
-
-/* .login-input {
+.login-input {
   border: 1px solid gray;
   display: block;
   padding: 8px;
@@ -29,8 +18,8 @@
   margin-top: 25px;
   border-radius: 7px;
   outline: none;
-} */
-/* 
+} 
+
 .social-btn {
   border-radius: 10px;
   text-align: center;
@@ -43,4 +32,4 @@
   font-weight: 600;
   padding: 7px 10px;
   margin: 5px 0;
-} */
+} 

@@ -44,7 +44,7 @@ export default function TradingViewWidget() {
 
   return (
     <div className="custom-chart-container">
-      <div className="w-[100%] mx-auto" id="tradingview_f4046" style={{ height: '400px' }} />
+      <div className="w-[100%] mx-auto" id="tradingview_f4046" style={{ height: '300px' }} />
     </div>
   );
 }
