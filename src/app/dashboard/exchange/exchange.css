@@ -9,6 +9,9 @@
     .chart-container {
         height: 100%;
     }
+    .XAxis {
+        display: none;
+    }
 }
 
 /* Media query for mobile */
@@ -27,9 +30,4 @@
   
   }
   
-  
-  @media (max-width: 768px) {
-    .XAxis {
-        display: none;
-    }
-  }
+
