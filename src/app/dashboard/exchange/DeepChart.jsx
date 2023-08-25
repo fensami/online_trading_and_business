@@ -67,7 +67,7 @@ class RealTimeChart extends Component {
 
     render() {
         return (
-            <div className="chart-wrapper w-[100%]">
+            <div className="chart-wrapper w-fit">
                 <ResponsiveContainer width="100%" height={300}>
                     <ComposedChart data={this.state.data}>
                         <XAxis
