@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 export const metadata = {
   title: 'Home',

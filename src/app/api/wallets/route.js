@@ -4,7 +4,7 @@ import clientPromise from "@/db/dbClient";
 import { NextResponse } from "next/server";
 
 
-export async function GET(req){
+export async function GET(req) {
 
   const client = await clientPromise;
   const db = await client.db("buisness")
