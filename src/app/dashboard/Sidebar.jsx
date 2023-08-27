@@ -28,10 +28,10 @@ const Sidebar = () => {
 
    <div className="drawer lg:drawer-open">
      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-     <div className="drawer-content flex flex-col items-center justify-center">
+     <div className="drawer-content fixed bg-[#212b39] flex flex-col items-center justify-center">
        {/* Page content here */}
        <label htmlFor="my-drawer-2" className=" lg:hidden">
-       <GiHamburgerMenu className='text-2xl top-0 left-0 fixed'></GiHamburgerMenu>
+       <GiHamburgerMenu className='text-3xl m-3'></GiHamburgerMenu>
      
      
      {/* close icon */}
@@ -43,7 +43,7 @@ const Sidebar = () => {
      <div className="drawer-side">
        <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
    
-       <div className='flex my-2 w-52  flex-col bg-[#212b39] text-white p-4 gap-5'>
+       <div className=' my-2 w-52   bg-[#212b39] text-white p-4 gap-5'>
    
        <Link href='/' className='text-center mt-5 text-2xl font-bold'>OTAB</Link>
          

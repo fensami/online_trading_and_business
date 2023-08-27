@@ -2,7 +2,7 @@ import React from 'react';
 
 const RecentTransaction = () => {
   return (
-    <div className='bg-[#171f2a] px-3 md:w-full w-[300px] py-5'>
+    <div className='bg-[#171f2a] px-3 py-5'>
       <h1 className='text-center text-xl font-bold'>Recent Transaction</h1>
 
       <article className='flex justify-between mt-5'>

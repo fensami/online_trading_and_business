@@ -3,53 +3,53 @@ import React from 'react';
 
 const SidebarLink = () => {
   return (
-    <>
+    <div className='flex gap-5 flex-col'>
        
-   <div className='border p-3 rounded-xl'><Link href='/dashboard' className='flex gap-2 items-center ' > Dashboard</Link></div>
+   <div className='border p-3 rounded-xl'><Link href='/dashboard' className=' ' > Dashboard</Link></div>
    
-   <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/exchange'>  Exchange</Link></div>
+   <div className='border p-3 rounded-xl'><Link className=' ' href='/dashboard/exchange'>  Exchange</Link></div>
 
-   <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/forex'>  Forex</Link></div>
-   <div className='border p-3 rounded-xl'><Link className='flex gap-2 items-center ' href='/dashboard/marketsOverviews'>  Markets Overview</Link></div>
+   <div className='border p-3 rounded-xl'><Link className=' ' href='/dashboard/forex'>  Forex</Link></div>
+   {/* <div className='border p-3 rounded-xl'><Link className=' ' href='/dashboard/marketsOverviews'>  Markets Overview</Link></div> */}
    
     <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/prices' className='flex gap-2 items-center'>  Prices</Link>
+   <Link href='/dashboard/prices' className=''>  Prices</Link>
    </div>
     
    <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/wallets' className='flex gap-2 items-center'>Wallets</Link>
+   <Link href='/dashboard/wallets' className=''>Wallets</Link>
    </div>
 
    
    <div className='border p-3 rounded-xl'>
-     <Link href='/dashboard/promotions' className='flex gap-2 items-center'> Promotions</Link>
+     <Link href='/dashboard/promotions' className=''> Promotions</Link>
    </div>
    
    
    <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/activities' className='flex gap-2 items-center' > Activities</Link>
+   <Link href='/dashboard/activities' className='' > Activities</Link>
    </div>
    
    
    <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/notifications' className='flex gap-2 items-center'> Notifications</Link>
+   <Link href='/dashboard/notifications' className=''> Notifications</Link>
    </div>
    
    
    <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/settings' className='flex gap-2 items-center'>  Settings</Link>
+   <Link href='/dashboard/settings' className=''>  Settings</Link>
    </div>
    
    
    <div className='border p-3 rounded-xl'>
-   <Link href='/dashboard/utilities' className='flex gap-2 items-center'>  Utilities</Link>
+   <Link href='/dashboard/utilities' className=''>  Utilities</Link>
    </div>
    
    
    <div className='border p-3 rounded-xl' >
-   <Link href='/dashboard/authentication' className='flex gap-2 items-center'>  Authentication</Link>
+   <Link href='/dashboard/authentication' className=''>  Authentication</Link>
    </div>
-    </>
+    </div>
   );
 };
 
