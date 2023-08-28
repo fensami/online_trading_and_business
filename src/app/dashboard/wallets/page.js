@@ -1,6 +1,6 @@
   
 import Wallets from './Wallets';
-import React from 'react';
+
 
 const WalletsPage = () => {
   return (

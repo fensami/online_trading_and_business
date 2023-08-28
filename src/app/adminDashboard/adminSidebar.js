@@ -9,17 +9,18 @@ import { GiPriceTag,GiCrossedChains,GiHamburgerMenu } from 'react-icons/gi';
 // import { TbActivityHeartbeat } from 'react-icons/tb';
 // import { MdOutlineNotificationsActive } from 'react-icons/md';
 // import { TbSettings,TbBrandOauth } from 'react-icons/tb';
-import SidebarLink from './sidebarLink';
+// import SidebarLink from './sidebarLink';
+import AdminSidebarLink from './adminSidebarLink';
 
-const dashboardLinks  =[
-  {
-    path: '/dashboard',
-    title: 'Dashboard',
-  }
-]
+// const dashboardLinks  =[
+//   {
+//     path: '/dashboard',
+//     title: 'Dashboard',
+//   }
+// ]
 
 
-const Sidebar = () => {
+const AdminSidebar = () => {
   return (
   <div>
     <div className=' bg-[#131720] w-full h-full'>
@@ -48,7 +49,9 @@ const Sidebar = () => {
        <Link href='/' className='text-center mt-5 text-2xl font-bold'>OTAB</Link>
          
 
-         <SidebarLink></SidebarLink>
+         {/* <SidebarLink></SidebarLink> */}
+         <AdminSidebarLink></AdminSidebarLink>
+         
     
    
    
@@ -65,4 +68,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default AdminSidebar;

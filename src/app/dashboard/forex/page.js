@@ -1,8 +1,6 @@
 "use client"
 // TradingViewWidget.jsx
-export const metadata = {
-title: 'Forex | OTAB',
-}
+
 import { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {

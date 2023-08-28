@@ -3,7 +3,7 @@ import DashboardUserTotalChart from './dashboardUserTotalChart';
 
 const DashboardUserTotal = () => {
   return (
-    <div className='bg-[#171f2a] md:w-full w-fit px-5 py-4  text-center'>
+    <div className='bg-[#171f2a] px-5 py-4  text-center'>
       <DashboardUserTotalChart></DashboardUserTotalChart>
      <div className='mt-5'>
      <h1 className='text-2xl font-bold'>Total Balance</h1>

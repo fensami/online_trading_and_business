@@ -4,7 +4,7 @@
 
 const DashboardUserTotalChart = () => {
   return (
-    <div>
+    <>
     <div>
     <progress className="progress progress-secondary w-56" value={0} max="100"></progress></div>
 <div>
@@ -20,7 +20,7 @@ const DashboardUserTotalChart = () => {
 <progress className="progress progress-success w-56" value="100" max="100"></progress>
 </div>
 
-    </div>
+    </>
   );
 };
 
