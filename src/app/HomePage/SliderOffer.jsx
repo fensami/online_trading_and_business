@@ -12,11 +12,23 @@ import  './SliderOffer.css'
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import img1 from '../../assets/Bitcoin.webp'
+
+// import img
+import img1 from '../../assets/graph10.png'
+import img2 from '../../assets/graph9.png'
+import img3 from '../../assets/graph8.webp'
+import img4 from '../../assets/graph7.png'
+import img5 from '../../assets/graph6.png'
+import img6 from '../../assets/graph5.jpg'
+import img7 from '../../assets/graph4.png'
+import img8 from '../../assets/graph3.webp'
+import img9 from '../../assets/graph2.jpg'
+
+
 
 const SliderOffer = () => {
   return (
-    <>
+    <div className='flex justify-center container mx-auto'>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -33,44 +45,46 @@ const SliderOffer = () => {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
+        {/* <SwiperSlide>
           <Image  src={img1} alt="" />
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
+          <Image  src={img2} alt="" />
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
+          <Image  src={img3} alt="" />
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
+          <Image  src={img4} alt="" />
+        </SwiperSlide> */}
+
+        {/* <SwiperSlide>
+          <Image  src={img6} alt="" />
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
+          <Image  src={img7} alt="" />
+        </SwiperSlide> */}
+
+        <SwiperSlide>
+          <Image src={img5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-2.jpg" /> */}
-          <Image  src={img1} alt="" />
+          <Image src={img8} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> */}
-          <Image  src={img1} alt="" />
+          <Image src={img9} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-4.jpg" /> */}
-          <Image  src={img1} alt="" />
+          <Image src={img5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-5.jpg" /> */}
-          <Image  src={img1} alt="" />
+          <Image src={img8} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-6.jpg" /> */}
-          <Image  src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-7.jpg" /> */}
-          <Image  src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-8.jpg" /> */}
-          <Image  src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-9.jpg" /> */}
-          <Image  src={img1} alt="" />
+          <Image src={img9} alt="" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
