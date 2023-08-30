@@ -15,7 +15,7 @@ const Home = () => {
     <main className=" bg-[#131720] text-white">
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
-      <SliderOffer></SliderOffer>
+      {/* <SliderOffer></SliderOffer> */}
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>

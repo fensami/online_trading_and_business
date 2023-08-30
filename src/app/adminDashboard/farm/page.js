@@ -1,11 +1,12 @@
 import React from 'react';
+import Farm from './Farm';
 
-const Farm = () => {
+const Farms = () => {
     return (
         <div>
-            Farm
+            <Farm></Farm>
         </div>
     );
 };
 
-export default Farm;
+export default Farms;

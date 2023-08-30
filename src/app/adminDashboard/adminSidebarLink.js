@@ -22,13 +22,11 @@ const SidebarLink = () => {
              
           </ul>
         </details>
-       </div>
-
-     
-
+       </div> 
+       
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/profile' className=''>Profile</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/vote' className=''>Vote</Link></div>
-      <div className='border p-3 rounded-xl'><Link href='/adminDashboard/authentication' className=''>Authentication</Link></div>
+      <div className='border p-3 rounded-xl'><Link href='/adminDashboard/authentication' className=''>Authenticat</Link></div>
 
 
     </div>
