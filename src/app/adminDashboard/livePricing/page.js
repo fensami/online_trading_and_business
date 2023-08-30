@@ -1,9 +1,10 @@
 import React from 'react';
+import LivePrices from './LivePrices';
 
 const LivePricing = () => {
   return (
     <div>
-      Live LivePricing
+      <LivePrices></LivePrices>
     </div>
   );
 };
