@@ -11,9 +11,9 @@ const Liquidity = () => {
             <h1>From</h1>
             <FaArrowRight></FaArrowRight>
             </div>
-         <div className="join md:w-[60%] mx-auto mb-4 md:mb-6">
+         <div className="join md:w-[60%] bg-[#131720] border mx-auto mb-4 md:mb-6">
   
-  <select className="select select-bordered  md:h-20 join-item w-28 md:w-36">
+  <select className="select border  bg-[#131720]  md:h-20 join-item w-28 md:w-36">
   <option disabled selected>Filter</option>
     <option>Bitcoin</option>
     <option>ETHEREUM</option>
@@ -25,7 +25,7 @@ const Liquidity = () => {
   </select>
   <div>
     <div >
-      <input className="input  md:h-20 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00"/>
+      <input className="input bg-[#131720]  md:h-20 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00"/>
       <p className='text-green-500 text-right'>= $0.00</p>
     </div>
   </div>
@@ -36,8 +36,8 @@ const Liquidity = () => {
             <h1>To</h1>
                  <FaArrowRight></FaArrowRight>
             </div>
-         <div className="join md:w-[60%] mx-auto">
-  <select className="select select-bordered  md:h-20 join-item w-28 md:w-36">
+         <div className="join md:w-[60%] bg-[#131720] mx-auto border">
+  <select className="select bg-[#131720] md:h-20 border-r-2 join-item w-28 md:w-36">
   <option disabled selected>Filter</option>
     <option>Bitcoin</option>
     <option>ETHEREUM</option>
@@ -49,7 +49,7 @@ const Liquidity = () => {
   </select>
   <div>
     <div>
-      <input className="input  md:h-20 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00"/>
+      <input className="input bg-[#131720] md:h-20 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00"/>
       <p className='text-green-500 text-right'>= $0.00</p>
     </div>
   </div>

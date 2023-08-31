@@ -1,9 +1,12 @@
+import Image from 'next/image';
 import React from 'react';
+import CreateNfts from './CreateNfts';
+
 
 const page = () => {
         return (
-                <div>
-                        <h1>create nftsss pageee</h1>
+                <div className='mt-12'>
+                         <CreateNfts></CreateNfts>
                 </div>
         );
 };

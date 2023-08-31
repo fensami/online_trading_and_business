@@ -12,10 +12,26 @@ const Banner = () => {
       <article className="md:w-1/2 p-6">
         <h1 className="md:text-5xl text-2xl font-bold ">One broker, countless trading opportunities</h1>
         <p className="mt-5 md:text-xl font-semibold">Get the widest range of markets, trades and platforms</p>
-        <div className="md:text-2xl font-semibold">
-        <p>Cryptocurrencies</p>
-        <p>Stocks & indices|</p>
-        <p>Commodities</p>
+        <div className="md:text-2xl mt-5 font-semibold">
+
+        <TypeAnimation className="text-orange-700"
+  sequence={[
+    // Same substring at the start will only be typed once, initially
+    'Crypto Exchange',
+    1000,
+    'Transaction ID',
+    1000,
+    'Stocks & indices',
+    1000,
+    'Commodities & Forex',
+    1000,
+    'Cryptocurency Prices',
+    1000,
+  ]}
+  speed={50}
+  style={{ fontSize: '2em' }}
+  repeat={Infinity}
+/>    
         </div>
       </article>
       <article>
