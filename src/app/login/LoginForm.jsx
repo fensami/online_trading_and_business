@@ -1,6 +1,5 @@
 "use client";
 import useAuth from "@/hooks/useAuth";
-import createJWT from "@/utils/createJWT";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
@@ -21,7 +20,7 @@ const LoginForm = () => {
         console.log(data);
         try {
             const {user} = await signIn(data.email, data.password);
-            createJWT({email: user.email})
+            await createJWT({email: user.email})
             toast.success("User signed In successfully")
             replace(from)
         } catch (error) {

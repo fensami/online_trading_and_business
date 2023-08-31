@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import {useRouter, useSearchParams} from "next/navigation";
 import Link from "next/link";
-import createJWT from "@/utils/createJWT";
 const SignUpForm = () => {
 const {createUser, profileUpdate} = useAuth();
     const {
@@ -21,30 +20,16 @@ const {createUser, profileUpdate} = useAuth();
 
 
     const onSubmit = async (data) => {
+        const { email, password } = data;
         try {
-            await createUser(email, password);
-            await createJWT({ email });
-            await profileUpdate({
-              displayName: data.name,
-            });
-            const response = await fetch("http://localhost:3000/api/add-user", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ userName: data.name, email: data.email }),
-              });
-            
-              if (response.ok) {
-                const data = await response.json();
-                console.log("Data added:", data);
-              } else {
-                console.error("Failed to add data");
-              }
-            toast.success("User signed up successfully");
+        await signIn(email, password);
+        startTransition(() => {
+            refresh();
             replace(from);
+            toast.success("User signed in successfully");
+        });
         } catch (error) {
-            toast.error(error.message || "User Create failed")
+        toast.error(error.message || "User not signed in");
         }
             
 
