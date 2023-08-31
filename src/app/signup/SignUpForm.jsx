@@ -3,7 +3,9 @@ import useAuth from "@/hooks/useAuth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import {useRouter, useSearchParams} from "next/navigation";
+import Link from "next/link";
 const SignUpForm = () => {
+
 const {createUser, updateUserData} = useAuth();
     const {
         register,
@@ -18,16 +20,46 @@ const {createUser, updateUserData} = useAuth();
     const { replace } = useRouter();
 
 
-    const onSubmit = (data) => {
+    const onSubmit = data => {
         console.log(data);
+
+
         createUser(data.email, data.password)
         .then(result => {
             const loggedUser = result.user;
+
             console.log(loggedUser);
+
             updateUserData(result.user, data.name)
+
+  .then(()=> {
+    const saveUser = {name: data.name, email: data.email};
+    fetch('http://localhost:3000/api/users', {
+        method: "POST",
+        headers: {
+            "content-type" : "application/json"
+        },
+        body: JSON.stringify(saveUser)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+
+        if(data.insertedId){
+            console.log('done');
+        }
+    })
+    .catch(error => console.log(error))
+   })
+
+
+
             toast.success("User signed up successfully");
             replace(from);
         })
+
+
+
         .catch(error => {
             toast.error(error.message || "User Create failed")
         })
@@ -106,6 +138,7 @@ const {createUser, updateUserData} = useAuth();
                     Sign Up
                 </button>
             </div>
+            <div className="divider font-semibold">Have  an account<Link href='/login' className='text-primary'>Sign in</Link></div>
         </form>
     );
 };

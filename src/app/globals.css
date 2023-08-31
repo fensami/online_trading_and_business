@@ -7,18 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* a {
-  padding: 5px 0px;
-} */
-
-/* a:hover {
-  text-decoration: underline;
-  transition: transform 0.3s;
-  color: red;
-} */
-
+} 
 
 
 .login-input {
@@ -29,7 +18,7 @@
   margin-top: 25px;
   border-radius: 7px;
   outline: none;
-}
+} 
 
 .social-btn {
   border-radius: 10px;
@@ -43,4 +32,4 @@
   font-weight: 600;
   padding: 7px 10px;
   margin: 5px 0;
-}
+} 

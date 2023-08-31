@@ -3,6 +3,9 @@ import React from 'react';
 import { MdOutlineNotificationsActive } from 'react-icons/md';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
+export const metadata = {
+  title: 'Notification | OTAB',
+}
 
 const NotificationsPage = () => {
   return (

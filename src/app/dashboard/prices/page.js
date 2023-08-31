@@ -1,9 +1,16 @@
-import Prices from "@/components/Prices";
+// import Prices from "@/app/dashboard/prices/Prices";
+
+import Prices from "./Prices";
+
+export const metadata = {
+  title: 'Prices | OTAB',
+}
+ 
 
 const PricePage = () => {
   return (
-    <div>
-      <Prices></Prices>
+    <div> 
+      <Prices></Prices> 
     </div>
   );
 };
