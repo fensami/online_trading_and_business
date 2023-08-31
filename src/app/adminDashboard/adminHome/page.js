@@ -1,9 +1,10 @@
 import React from 'react';
+import AdminCard from './adminCard';
 
 const AdminHome = () => {
   return (
     <div>
-      This is Admin Home page
+      {/* <AdminCard></AdminCard> */}
     </div>
   );
 };
