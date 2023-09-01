@@ -1,14 +1,16 @@
 import React from 'react';
-import {AiFillThunderbolt} from "react-icons/ai";
+import {AiFillPlusCircle, AiFillThunderbolt} from "react-icons/ai";
 import {BiSearch} from "react-icons/bi";
 import Link from "next/link";
 import CardSwiper from "@/app/adminDashboard/adminHome/cardSwiper";
 import Image from "next/image";
+import Charts from "@/app/adminDashboard/adminHome/charts";
+import TopCrytoTable from "@/app/adminDashboard/adminHome/topCrytoTable";
 
 const AdminHome = () => {
   return (
     <>
-        <div className='flex justify-between m-5'>
+        <div className='flex justify-between m-5 '>
             <div><BiSearch className='text-5xl'></BiSearch></div>
            <div className='flex gap-3 items-center'>
                <Link href='/adminDashboard/notification'><AiFillThunderbolt className='text-5xl'></AiFillThunderbolt></Link>
@@ -16,12 +18,9 @@ const AdminHome = () => {
            </div>
         </div>
      <div className='grid md:grid-cols-3  gap-5 m-5'>
-        {/*<article className='bg-accent-content/20 col-span-2 p-3 gap-3 grid grid-cols-3'>*/}
-            {/*<CardSwiper></CardSwiper>*/}
-        {/*</article>*/}
 
 
-    <article className='bg-accent-content/20 col-span-2 p-3  gap-3  grid grid-cols-2'>
+    <article className='bg-[#171f2a] rounded-lg col-span-2 p-3  gap-3  grid grid-cols-2'>
         {/*card1*/}
         <div >
             <h1 className='absolute'>BitCoin</h1>
@@ -35,12 +34,41 @@ const AdminHome = () => {
         </div>
     </article>
 
-         <article className='bg-[#171f2a] p-3'>
-hello
-         </article>
-     </div>
-        <div>
 
+         {/*profile section*/}
+         <article className='bg-[#171f2a] rounded-lg  p-3 col-span-1'>
+
+
+<div className='flex justify-center'>
+    <Image className='w-20 h-20 mt-10' style={{borderRadius:'100%'}} width={200} height={200} src='https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg' alt=''></Image>
+
+</div>
+               <div className='text-center my-5'>
+                   <h1>MY BALANCE</h1>
+                   <p className='my-2'>$10,86,000</p>
+
+                  <div className='flex justify-center'>
+                      <button className='border-dashed border-2 px-3 py-1 rounded-lg border-sky-500 flex items-center '> <AiFillPlusCircle></AiFillPlusCircle> TOP UP BALANCE</button>
+
+                  </div>
+               </div>
+         </article>
+
+     </div>
+
+
+
+        <div>
+          <Charts></Charts>
+        </div>
+
+        <div className=' mt-20 px-5 container mx-auto'>
+            <div className='bg-[#171f2a]'>
+                <h1>TOP CRYPTOCURRENCY</h1>
+
+            </div>
+
+            {/*<TopCrytoTable></TopCrytoTable>*/}
         </div>
     </>
   );

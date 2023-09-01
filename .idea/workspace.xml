@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="328087f3-d866-4040-9c54-ccdefa72a070" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/cardSwiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/notification/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts/chart_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts/chart_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/topCrytoTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,8 @@
       <workItem from="1693201907543" duration="632000" />
       <workItem from="1693495524096" duration="4742000" />
       <workItem from="1693500829017" duration="2656000" />
-      <workItem from="1693536946692" duration="5960000" />
+      <workItem from="1693536946692" duration="11837000" />
+      <workItem from="1693560184612" duration="9751000" />
     </task>
     <servers />
   </component>

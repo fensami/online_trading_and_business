@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'plus.unsplash.com', 'cryptdash.vercel.app', 'localhost','static.vecteezy.com','cdn.coingape.com'],
+    domains: ['images.unsplash.com', 'plus.unsplash.com', 'cryptdash.vercel.app','t4.ftcdn.net', 'localhost','static.vecteezy.com','cdn.coingape.com'],
   },
 };
 
