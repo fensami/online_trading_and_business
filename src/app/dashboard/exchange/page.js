@@ -11,10 +11,10 @@ export const metadata = {
 const ExchangePage = () => {
 
   return (
-    <div className="m-6  w-full text-gray-300">
+    <div className="m-6 text-gray-300">
       <header className="
-       w-full grid lg:grid-cols-3 grid-cols-2  gap-4 items-center lg:justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
-        <div className="   border-r  border-gray-700 pr-20">
+       w-full grid lg:grid-cols-3 grid-cols-2  gap-4 items-center justify-between lg:justify-around p-4 font-semibold  md:text-center rounded-md shadow-md">
+        <div className=" md:border-r  border-gray-700 pr-20  md:bg-transparent bg-gray-700 py-4 px-2 rounded-sm">
           <Dropdown />
           <div className="mt-6">
             <h2 className="text-[18px] font-bold">24h high</h2>
@@ -22,7 +22,7 @@ const ExchangePage = () => {
           </div>
         </div>
 
-        <div className="  border-r  border-gray-700 pr-20">
+        <div className=" md:border-r  border-gray-700 pr-20">
           <div className="my-6">
             <h2 className="text-[18px] font-bold">Price</h2>
             <p className="text-green-500">21,264.95 </p>
@@ -47,8 +47,8 @@ const ExchangePage = () => {
       {/* header part end */}
       <main className="my-6 rounded-md shadow-md">
         {/* chart section */}
-        <div className="grid w-full md:flex  gap-6">
-          <div className="md:w-7/12  w-[100%] bg-[#171f2a] rounded-md shadow-md p-4">
+        <div className="grid md:flex  gap-6">
+          <div className="md:w-7/12 w-auto bg-[#171f2a] rounded-md shadow-md p-4">
            <ChartSection/>
           </div>
           <div className="md:w-5/12  w-[100%] bg-[#171f2a] rounded-md shadow-md p-4">
@@ -62,7 +62,7 @@ const ExchangePage = () => {
           </div>
         </div>
         {/* table section */}
-        <div className="grid w-full md:flex  gap-6 mt-6">
+        <div className="grid md:flex  gap-6 mt-6">
           <div className="md:w-7/12 bg-[#171f2a] rounded-md shadow-md p-4">
             <div className=" mb-4 md:flex justify-between items-center">
               <span>
@@ -73,7 +73,7 @@ const ExchangePage = () => {
                 <button className="btn btn-success btn-sm text-white btn-outline">Price Chart</button>
               </span> */}
             </div>
-            {/* <TablePriceDeep /> */}
+            <TablePriceDeep />
           </div>
           <div className="md:w-5/12 bg-[#171f2a] rounded-md shadow-md p-4">
             <div className=" grid grid-cols-2 gap-4">

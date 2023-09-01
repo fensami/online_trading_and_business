@@ -9,9 +9,12 @@ const SidebarLink = () => {
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/adminHome' className=''> Home</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/livePricing' className=''> Live Pricing</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/farm' className=''>Farm</Link></div>
+<<<<<<< HEAD
       {/* <div className='border p-3 rounded-xl'><Link href='/adminDashboard/swap' className=''>Swap</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/liquidity' className=''>Liquidity</Link></div> */}
       {/*<div className='border p-3 rounded-xl'><Link href='/adminDashboard/nfts' className=''>NFTs</Link></div>*/}
+=======
+>>>>>>> 3f19341306fcc8bde65a7580359ed936b1505d6f
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/swap' className=''>Swap</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/liquidity' className=''>Liquidity</Link></div>
 
@@ -25,10 +28,15 @@ const SidebarLink = () => {
              
           </ul>
         </details>
+<<<<<<< HEAD
        </div>
 
      
 
+=======
+       </div> 
+       
+>>>>>>> 3f19341306fcc8bde65a7580359ed936b1505d6f
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/profile' className=''>Profile</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/vote' className=''>Vote</Link></div>
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/authentication' className=''>Authenticat</Link></div>

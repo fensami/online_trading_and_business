@@ -14,41 +14,7 @@ const DeviceHistory = () => {
       ipAddress: "179.122.37.231",
       status: "Unactive",
     },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Active",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Active",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
+  
   ];
 
   return (

@@ -1,9 +1,10 @@
 import React from 'react';
+import DetailsNfts from './DetailsNfts';
 
 const page = () => {
         return (
                 <div>
-                        <h1>details nfrs passsgss</h1>
+                      <DetailsNfts></DetailsNfts>
                 </div>
         );
 };
