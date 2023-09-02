@@ -10,7 +10,7 @@ const ChangePasswordForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className=" text-gray-300">
-      <div className="md:flex gap-4">
+      <div className="md:flex w-10/12 md:w-full gap-4">
         <div className="form-control">
           <label htmlFor="Current Password" className=" mb-2">
             Current Password
@@ -39,7 +39,7 @@ const ChangePasswordForm = () => {
           />
         </div>
       </div>
-      <div className="md:flex items-center gap-4 my-4">
+      <div className="md:flex w-10/12 md:w-full items-center gap-4 my-4">
         <div className="form-control">
           <label htmlFor="Confirm Password" className=" mb-2">
           Confirm Password
