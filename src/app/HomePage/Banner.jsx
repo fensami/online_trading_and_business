@@ -20,7 +20,7 @@ const Banner = () => {
           <TypeAnimation
             className="text-orange-700"
             sequence={[
-              // Same substring at the start will only be typed once, initially
+              // Same substring at the start will only be typed once,
               "Crypto Exchange",
               1000,
               "Transaction ID",
