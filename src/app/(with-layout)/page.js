@@ -15,13 +15,13 @@ const Home = () => {
     <main className=" bg-[#131720] text-white">
       <Banner></Banner>
       <CheckTradingSped></CheckTradingSped>
+      {/* <SliderOffer></SliderOffer> */}
       <SubLogin></SubLogin>
       <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>
       <OfferService></OfferService>
       <AnalysisSection></AnalysisSection>
       <TradeTypes></TradeTypes>
-      {/* <SliderOffer></SliderOffer> */}
        
      
        

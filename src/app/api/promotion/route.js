@@ -1,5 +1,3 @@
-
-
 import clientPromise from "@/db/dbClient";
 import { NextResponse } from "next/server";
 

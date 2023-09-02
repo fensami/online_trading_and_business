@@ -59,7 +59,7 @@ const UsingChart = () => {
   
 
   return (
-    <div className="bg-[#171f2a] md:w-full w-[350px] px-4">
+    <div className="bg-[#171f2a] rounded-lg p-4">
       <div>
         <h1>Monthly Overall Growth</h1>
         <article className="flex gap-3 justify-between">
