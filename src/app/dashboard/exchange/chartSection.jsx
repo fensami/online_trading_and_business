@@ -44,6 +44,7 @@ const ChartSection = () => {
       {selectedChart === "deep" && (
         <div>
           <DeepChart />
+          hi
         </div>
       )}
     </div>
