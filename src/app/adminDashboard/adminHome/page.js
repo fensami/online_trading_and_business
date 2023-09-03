@@ -5,7 +5,7 @@ import Link from "next/link";
 import CardSwiper from "@/app/adminDashboard/adminHome/cardSwiper";
 import Image from "next/image";
 import Charts from "@/app/adminDashboard/adminHome/charts";
-import TopCrytoTable from "@/app/adminDashboard/adminHome/topCrytoTable";
+import TopCrytoTable from "@/app/adminDashboard/adminHome/topCurrency/topCrytoTable";
 
 const AdminHome = () => {
   return (
@@ -17,21 +17,34 @@ const AdminHome = () => {
                <Link href='' className='px-3 py-2 border rounded-lg'>Connect</Link>
            </div>
         </div>
-     <div className='grid md:grid-cols-3  gap-5 m-5'>
+
+     <div className='gap-5 m-5 md:grid flex-row  md:grid-cols-3'>
 
 
-    <article className='bg-[#171f2a] rounded-lg col-span-2 p-3  gap-3  grid grid-cols-2'>
+    <article className='bg-[#171f2a] rounded-lg p-3 col-span-2 md:w-full w-4/5 gap-3  '>
         {/*card1*/}
-        <div >
-            <h1 className='absolute'>BitCoin</h1>
-            <Image className='h-full rounded-lg' width={500} height={400} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+
+        <div className='flex flex-row gap-5 py-3  overflow-x-auto'>
+            <>
+
+                    <Image className='relative rounded-lg' width={300} height={300} src='https://cdn.coingape.com/wp-content/uploads/2020/09/14115401/bnb.jpg' alt=''></Image>
+                    <p className='absolute top-0 left-0 '>Bitcoin</p>
+
+
+            </>
+            <>
+            <Image  className='rounded-lg' width={300} height={300} src='https://cdn.coingape.com/wp-content/uploads/2020/09/14115401/bnb.jpg' alt=''></Image>
+
+        </>
+
+            <>
+                <Image  className='rounded-lg' width={300} height={300} src='https://cdn.coingape.com/wp-content/uploads/2020/09/14115401/bnb.jpg' alt=''></Image>
+
+            </>
+
+
         </div>
 
-        <div className=''>
-            <h1 className='absolute '>BNB</h1>
-            <Image className='h-full' width={500} height={300} src='https://cdn.coingape.com/wp-content/uploads/2020/09/14115401/bnb.jpg' alt=''></Image>
-
-        </div>
     </article>
 
 
@@ -68,8 +81,26 @@ const AdminHome = () => {
 
             </div>
 
-            {/*<TopCrytoTable></TopCrytoTable>*/}
+            <TopCrytoTable></TopCrytoTable>
         </div>
+
+        <div className='my-20'>
+            slider section
+            <div className="w-1/2 md:w-full">
+
+                <div className="flex flex-row overflow-x-auto gap-4">
+
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+                    <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
+
+                </div>
+            </div>
+        </div>
+
     </>
   );
 };

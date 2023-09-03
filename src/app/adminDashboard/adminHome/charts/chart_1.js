@@ -193,7 +193,7 @@ const data = [
 ];
 const Chart_1 = () => {
     return (
-        <>
+        <div style={{ overflowX: "auto", width: "100%" }}>
             <AreaChart
                 width={500}
                 height={350}
@@ -213,7 +213,7 @@ const Chart_1 = () => {
                 <Tooltip />
                 <Area type="monotone" dataKey="pv" stroke="#82ca9d" fill="#82ca9d" />
             </AreaChart>
-        </>
+        </div>
     );
 };
 
