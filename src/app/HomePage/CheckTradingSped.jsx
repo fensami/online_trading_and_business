@@ -2,7 +2,7 @@ import React from 'react';
 
 const CheckTradingSped = () => {
   return (
-    <div className='text-center'>
+    <div className='text-center my-8'>
       <h1 className='text-xl'>All spreads are indicative. To view real-time spreads, please refer to your terminal.</h1>
 
    <div className='flex items-center gap-5 my-5 justify-center'>
