@@ -28,7 +28,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="container mx-auto p-4 flex justify-between items-center relative dark:bg-[#212b39]">
+    <nav className="text-slate-200 p-4 flex justify-between items-center relative bg-[#212b39]">
       <Link href="/" className='text-3xl font-bold'> OTAB </Link>
       <div className="hidden md:flex space-x-5 font-semibold">
         <Link href="/trade" className="block hover:text-red-500  my-2">Trades</Link>

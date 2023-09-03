@@ -1,15 +1,8 @@
 'use client'
 import Link from 'next/link';
 import React from 'react';
-// import { FaExchangeAlt } from 'react-icons/fa';
-// import { MdDashboardCustomize } from 'react-icons/md';
-import { GiPriceTag,GiCrossedChains,GiHamburgerMenu } from 'react-icons/gi';
-// import { LiaWalletSolid } from 'react-icons/lia';
-// import { MdOutlinePercent } from 'react-icons/md';
-// import { TbActivityHeartbeat } from 'react-icons/tb';
-// import { MdOutlineNotificationsActive } from 'react-icons/md';
-// import { TbSettings,TbBrandOauth } from 'react-icons/tb';
-// import SidebarLink from './sidebarLink';
+import {GiHamburgerMenu } from 'react-icons/gi';
+
 import AdminSidebarLink from './adminSidebarLink';
 
 // const dashboardLinks  =[
@@ -41,10 +34,10 @@ const AdminSidebar = () => {
      
      </div>
       
-     <div className="drawer-side">
+     <div className="drawer-side fixed z-10 ">
        <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
    
-       <div className=' my-2 w-52   bg-[#212b39] text-white p-4 gap-5'>
+       <div className='w-52 bg-[#212b39] text-white p-4 gap-5'>
    
        <Link href='/' className='text-center mt-5 text-2xl font-bold'>OTAB</Link>
          
