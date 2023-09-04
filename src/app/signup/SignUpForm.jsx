@@ -6,7 +6,7 @@ import {useRouter, useSearchParams} from "next/navigation";
 import Link from "next/link";
 const SignUpForm = () => {
 
-const {createUser, updateUserData} = useAuth();
+const {createUser, profileUpdate} = useAuth();
     const {
         register,
         handleSubmit,
@@ -20,51 +20,40 @@ const {createUser, updateUserData} = useAuth();
     const { replace } = useRouter();
 
 
-    const onSubmit = data => {
-        console.log(data);
-
-
-        createUser(data.email, data.password)
-        .then(result => {
-            const loggedUser = result.user;
-
-            console.log(loggedUser);
-
-            updateUserData(result.user, data.name)
-
-  .then(()=> {
-    const saveUser = {name: data.name, email: data.email};
-    fetch('http://localhost:3000/api/users', {
-        method: "POST",
-        headers: {
-            "content-type" : "application/json"
-        },
-        body: JSON.stringify(saveUser)
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-
-        if(data.insertedId){
-            console.log('done');
+    const onSubmit = async (data, e) => {
+      e.preventdefault()
+      const { name, email , password} = data;
+      try {
+        await createUser(email, password);
+        await profileUpdate({
+          displayName: name,
+        });
+        
+          toast.success("User signed in successfully");
+        const userData = {name, email};
+        const response = await fetch('/api/users', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(userData),
+        });
+    
+        if (response.ok) {
+          return { success: true };
+        } else {
+          const errorData = await response.json();
+          return { success: false, error: errorData.error || 'Unknown error' };
         }
-    })
-    .catch(error => console.log(error))
-   })
+      } catch (error) {
+        toast.error(error.message || "User not signed in");
+      }
 
 
-
-            toast.success("User signed up successfully");
-            replace(from);
-        })
-
-
-
-        .catch(error => {
-            toast.error(error.message || "User Create failed")
-        })
-
-    };
+      };
+      
+      
+      
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="card-body text-white">

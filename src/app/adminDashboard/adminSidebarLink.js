@@ -25,8 +25,17 @@ const SidebarLink = () => {
        </div> 
        
       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/profile' className=''>Profile</Link></div>
-      <div className='border p-3 rounded-xl'><Link href='/adminDashboard/vote' className=''>Vote</Link></div>
-      <div className='border p-3 rounded-xl'><Link href='/adminDashboard/authentication' className=''>Authenticat</Link></div>
+      <div className='border p-3 rounded-xl'>
+        <details>
+          <summary className='cursor-pointer'>Vote</summary>
+          <ul className="p-2 text-right">
+            <li><Link href='/adminDashboard/explore-vote' className='flex items-center'> <FaDotCircle></FaDotCircle> Explore</Link></li>
+            <li><Link href='/adminDashboard/criptic-vote' className='flex items-center my-2'> <FaDotCircle></FaDotCircle> Vote criptic</Link></li>
+            <li><Link href='/adminDashboard/create-proposal' className='flex items-center'> <FaDotCircle></FaDotCircle> Create proposal</Link></li>
+          </ul>
+        </details>
+       </div>      
+       <div className='border p-3 rounded-xl'><Link href='/adminDashboard/authentication' className=''>Authenticat</Link></div>
 
 
     </div>
