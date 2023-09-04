@@ -6,15 +6,20 @@ import LivePriceCard from './LivePriceCard';
 const LivePrices = () => {
     return (
 
-        <div className=' mx-5 py-2 my-5 text-slate-200 md:w-10/12 lg:w-10/12 w-full'>
-            <LivePriceCard></LivePriceCard>
-            <div className='md:flex md:justify-between w-1/2 mb-6'>
-                <p className='text-xl font-bold ml-10'>CRYPTOCURRENCY PRICES</p>
-                <span className='flex justify-around gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch></FaSearch> <input type="text" /></span>
+        <div className=' mx-5 py-2 my-5 text-slate-200 md:w-screen w-80'>
+            <div className=''>
+                <LivePriceCard></LivePriceCard>
+            </div>
+            <div className='md:flex md:justify-between grid gap-4 justify-items-center md:w-1/2 w-96 mb-6'>
+                <p className='text-xl font-bold md:ml-10 ml-0 md:inline-flex inline-grid'>CRYPTOCURRENCY PRICES</p>
+                {/* <p className='text-xl font-bold md:ml-10 ml-0'>CRYPTOCURRENCY PRICES</p> */}
+                <article className='w-36'>
+                    <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch className=''></FaSearch> <input className='w-24' type="text" /></span>
+                </article>
             </div>
             <div >
-                <div className="overflow-x-auto w-2/3">
-                    <table className="table w-11/12 mx-auto">
+                <div className="md:overflow-hidden overflow-x-auto md:w-2/3 w-80">
+                    <table className="table md:w-11/12 w-80 md:mx-auto">
                         {/* head */}
                         <thead className='text-slate-100'>
                             <tr>
