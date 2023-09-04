@@ -20,8 +20,7 @@ const {createUser, profileUpdate} = useAuth();
     const { replace } = useRouter();
 
 
-    const onSubmit = async (data, e) => {
-      e.preventdefault()
+    const onSubmit = async (data) => {
       const { name, email , password} = data;
       try {
         await createUser(email, password);
@@ -29,22 +28,18 @@ const {createUser, profileUpdate} = useAuth();
           displayName: name,
         });
         
-          toast.success("User signed in successfully");
-        const userData = {name, email};
-        const response = await fetch('/api/users', {
+        const userData = {"userName": name, "email": email};
+         await fetch('/api/users', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(userData),
-        });
-    
-        if (response.ok) {
-          return { success: true };
-        } else {
-          const errorData = await response.json();
-          return { success: false, error: errorData.error || 'Unknown error' };
-        }
+        }).then(res => res.json()).then(data => {
+            console.log("add user data", data)
+            toast.success("User signed in successfully");
+            replace(from)
+        })
       } catch (error) {
         toast.error(error.message || "User not signed in");
       }
