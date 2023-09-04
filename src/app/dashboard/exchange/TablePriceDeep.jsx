@@ -21,32 +21,29 @@ const TablePriceDeep = () => {
       Amount: "2473 BTC",
       Total: "$166.67",
     },
-   
   ];
 
   return (
-    <div className="table-responsive">
-      <table className="table w-full  text-left ">
-        {/* Head */}
-        <thead className="text-[18px] font-bold">
-          <tr>
-            <th scope="col">Time</th>
-            <th scope="col">Price (USDT)</th>
-            <th scope="col">Amount (BTC)</th>
-            <th scope="col">Total (USDT)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {PriceData.map((PD) => (
-            <tr key={PD.id}>
-              <td>{PD.Time}</td>
-              <td>{PD.Price}</td>
-              <td>{PD.Amount}</td>
-              <td>{PD.Total}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="md:text-[16px] text-[10px]">
+      <header className="flex justify-between items-center p-4 bg-slate-800">
+        <p>Time</p>
+        <p>Price (USDT)</p>
+        <p>Amount (BTC)</p>
+        <p>Total (USDT)</p>
+      </header>
+      <div className="pb-4">
+        {PriceData.map((data) => (
+          <div
+            className="flex justify-between items-center border-b text-left my-3"
+            key={data.id}
+          >
+            <p>{data.Time}</p>
+            <p>{data.Price}</p>
+            <p>{data.Amount}</p>
+            <p>{data.Total}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
