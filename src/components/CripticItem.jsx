@@ -710,7 +710,7 @@ const CripticItem = () => {
               </div>
               <p className="text-gray-300 mt-5">In order to vote on SnapShot, you need to have ptPOOL tokens. You can obtain them by depositing your token icon POOL into the POOL Pool . By doing so, you will be eligible to vote gas-free and have a chance to win a weekly prize.</p>
             </div>
-            <div className="mt-4">
+            <div className="mt-7">
               <NoData></NoData>
             </div>
           </>
