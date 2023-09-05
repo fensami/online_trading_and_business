@@ -28,7 +28,7 @@ const {createUser, profileUpdate} = useAuth();
           displayName: name,
         });
         
-        const userData = {"userName": name, "email": email};
+        const userData = {"userName": name, "email": email, "role": "user"};
          await fetch('/api/users', {
           method: 'POST',
           headers: {

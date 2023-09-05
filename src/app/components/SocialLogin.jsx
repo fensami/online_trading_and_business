@@ -21,7 +21,7 @@ const SocialLogin = () => {
         try {
             const user = await googleLogin()
             console.log(user)
-            const userData = {"userName": user.user.displayName, "email": user.user.email};
+            const userData = {"userName": user.user.displayName, "email": user.user.email, "role": "admin"};
             console.log(userData)
             await fetch('/api/users', {
             method: 'POST',

@@ -29,28 +29,34 @@ const ExploreVote = () => {
                             </a>
                         </div>
 
-                        <div  className="rounded-lg bg-white p-6 shadow-card transition-shadow duration-200 hover:shadow-large dark:bg-light-dark" >
-                            <span className="inline-block h-auto w-12 sm:w-auto">
-                                <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/forum.f35df0de.svg" >
-                                </Image>
-                            </span>
-                            <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">join the forum</h3>
+                        <div  className="rounded-lg bg-white p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 dark:bg-light-dark" >
+                            <a href="http://www.discord.com" target="_blank" rel="noopener noreferrer">
+                                <span className="inline-block h-auto w-12 sm:w-auto">
+                                    <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/forum.f35df0de.svg" >
+                                    </Image>
+                                </span>
+                                <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">join the forum</h3>
+                            </a>
                         </div>
 
-                        <div  className="rounded-lg bg-white p-6 shadow-card transition-shadow duration-200 hover:shadow-large dark:bg-light-dark">
-                            <span className="inline-block h-auto w-12 sm:w-auto">
-                                <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/bank.4067932b.svg" >
-                                </Image>
-                            </span>
-                            <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">view documentation</h3>
+                        <div  className="rounded-lg bg-white p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 dark:bg-light-dark">
+                            <a href="http://www.discord.com" target="_blank" rel="noopener noreferrer">
+                                <span className="inline-block h-auto w-12 sm:w-auto">
+                                    <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/bank.4067932b.svg" >
+                                    </Image>
+                                </span>
+                                <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">view documentation</h3>
+                            </a>
                         </div>
 
-                        <div  className="rounded-lg bg-white p-6 shadow-card transition-shadow duration-200 hover:shadow-large dark:bg-light-dark">
-                            <span className="inline-block h-auto w-12 sm:w-auto">
-                                <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/mirror.64731dd9.svg" >
-                                </Image>
-                            </span>
-                            <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">Read on mirror</h3>
+                        <div  className="rounded-lg bg-white p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 dark:bg-light-dark">
+                            <a href="http://www.discord.com" target="_blank" rel="noopener noreferrer">
+                                <span className="inline-block h-auto w-12 sm:w-auto">
+                                    <Image alt="Discord" loading="lazy" width="48" height="56" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/mirror.64731dd9.svg" >
+                                    </Image>
+                                </span>
+                                <h3 className="mt-6 text-sm font-medium uppercase text-purple-600 sm:mt-8 sm:text-base 3xl:mt-11 3xl:text-lg">Read on mirror</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
