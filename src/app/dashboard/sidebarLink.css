@@ -1,0 +1,18 @@
+.sidebar-link {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.sidebar-link:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+.active {
+  background-color: gainsboro;
+}

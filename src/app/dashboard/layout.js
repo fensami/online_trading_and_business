@@ -9,7 +9,7 @@ const DashboardLayout = ({children}) => {
   return (
     <div className='flex bg-[#131720] text-slate-300 
     '>
-      <div className=''>
+      <div>
       <Sidebar></Sidebar>
       </div>
 

@@ -14,68 +14,31 @@ const DeviceHistory = () => {
       ipAddress: "179.122.37.231",
       status: "Unactive",
     },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Active",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Active",
-    },
-    {
-      timestamp: "Dec 2, 1:30pm",
-      device: "iMac Pro",
-      country: "United States",
-      ipAddress: "179.122.37.231",
-      status: "Unactive",
-    },
   ];
 
   return (
-    <div className="overflow-x-auto">
-      <table className="table">
-        {/* <!-- head --> */}
-        <thead className="bg-gray-700">
-          <tr className="text-white">
-            <th>Date/Time</th>
-            <th>Device List</th>
-            <th>Location</th>
-            <th>IP Address</th>
-            <th>Active Device</th>
-          </tr>
-        </thead>
-        <tbody>
-          {DeviceHistory.map((DH) => (
-            <tr key={DH.ipAddress}>
-              <td>{DH.timestamp}</td>
-              <td>{DH.device}</td>
-              <td>{DH.country}</td>
-              <td>{DH.ipAddress}</td>
-              <td>{DH.status}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="md:text-[16px] text-[10px]">
+      <header className="flex justify-between items-center p-4 bg-slate-800 ">
+        <p> Time</p>
+        <p> Device List</p>
+        <p> Country</p>
+        <p> IP Address</p>
+        <p> Status</p>
+      </header>
+      <div className="p-4">
+        {DeviceHistory.map((device) => (
+          <div
+            className="flex justify-between items-center border-b text-left my-3"
+            key={device.ipAddress}
+          >
+            <p>{device.timestamp}</p>
+            <p>{device.device}</p>
+            <p>{device.country}</p>
+            <p>{device.ipAddress}</p>
+            <p>{device.status}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
