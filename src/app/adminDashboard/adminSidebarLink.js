@@ -81,24 +81,54 @@ const SidebarLink = () => {
         </details>
       </div>
 
-      <div className="sidebar-link">
-        <CgProfile className="icon" />
-        <Link href="/adminDashboard/profile" className="">
-          Profile
-        </Link>
-      </div>
-      <div className="sidebar-link">
-        <MdHowToVote className="icon" />
-        <Link href="/adminDashboard/vote" className="">
-          Vote
-        </Link>
-      </div>
-      <div className="sidebar-link">
-        <GiSecurityGate className="icon" />
-        <Link href="/adminDashboard/authentication" className="">
-          Authentication
-        </Link>
-      </div>
+        <div className="sidebar-link">
+          <CgProfile className="icon" />
+          <Link href="/adminDashboard/profile" className="">
+            Profile
+          </Link>
+        </div>
+
+        <div className="sidebar-link">
+          <MdHowToVote className="icon" />
+         <details>
+          <summary className="cursor-pointer">NFTs</summary>
+          <ul className="p-2 text-right">
+            <li>
+              <Link
+                href="/adminDashboard/explore-vote"
+                className="flex items-center"
+              >
+                {" "}
+                <FaDotCircle></FaDotCircle>Explore Vote
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/adminDashboard/criptic-vote"
+                className="flex items-center my-2"
+              >
+                {" "}
+                <FaDotCircle></FaDotCircle>Vote Criptic
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/adminDashboard/create-proposal"
+                className="flex items-center"
+              >
+                {" "}
+                <FaDotCircle></FaDotCircle>Create proposal
+              </Link>
+            </li>
+          </ul>
+        </details>
+        </div>
+        <div className="sidebar-link">
+          <GiSecurityGate className="icon" />
+          <Link href="/adminDashboard/authentication" className="">
+            Authentication
+          </Link>
+        </div> 
     </div>
   );
 };
