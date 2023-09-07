@@ -3,6 +3,7 @@ import PriceDropdown from "./PriceDropdown";
 import RoundCharts from "./RoundCharts";
 import ChartSection from "./chartSection";
 import TablePriceDeep from "./TablePriceDeep";
+import UserBalanceSection from "./userbalancesection";
 
 export const metadata = {
   title: "Exchange | OTAB",
@@ -54,14 +55,7 @@ const ExchangePage = () => {
           <div className="md:w-5/12 w-full bg-[#171f2a] rounded-md shadow-md p-4">
             <RoundCharts />
             <div className="text-center">
-              <h3 className="text-1xl font-semibold text-gray-300 mb-4">
-                Total Balance
-              </h3>
-              <h1 className="text-[28px] font-semibold">0.3475948</h1>
-              <p className="text-[#10b981]">11,032.24 USD</p>
-              <button className="btn btn-success btn-xs text-white my-2">
-                Withdraw
-              </button>
+              <UserBalanceSection />
             </div>
           </div>
         </div>
