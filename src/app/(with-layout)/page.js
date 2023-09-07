@@ -6,6 +6,8 @@ import CheckTradingSped from "../HomePage/CheckTradingSped";
 import OfferService from "../HomePage/OfferService";
 import OtherSection from "../HomePage/OtherSection";
 import SliderOffer from "../HomePage/SliderOffer";
+import TAbSection from "../HomePage/TAbSection";
+import TabSection1 from "../HomePage/TabSection1";
 import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
 
@@ -17,14 +19,16 @@ const Home = () => {
       <CheckTradingSped></CheckTradingSped>
       {/* <SliderOffer></SliderOffer> */}
       <SubLogin></SubLogin>
+      <TAbSection></TAbSection>
+      {/* <TabSection1></TabSection1> */}
       <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>
       <OfferService></OfferService>
       <AnalysisSection></AnalysisSection>
       <TradeTypes></TradeTypes>
-       
-     
-       
+
+
+
 
     </main>
   )
