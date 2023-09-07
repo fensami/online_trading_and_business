@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="328087f3-d866-4040-9c54-ccdefa72a070" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dashboard/dashboardUser.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/dashboardCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/dashboardCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/HomePage/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/Banner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/HomePage/CheckTradingSped.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/CheckTradingSped.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/liquidity/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/liquidity/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/swap/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/swap/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +48,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "asad__developer",
-    "last_opened_file_path": "C:/finalProject/online_trading_and_business",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/MERN/mern-chat-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +59,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\finalProject\online_trading_and_business\src\app\adminDashboard" />
+      <recent name="C:\finalProject\online_trading_and_business\src\app\adminDashboard\adminHome" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +76,14 @@
       <workItem from="1693062326683" duration="2766000" />
       <workItem from="1693104460721" duration="537000" />
       <workItem from="1693105009864" duration="1532000" />
+      <workItem from="1693201907543" duration="632000" />
+      <workItem from="1693495524096" duration="4742000" />
+      <workItem from="1693500829017" duration="2656000" />
+      <workItem from="1693536946692" duration="11837000" />
+      <workItem from="1693560184612" duration="11526000" />
+      <workItem from="1693578042010" duration="1449000" />
+      <workItem from="1693628401083" duration="6734000" />
+      <workItem from="1693647963402" duration="36000" />
     </task>
     <servers />
   </component>

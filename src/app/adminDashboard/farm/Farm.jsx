@@ -6,26 +6,26 @@ const Farm = () => {
 
 
     return (
-        <div className=' mx-5 py-2 my-5 text-slate-200 w-11/12'>
-            <div className='flex justify-evenly mb-6'>
+        <div className='md:mx-5 mx-1 md:py-2 p-1 my-5 text-slate-200 md:w-11/12 w-96'>
+            <div className='md:flex md:justify-evenly grid justify-items-center md:gap-0 gap-5 mb-6'>
                 <article className='flex gap-3'>
                     <button className='btn'>LIVE</button>
                     <button className='btn'>FINISHED</button>
                 </article>
-                <article>
-                    <div className="form-control flex gap-3">
-                        <label className="label cursor-pointer gap-3">
+                <article className='w-32'>
+                    <div className="form-control">
+                        <label className="label cursor-pointer">
                             <input type="checkbox" className="toggle" checked />
-                            <span className="text-white">STACKED ONLY</span>
+                            <span className="text-white text-sm">STACKED ONLY</span>
                         </label>
                     </div>
                 </article>
-                <article>
-                    <span className='flex justify-around gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch></FaSearch> <input type="text" /></span>
+                <article className='w-36'>
+                    <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch className=''></FaSearch> <input className='w-24' type="text" /></span>
                 </article>
                 <article>
-                    <select className="select text-black w-full max-w-xs">
-                        <option disabled selected className='text-black'>Pick Category</option>
+                    <select className="select text-black w-24 max-w-xs">
+                        <option disabled selected className='text-black bg-slate-200'>Pick Category</option>
                         <option className='text-black'>HOT</option>
                         <option className='text-black'>APR</option>
                         <option className='text-black'>EARNED</option>
@@ -36,7 +36,7 @@ const Farm = () => {
             </div>
             <div >
                 <div className="overflow-x-auto">
-                    <table className="table w-11/12 mx-auto">
+                    <table className="table md:w-11/12 w-full md:mx-auto">
                         {/* head */}
                         <thead className='text-slate-100'>
                             <tr>
@@ -56,7 +56,7 @@ const Farm = () => {
                                 <td> 29.72% <br /> <small>ANNUALIZED</small></td>
                                 <td>$232,941,720</td>
                                 <td>20X</td>
-                                
+
                             </tr>
                             <tr>
 

@@ -1,5 +1,4 @@
 "use client"
-import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import Image from 'next/image';
 import React from 'react';
 import nftp from '../../../../public/nfts image.jpg'
