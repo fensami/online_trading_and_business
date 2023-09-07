@@ -3,6 +3,7 @@ import SubLogin from "../Home/SubLogin";
 import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
+import MarqueeCard from "../HomePage/MarqueeCard";
 import OfferService from "../HomePage/OfferService";
 import OtherSection from "../HomePage/OtherSection";
 import SliderOffer from "../HomePage/SliderOffer";
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <main className=" bg-[#131720] text-white">
       <Banner></Banner>
+      <MarqueeCard></MarqueeCard>
       <CheckTradingSped></CheckTradingSped>
       {/* <SliderOffer></SliderOffer> */}
       <SubLogin></SubLogin>
