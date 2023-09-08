@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import SubLogin from "../Home/SubLogin";
 import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
+import BitcoinConverter from "../HomePage/BitcoinConverter";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
 import MarqueeCard from "../HomePage/MarqueeCard";
 import OfferService from "../HomePage/OfferService";
@@ -13,7 +14,6 @@ import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
 import AboutPage from "./about/page";
 
-
 const Home = () => {
   return (
     <main className=" bg-[#131720] text-white">
@@ -24,17 +24,14 @@ const Home = () => {
       <SubLogin></SubLogin>
       <TAbSection></TAbSection>
       {/* <TabSection1></TabSection1> */}
+      <BitcoinConverter />
       <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>
       <OfferService></OfferService>
       <AnalysisSection></AnalysisSection>
       <AboutPage></AboutPage>
       <TradeTypes></TradeTypes>
-
-
-
-
     </main>
-  )
-}
+  );
+};
 export default Home;
