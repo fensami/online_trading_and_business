@@ -12,6 +12,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const {user, logout} = useAuth();
   const { theme, toggleTheme } = useTheme();
+const isAdmin = role === 'admin'
 
 
   const toggleMenu = () => {
@@ -106,10 +107,12 @@ const Navbar = () => {
         <Link href="/blogs" className="block hover:text-red-500  my-2">Blogs</Link>
         <Link href="/about" className="block hover:text-red-500  my-2">About Us</Link>
         <Link href="/resource" className="block hover:text-red-500  my-2">Resources</Link>
+        {
+          user ? <Link href="/dashboard" className="block hover:text-red-500  my-2">dashboard</Link> : <Link href="/adminDashboard" className="block hover:text-red-500  my-2">dashboard</Link>
+        }
 
         {
-          user?
-          <div><Link href="/dashboard" className="block hover:text-red-500  my-2">dashboard</Link>
+          user ? <div>
           <Link href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link></div> :
           <Link href="/login"><button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button></Link>        
           }

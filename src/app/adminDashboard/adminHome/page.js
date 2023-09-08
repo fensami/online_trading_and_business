@@ -21,7 +21,7 @@ const AdminHome = () => {
      <div className='gap-5 m-5 md:grid flex-row  md:grid-cols-3'>
 
 
-    <article className='bg-[#171f2a] rounded-lg p-3 col-span-2 md:w-full w-4/5 gap-3  '>
+    <article className='bg-[#171f2a] rounded-lg p-3 col-span-2 md:w-full w-full gap-5  '>
         {/*card1*/}
 
         <div className='flex flex-row gap-5 py-3  overflow-x-auto'>
@@ -81,10 +81,10 @@ const AdminHome = () => {
 
             </div>
 
-            <TopCrytoTable></TopCrytoTable>
+            {/* <TopCrytoTable></TopCrytoTable> */}
         </div>
 
-        <div className='my-20'>
+        {/* <div className='my-20'>
             slider section
             <div className="w-1/2 md:w-full">
 
@@ -99,7 +99,7 @@ const AdminHome = () => {
 
                 </div>
             </div>
-        </div>
+        </div> */}
 
     </>
   );

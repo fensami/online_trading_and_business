@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react";
-import NoData from "./noData";
+
+import NoData from "./NoData";
 
 const CripticItem = () => {
     const [activeTab, setActiveTab] = useState(1);

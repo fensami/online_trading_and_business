@@ -32,7 +32,7 @@ const AdminSidebar = () => {
 
             <div className="w-52 bg-[#212b39] text-white p-4 pr-0 gap-5">
               <Link href="/" className="text-center mt-5 text-2xl font-bold">
-                OTAB
+                <p>OTAB</p>
               </Link>
 
               {/* <SidebarLink></SidebarLink> */}
