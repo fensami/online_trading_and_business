@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
@@ -12,8 +12,26 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const {user, logout} = useAuth();
   const { theme, toggleTheme } = useTheme();
-const isAdmin = role === 'admin'
-
+  const [userData, setUserData] = useState(null); 
+  const email = user.email;
+  
+  console.log(userData);
+   useEffect(() => {
+    const apiUrl = `/api/admin?email=${email}`;
+    fetch(apiUrl)
+      .then((response) => {
+        if (!response.ok) {
+          console.log("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setUserData(data);
+      })
+      .catch((error) => {
+        console.log("There was a problem with the fetch operation:", error);
+      });
+  }, [email]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

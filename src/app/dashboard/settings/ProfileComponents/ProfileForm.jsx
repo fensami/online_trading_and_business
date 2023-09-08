@@ -18,18 +18,9 @@ const ProfileForm = () => {
         <div className="form-control">
           <input
             type="text"
-            placeholder="Fast Name..."
-            {...register("FastName")}
+            placeholder="UserName..."
+            {...register("UserName")}
             className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
-            required
-          />
-        </div>
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Last Name....."
-            {...register("LastName")}
-            className="  h-8 border-b-2 outline-none border-gray-600 bg-transparent"
             required
           />
         </div>
@@ -95,21 +86,82 @@ const ProfileForm = () => {
           />
         </div>
       </div>
+      <div className="my-4">
+        <div className="form-control">
+          <input
+            type="text"
+            placeholder="photoUrl....."
+            {...register("PhotoUrl")}
+            className="border-b-2 outline-none  h-8  border-gray-600 bg-transparent"
+            required
+          />
+        </div>
+      </div>
       <div className="md:flex w-10/12 md:w-full gap-6 my-4">
         <div className="">
-          <label htmlFor="Deposit Assets" className="mb-2">
-            Deposit Assets
+          <label htmlFor="facebook url" className="mb-2">
+            Facebook Url
           </label>
           <div className=" my-2 h-8 border-b-2 outline-none border-gray-600 bg-transparent rounded-md px-2">
-            <DeposideDropdown></DeposideDropdown>
+            <div className="form-control">
+              <input
+                type="text"
+                placeholder="Facebook Url..."
+                {...register("Facebook")}
+                className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
+                required
+              />
+            </div>
           </div>
         </div>
         <div className="">
-          <label htmlFor="Withdraw Assets" className="mb-2">
-            Withdraw Assets
+          <label htmlFor="twitter url" className="mb-2">
+            Twitter Url
           </label>
           <div className="w-full my-2 h-8  border-b-2 outline-none border-gray-600 bg-transparent rounded-md px-2">
-            <DeposideDropdown></DeposideDropdown>
+            <div className="form-control">
+              <input
+                type="text"
+                placeholder="Twitter..."
+                {...register("Twitter")}
+                className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="md:flex w-10/12 md:w-full gap-6 my-4">
+        <div className="">
+          <label htmlFor="facebook url" className="mb-2">
+            LinkedIn Url
+          </label>
+          <div className=" my-2 h-8 border-b-2 outline-none border-gray-600 bg-transparent rounded-md px-2">
+            <div className="form-control">
+              <input
+                type="text"
+                placeholder="LinkedIn Url..."
+                {...register("Linkedin")}
+                className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <label htmlFor="twitter url" className="mb-2">
+            Instagram Url
+          </label>
+          <div className="w-full my-2 h-8  border-b-2 outline-none border-gray-600 bg-transparent rounded-md px-2">
+            <div className="form-control">
+              <input
+                type="text"
+                placeholder="Instagram..."
+                {...register("Instagram")}
+                className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
+                required
+              />
+            </div>
           </div>
         </div>
       </div>
