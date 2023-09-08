@@ -12,7 +12,6 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const {user, logout} = useAuth();
   const { theme, toggleTheme } = useTheme();
-const isAdmin = role === 'admin'
 
 
   const toggleMenu = () => {
