@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-
+}
 
 .login-input {
   border: 1px solid gray;
@@ -18,7 +16,7 @@
   margin-top: 25px;
   border-radius: 7px;
   outline: none;
-} 
+}
 
 .social-btn {
   border-radius: 10px;
@@ -32,4 +30,6 @@
   font-weight: 600;
   padding: 7px 10px;
   margin: 5px 0;
-} 
+}
+
+/* banner style */
