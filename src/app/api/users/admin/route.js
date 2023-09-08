@@ -1,7 +1,6 @@
 // pages/api/users/admin/[email].js
 
 import clientPromise from '@/db/dbClient';
-
 export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
