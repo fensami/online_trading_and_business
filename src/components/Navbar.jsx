@@ -14,6 +14,12 @@ const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
   const { user, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
+  const [loading, setLoading] = useState(true)
+  const [role, setRole] = useState(null)
+
+  const isAdmin = role === 'admin';
+  const isUser = role === 'user';
+  console.log(role, isAdmin, isUser);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -43,11 +49,37 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    if (user) {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          if (data.length > 0) {
+            const userRole = data[0].role;
+            setRole(userRole);
+          } else {
+            setRole(null);
+          }
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      fetchData();
+    }
+  }, [user]);
+
+
   return (
     <nav
-      className={`text-slate-200 p-4 flex justify-between items-center z-10 sticky top-0 bg-[#212b39] navbar ${
-        isNavbarVisible ? "navbar-visible" : ""
-      }`}
+      className={`text-slate-200 p-4 flex justify-between items-center z-10 sticky top-0 bg-[#212b39] navbar ${isNavbarVisible ? "navbar-visible" : ""
+        }`}
     >
       <Link href="/" className="text-3xl font-bold">
         {" "}
@@ -71,8 +103,12 @@ const Navbar = () => {
         <Link href="/resource" className="block hover:text-red-500  my-2">
           Resources
         </Link>
-        {user ? (
-          <Link href="/dashboard" className="block hover:text-red-500  my-2">
+        {isAdmin ? (
+          <Link href="/adminDashboard" className="block hover:text-red-500 my-2">
+            AdminDashboard
+          </Link>
+        ) : isUser ? (
+          <Link href="/dashboard" className="block hover:text-red-500 my-2">
             Dashboard
           </Link>
         ) : (
@@ -142,9 +178,8 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${
-          menuOpen ? "transform translate-y-full" : "-transform -translate-y-24"
-        }`}
+        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? "transform translate-y-full" : "-transform -translate-y-24"
+          }`}
       >
         <Link href="/trades" className="block hover:text-red-500  my-2">
           Trades
