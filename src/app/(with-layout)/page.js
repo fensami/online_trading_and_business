@@ -4,6 +4,7 @@ import AnalysisSection from "../HomePage/AnalysisSection";
 import Banner from "../HomePage/Banner";
 import BitcoinConverter from "../HomePage/BitcoinConverter";
 import CheckTradingSped from "../HomePage/CheckTradingSped";
+import Mail from "../HomePage/Mail";
 import MarqueeCard from "../HomePage/MarqueeCard";
 import OfferService from "../HomePage/OfferService";
 import OtherSection from "../HomePage/OtherSection";
@@ -31,6 +32,7 @@ const Home = () => {
       <AnalysisSection></AnalysisSection>
       <AboutPage></AboutPage>
       <TradeTypes></TradeTypes>
+      <Mail></Mail>
     </main>
   );
 };
