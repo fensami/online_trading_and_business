@@ -1,4 +1,5 @@
 import Sidebar from './Sidebar';
+import DashboardNav from './dashboardNav/dashboardNav';
 
 export const metadata = {
   title: 'Dashboard Next App',
@@ -14,7 +15,18 @@ const DashboardLayout = ({children}) => {
       </div>
 
       <div className='flex-1'>
+        <DashboardNav></DashboardNav>
       {children}
+      {/* footer */}
+        <footer className="footer md:flex justify-between  py-4 px-7 bg-base-300 text-base-content">
+         
+            <p>Copyright © 2023. All Rights Reserved By OTAB</p>
+            <div className='flex gap-5 justify-between'>
+              <p>Help Center</p>
+              <p>Privacy</p>
+              <p>Terms of Service</p>
+            </div>
+        </footer>
       </div>
     </div>
   );

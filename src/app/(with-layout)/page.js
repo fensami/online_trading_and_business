@@ -13,6 +13,7 @@ import TAbSection from "../HomePage/TAbSection";
 import TabSection1 from "../HomePage/TabSection1";
 import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
+import AboutPage from "./about/page";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <OtherSection></OtherSection>
       <OfferService></OfferService>
       <AnalysisSection></AnalysisSection>
+      <AboutPage></AboutPage>
       <TradeTypes></TradeTypes>
       <Mail></Mail>
     </main>

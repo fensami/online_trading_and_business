@@ -38,21 +38,21 @@ const TAbSection = () => {
                 {/* Tabs */}
                 <div className="flex space-x-4">
                     <button
-                        className={`px-4 py-2 ${activeTab === 1 ? 'bg-[#212b39] text-white' : 'text-gray-600'
+                        className={`px-4 py-3 ${activeTab === 1 ? 'bg-[#212b39] text-white' : 'text-gray-600'
                             }`}
                         onClick={() => handleTabClick(1)}
                     >
                         Active
                     </button>
                     <button
-                        className={`px-4 py-2 ${activeTab === 2 ? 'bg-[#212b39] text-white' : 'text-gray-600'
+                        className={`px-4 py-3 ${activeTab === 2 ? 'bg-[#212b39] text-white' : 'text-gray-600'
                             }`}
                         onClick={() => handleTabClick(2)}
                     >
                         Gainers
                     </button>
                     <button
-                        className={`px-4 py-2 ${activeTab === 3 ? 'bg-[#212b39] text-white' : 'text-gray-600'
+                        className={`px-4 py-3 ${activeTab === 3 ? 'bg-[#212b39] text-white' : 'text-gray-600'
                             }`}
                         onClick={() => handleTabClick(3)}
                     >
@@ -106,7 +106,7 @@ const TAbSection = () => {
 
                             </div>
                             {/* Tabs */}
-                            <div className="flex space-x-4">
+                            <div className="md:flex md:space-x-4 grid grid-cols-4">
                                 {/* <Image src={t1}></Image> */}
                                 <button
                                     className={`px-4 py-2 ${activeTab1 === 1 ? 'bg-[#212b39] text-white' : 'text-gray-600'

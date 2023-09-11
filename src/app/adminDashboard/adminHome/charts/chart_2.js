@@ -188,8 +188,8 @@ const data = [
 
 const Chart_2 = () => {
     return (
-        <>
-            <ResponsiveContainer width="100%" height='100%'>
+        <div  style={{ height: '400px', overflowY: 'auto' }}>
+            <ResponsiveContainer width="100%" height='75%'>
                 <BarChart
                     width={500}
                     height={250}
@@ -211,7 +211,7 @@ const Chart_2 = () => {
                     <Bar yAxisId="right" dataKey="uv" fill="#82ca9d" />
                 </BarChart>
             </ResponsiveContainer>
-        </>
+        </div>
     );
 };
 

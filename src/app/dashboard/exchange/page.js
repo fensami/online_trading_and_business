@@ -3,8 +3,8 @@ import PriceDropdown from "./PriceDropdown";
 import RoundCharts from "./RoundCharts";
 import ChartSection from "./chartSection";
 import TablePriceDeep from "./TablePriceDeep";
-import UserBalanceSection from "./userbalancesection";
-
+// import UserBalanceSection from "./serbalancesection";
+import UserBalanceSection from './Userbalancesection'
 export const metadata = {
   title: "Exchange | OTAB",
 };
