@@ -32,7 +32,7 @@ const TAbSection = () => {
 
     return (
 
-        <div className="max-w-3xl mx-auto p-4 mt-24">
+        <div className="max-w-2xl mx-auto p-4 mt-24">
             <h1 className='md:text-4xl text-2xl font-semibold md:font-bold mb-20 text-center'>Live Market Gainers and Losers Tracking</h1>
             <div className="bg-[#171f2a] shadow-md rounded-md">
                 {/* Tabs */}
