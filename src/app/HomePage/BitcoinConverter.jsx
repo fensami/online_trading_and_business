@@ -63,14 +63,14 @@ const BitcoinConverter = () => {
 
   return (
     <div className="max-w-5xl mx-auto flex flex-col items-center justify-center bg-[#171f2a] text-white py-12 mt-16">
-      <h1 className="text-4xl  mb-4 font-bold text-gray-300">
+      <h1 className="md:text-4xl  mb-4 font-bold text-gray-300">
         {" "}
         <span className="text-red-500 ">BITCOIN</span> CALCULATOR
       </h1>
-      <p className="text-gray-300 mb-4">
+      <p className="text-gray-300 text-center mb-4">
         FIND OUT THE CURRENT BITCOIN VALUE WITH OUR EASY-TO-USE CONVERTER
       </p>
-      <div className="flex items-center space-x-4">
+      <div className="md:flex items-center md:space-x-4 grid grid-cols-1 gap-5">
         <div className="flex">
           <input
             type="number"
