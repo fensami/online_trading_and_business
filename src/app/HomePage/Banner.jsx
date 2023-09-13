@@ -83,7 +83,7 @@ const Banner = () => {
       {backgroundImages.map((imageUrl, index) => (
         <div
           key={index}
-          className={`banner-slide ${index === currentImage ? "active" : ""}`}
+          className={`banner-slide  ${index === currentImage ? "active" : ""}`}
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="banner-text">

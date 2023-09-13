@@ -62,27 +62,28 @@ const BitcoinConverter = () => {
   }, [amount, selectedCrypto, selectedCurrency]);
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col items-center justify-center bg-[#171f2a] text-white py-12 mt-16">
-      <h1 className="md:text-4xl  mb-4 font-bold text-gray-300">
-        {" "}
+    <div className="lg:mx-16 mx-4 lg:px-6 px-2  text-center bg-[#171f2a] text-white py-12 mt-12">
+      <h1 className="text-2xl md:text-4xl mb-4 font-bold text-gray-300 md:mx-0 mx-4">
         <span className="text-red-500 ">BITCOIN</span> CALCULATOR
       </h1>
       <p className="text-gray-300 text-center mb-4">
         FIND OUT THE CURRENT BITCOIN VALUE WITH OUR EASY-TO-USE CONVERTER
       </p>
-      <div className="md:flex items-center md:space-x-4 grid grid-cols-1 gap-5">
-        <div className="flex">
+      <div className="flex md:gap-6 gap-2">
+        <div className="flex lg:w-4/12 gap-0 w-full mx-auto">
           <input
-            type="number"
-            className="p-2 outline-none bg-black "
+            type="text"
+            className="p-2 outline-none  bg-black  w-full "
             placeholder="Enter amount"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
           />
-          <button className="bg-red-500 px-4 font-extrabold">$</button>
+          <button className="bg-red-500 px-4 font-extrabold lg:block hidden">
+            $
+          </button>
         </div>
         <select
-          className="p-2 outline-none bg-black w-6/12"
+          className="p-2 outline-none bg-black lg:w-4/12  w-10/12 mx-auto"
           value={selectedCrypto}
           onChange={(e) => setSelectedCrypto(e.target.value)}
         >
@@ -93,7 +94,7 @@ const BitcoinConverter = () => {
           ))}
         </select>
         <select
-          className="p-2 outline-none bg-red-500"
+          className="p-2 outline-none bg-red-500 lg:w-4/12 w-10/12 mx-auto"
           value={selectedCurrency}
           onChange={(e) => setSelectedCurrency(e.target.value)}
         >
