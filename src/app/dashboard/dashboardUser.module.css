@@ -1,12 +1,13 @@
-.container{
+ .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     /* margin: 10px 30px 20px 10px; */
     
     width: 100%;
+    margin-top: 10px;
     /* margin: 10px; */
-    padding: 10px;
+    padding: 5x;
 }
 .cards{
     background-color: #171f2a;
@@ -19,11 +20,12 @@
     
 }
 .cards p{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
 }
 .cards h1{
     font-size: larger;
+        font-weight: 400;
 
 }
 /* .flex{

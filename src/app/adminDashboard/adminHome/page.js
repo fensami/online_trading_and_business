@@ -81,10 +81,10 @@ const AdminHome = () => {
 
                 </div>
 
-                <TopCrytoTable></TopCrytoTable>
+                {/* <TopCrytoTable></TopCrytoTable> */}
             </div>
 
-            <div className='my-20'>
+            {/* <div className='my-20'>
                 slider section
                 <div className="w-1/2 md:w-full">
 
@@ -99,7 +99,7 @@ const AdminHome = () => {
 
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </>
     );
