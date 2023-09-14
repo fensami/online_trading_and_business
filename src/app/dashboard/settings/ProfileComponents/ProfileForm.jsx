@@ -40,7 +40,7 @@ const ProfileForm = () => {
             name="username"
             {...register("username")}
             className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -54,7 +54,7 @@ const ProfileForm = () => {
             id="email"
             {...register("email")}
             className="border-b-2 outline-none h-8   border-gray-600 bg-transparent"
-            required
+            
           />
         </div> */}
         <div className="form-control">
@@ -65,7 +65,7 @@ const ProfileForm = () => {
             name="phon"
             {...register("phon")}
             className="  h-8 border-b-2 outline-none border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -78,7 +78,7 @@ const ProfileForm = () => {
             name="date"
             {...register("date")}
             className="border-b-2 outline-none h-8 w-full  border-gray-600 bg-transparent mt-2"
-            required
+            
           />
         </div>
         <div className="form-control">
@@ -89,7 +89,7 @@ const ProfileForm = () => {
             name="city"
             {...register("city")}
             className="border-b-2 outline-none  h-8  border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -102,7 +102,7 @@ const ProfileForm = () => {
             name="country"
             {...register("country")}
             className="border-b-2 outline-none h-8   border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
         <div className="form-control">
@@ -113,7 +113,7 @@ const ProfileForm = () => {
             name="zipcode"
             {...register("zipcode")}
             className="border-b-2 outline-none  h-8  border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -126,7 +126,7 @@ const ProfileForm = () => {
             name="photourl"
             {...register("photourl")}
             className="border-b-2 outline-none  h-8  border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -137,7 +137,7 @@ const ProfileForm = () => {
             placeholder="photoUrl....."
             {...register("PhotoUrl")}
             className="border-b-2 outline-none  h-8  border-gray-600 bg-transparent"
-            required
+            
           />
         </div>
       </div>
@@ -155,7 +155,7 @@ const ProfileForm = () => {
                 name="facebook"
                 {...register("facebook")}
                 className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
-                required
+                
               />
             </div>
           </div>
@@ -192,7 +192,7 @@ const ProfileForm = () => {
                 name="linkedin"
                 {...register("linkedin")}
                 className=" h-8 border-b-2 outline-none border-gray-600 bg-transparent"
-                required
+                
               />
             </div>
           </div>
