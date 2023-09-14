@@ -62,7 +62,7 @@ const Contact = () => {
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/humaionkobir.humaionkobir"> <FaFacebook></FaFacebook> Facebook </Link>
                         <Link className='text-purple-800 flex items-center gap-2' href="https://m.me/humaionkobir.humaionkobir"> <FaFacebookMessenger></FaFacebookMessenger> Messenger </Link>
                         <Link className='text-yellow-600 flex items-center gap-2' href="mailto:humaionkobir341@gmail.com" target='_blank'> <MdContactMail></MdContactMail> Email </Link>
-                        <Link className='text-blue-800 flex items-center gap-2' href=""> <BsLinkedin></BsLinkedin> Linkedin </Link>
+                        <Link className='text-blue-800 flex items-center gap-2' href="https://www.linkedin.com/in/humaion-kobir-072503209"> <BsLinkedin></BsLinkedin> Linkedin </Link>
 
                     </div>
                 </div>
