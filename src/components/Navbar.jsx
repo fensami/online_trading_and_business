@@ -8,8 +8,11 @@ import { toast } from "react-hot-toast";
 import useTheme from "@/hooks/useTheme";
 import Image from "next/image";
 import "./Navbar.css";
+// import { useRouter } from "next/router";
+
 
 const Navbar = () => {
+  // const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
   const { user, logout } = useAuth();
@@ -81,7 +84,7 @@ const Navbar = () => {
       className={`text-slate-200 p-4 flex justify-between items-center z-10 sticky top-0 bg-[#212b39] navbar ${isNavbarVisible ? "navbar-visible" : ""
         }`}
     >
-      <Link href="/" className="text-3xl font-bold">
+      <Link href="/" className={'text-3xl font-bold'}>
         {" "}
         OTAB{" "}
       </Link>

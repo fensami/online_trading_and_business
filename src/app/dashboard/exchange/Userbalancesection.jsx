@@ -7,6 +7,7 @@ const UserBalanceSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const { user } = useAuth();
+  console.log("first", user);
 
   useEffect(() => {
     fetch("http://localhost:3000/api/exchange")
@@ -37,6 +38,8 @@ const UserBalanceSection = () => {
   const userWithBalance = user
     ? usersBalance.find((findUser) => findUser.email === user.email)
     : null;
+
+  console.log(userWithBalance, "serch uert");
 
   return (
     <div>

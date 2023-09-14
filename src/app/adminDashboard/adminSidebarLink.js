@@ -13,7 +13,7 @@ import { GiSecurityGate } from "react-icons/gi";
 const SidebarLink = () => {
   return (
     <div className="flex flex-col">
-      <div className="sidebar-link">
+      <div className="sidebar-link mt-5">
         <BiHome className="icon" />
         <Link href="/adminDashboard/adminHome" className="">
           {" "}

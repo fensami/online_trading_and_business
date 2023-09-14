@@ -1,5 +1,6 @@
 // import Sidebar from './Sidebar';
 
+import DashboardNav from "../dashboard/dashboardNav/dashboardNav";
 import AdminSidebar from "./adminSidebar";
 
 export const metadata = {
@@ -18,6 +19,7 @@ const AdminDashboardLayout = ({children}) => {
       </div>
 
       <div className='flex-1'>
+        <DashboardNav></DashboardNav>
       {children}
       </div>
     </div>

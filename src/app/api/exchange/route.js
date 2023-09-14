@@ -5,11 +5,11 @@ export async function GET(req) {
   try {
     const client = await clientPromise;
     const db = await client.db("buisness");
-    const collection = await db.collection("UserBlance");
+    const collection = await db.collection("users");
 
     const usersBalance = await collection.find().toArray();
 
-    console.log("Total Balance Data without Email:", usersBalance);
+    // console.log("Total Balance Data without Email:", usersBalance);
 
     return NextResponse.json(usersBalance);
   } catch (error) {

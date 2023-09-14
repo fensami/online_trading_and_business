@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="328087f3-d866-4040-9c54-ccdefa72a070" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/HomePage/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/Banner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/HomePage/CheckTradingSped.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/CheckTradingSped.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/liquidity/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/liquidity/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/swap/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/swap/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/HomePage/BitcoinConverter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/BitcoinConverter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,25 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "asad__developer",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/MERN/mern-chat-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;asad__developer&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/finalProject/online_trading_and_business&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\finalProject\online_trading_and_business\src\app\adminDashboard" />
@@ -84,6 +79,9 @@
       <workItem from="1693578042010" duration="1449000" />
       <workItem from="1693628401083" duration="6734000" />
       <workItem from="1693647963402" duration="36000" />
+      <workItem from="1693801057687" duration="307000" />
+      <workItem from="1693993304955" duration="591000" />
+      <workItem from="1694228036950" duration="1049000" />
     </task>
     <servers />
   </component>
