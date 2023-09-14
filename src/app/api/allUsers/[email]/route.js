@@ -18,3 +18,34 @@ export async function GET(request, content) {
         return NextResponse.error("Failed to retrieve data from MongoDB");
     }
 }
+
+export async function POST(request, content) {
+    let payload = await request.json();
+    console.log(payload)
+    const { userName, otherData } = payload;
+
+    const client = await clientPromise;
+    const db = client.db('buisness');
+    const collection = db.collection('users');
+
+
+    const email = content.params.email;
+
+    if (!email) {
+        return NextResponse.json({ result: "request data is not valid", success: false }, { status: 400 })
+    }
+
+    else {
+        await collection.updateOne(
+            { email },
+            {
+                $set: {
+                    userName,
+                    ...otherData,
+                },
+            }
+        );
+    }
+
+    return NextResponse.json({ result: payload, success: true }, { status: 200 })
+}
