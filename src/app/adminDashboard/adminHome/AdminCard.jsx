@@ -1,15 +1,16 @@
 import React from 'react';
 import { LiaEthereum } from 'react-icons/lia';
 import { SiDogecoin, SiBinance } from 'react-icons/si';
-import style from '../../dashboard/dashboardUser.module.css'
 import { FaBitcoin } from 'react-icons/fa';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
+// import style from '../../dashboard/dashboardUser.module.css'
+import style from '../../dashboard/dashboardUser.module.css'
 
-const LivePriceCard = () => {
+const AdminCard = () => {
     return (
-        <div className="md:w-3/4 w-64 ml-10 mb-6">
-            <div className='overflow-x-auto md:w-3/4 flex gap-4'>
+        <div>
+            <div className='overflow-x-auto w-3/4 flex gap-4'>
                 <article className={style.cards}>
 
                     <div className='flex justify-between' >
@@ -24,7 +25,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -42,7 +43,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
+                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -60,7 +61,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -78,7 +79,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
+                            <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -96,7 +97,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
+                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -114,7 +115,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -132,7 +133,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -150,7 +151,7 @@ const LivePriceCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
+                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -160,4 +161,4 @@ const LivePriceCard = () => {
     );
 };
 
-export default LivePriceCard;
+export default AdminCard;

@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="328087f3-d866-4040-9c54-ccdefa72a070" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/topCurrency/topCrytoTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts/chart_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/charts/chart_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminHome/topCurrency/topCrytoTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/adminSidebarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/adminDashboard/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adminDashboard/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/forex/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/forex/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dashboard/sidebarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/sidebarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/HomePage/BitcoinConverter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/HomePage/BitcoinConverter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +81,7 @@
       <workItem from="1693647963402" duration="36000" />
       <workItem from="1693801057687" duration="307000" />
       <workItem from="1693993304955" duration="591000" />
+      <workItem from="1694228036950" duration="1049000" />
     </task>
     <servers />
   </component>

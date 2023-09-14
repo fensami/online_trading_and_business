@@ -4,8 +4,8 @@ import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 const AnalysisSection = () => {
   return (
     <div className='mt-24 mb-24'>
-      <p className='flex justify-center text-4xl md:text-5xl font-semibold mb-8'>This is Analysis Section</p>
-      <p className='flex justify-center mb-24'>Volatile crypto markets drive rapid value shifts, impacting investments worldwide.</p>
+      <p className='flex justify-center md:text-5xl font-semibold mb-8'>This is Analysis Section</p>
+      <p className='flex justify-center mb-16 text-center'>Volatile crypto markets drive rapid value shifts, impacting investments worldwide.</p>
       <div className="overflow-x-auto">
         <table className="table w-11/12 mx-auto">
           {/* head */}

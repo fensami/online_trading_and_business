@@ -1,84 +1,151 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
-import useAuth from '@/hooks/useAuth';
-import { toast } from 'react-hot-toast';
-import useTheme from '@/hooks/useTheme';
-import Image from 'next/image';
+"use client";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import useAuth from "@/hooks/useAuth";
+import { toast } from "react-hot-toast";
+import useTheme from "@/hooks/useTheme";
+import Image from "next/image";
+import "./Navbar.css";
+// import { useRouter } from "next/router";
+
 
 const Navbar = () => {
+  // const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  const {user, logout} = useAuth();
+  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  const { user, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
-  const [userData, setUserData] = useState(null); 
-  const email = user.email;
-  
-  console.log(userData);
-   useEffect(() => {
-    const apiUrl = `/api/admin?email=${email}`;
-    fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          console.log("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setUserData(data);
-      })
-      .catch((error) => {
-        console.log("There was a problem with the fetch operation:", error);
-      });
-  }, [email]);
+  const [loading, setLoading] = useState(true)
+  const [role, setRole] = useState(null)
+
+  const isAdmin = role === 'admin';
+  const isUser = role === 'user';
+  console.log(role, isAdmin, isUser);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsNavbarVisible(true);
+      } else {
+        setIsNavbarVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleLogout = async () => {
     try {
-      await logout()
-      toast.success("successfully logout")
+      await logout();
+      toast.success("successfully logout");
     } catch (error) {
-      toast.error(error.message)
+      toast.error(error.message);
     }
-  }
+  };
+
+  useEffect(() => {
+    if (user) {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          if (data.length > 0) {
+            const userRole = data[0].role;
+            setRole(userRole);
+          } else {
+            setRole(null);
+          }
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      fetchData();
+    }
+  }, [user]);
+
 
   return (
-    <nav className="text-slate-200 p-4 flex justify-between items-center relative bg-[#212b39]">
-      <Link href="/" className='text-3xl font-bold'> OTAB </Link>
+    <nav
+      className={`text-slate-200 p-4 flex justify-between items-center z-10 sticky top-0 bg-[#212b39] navbar ${isNavbarVisible ? "navbar-visible" : ""
+        }`}
+    >
+      <Link href="/" className={'text-3xl font-bold'}>
+        {" "}
+        OTAB{" "}
+      </Link>
       <div className="hidden md:flex space-x-5 font-semibold">
-        <Link href="/trade" className="block hover:text-red-500  my-2">Trades</Link>
+        <Link href="/trade" className="block hover:text-red-500  my-2">
+          Trades
+        </Link>
 
-        
-        <Link href="/markets" className="block hover:text-red-500  my-2">Markets</Link>
-        <Link href="/blogs" className="block hover:text-red-500  my-2">Blogs</Link>
+        <Link href="/markets" className="block hover:text-red-500  my-2">
+          Markets
+        </Link>
+        <Link href="/blogs" className="block hover:text-red-500  my-2">
+          Blogs
+        </Link>
 
-
-
-
-        <Link href="/about" className="block hover:text-red-500  my-2">About Us</Link>
-        <Link href="/resource" className="block hover:text-red-500  my-2">Resources</Link>
-        {
-          user ? <Link href="/dashboard" className="block hover:text-red-500  my-2">Dashboard</Link> : ''
-        }
-        
-        
+        <Link href="/about" className="block hover:text-red-500  my-2">
+          About Us
+        </Link>
+        <Link href="/resource" className="block hover:text-red-500  my-2">
+          Resources
+        </Link>
+        {isAdmin ? (
+          <Link href="/adminDashboard" className="block hover:text-red-500 my-2">
+            AdminDashboard
+          </Link>
+        ) : isUser ? (
+          <Link href="/dashboard" className="block hover:text-red-500 my-2">
+            Dashboard
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
       <div className="flex items-center space-x-4">
-        {
-          user? 
-          <div className='flex justify-center items-center gap-5'>
-            {
-            user.displayName ? <h3 className='font-semibold'>{user.displayName}</h3> :
-            <Image className='w-8 h-8 rounded-full' src={user.photoURL} alt="" />
-            }
-            <Link className='hidden md:block' href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link>
-          </div> :
-          <Link href="/login"><button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button></Link>
-        }
+        {user ? (
+          <div className="flex justify-center items-center gap-5">
+            {user.displayName ? (
+              <h3 className="font-semibold">{user.displayName}</h3>
+            ) : (
+              <Image
+                className="w-8 h-8 rounded-full"
+                src={user.photoURL}
+                alt=""
+              />
+            )}
+            <Link className="hidden md:block" href="/">
+              <button
+                onClick={handleLogout}
+                className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold"
+              >
+                Logout
+              </button>
+            </Link>
+          </div>
+        ) : (
+          <Link href="/login">
+            <button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">
+              Login
+            </button>
+          </Link>
+        )}
         <button className="text-white hidden font-semibold md:block bg-red-500  px-4 py-2 rounded-2xl">
           Create Demo Account
         </button>
@@ -105,10 +172,7 @@ const Navbar = () => {
         </label>
       </div>
       <div className="md:hidden flex items-center">
-        <button
-          className="text-white"
-          onClick={toggleMenu}
-        >
+        <button className="text-white" onClick={toggleMenu}>
           {menuOpen ? (
             <FontAwesomeIcon icon={faTimes} />
           ) : (
@@ -117,23 +181,46 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? 'transform translate-y-full' : '-transform -translate-y-24'
+        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? "transform translate-y-full" : "-transform -translate-y-24"
           }`}
       >
-        <Link href="/trades" className="block hover:text-red-500  my-2">Trades</Link>
-        <Link href="/markets" className="block hover:text-red-500  my-2">Markets</Link>
-        <Link href="/blogs" className="block hover:text-red-500  my-2">Blogs</Link>
-        <Link href="/about" className="block hover:text-red-500  my-2">About Us</Link>
-        <Link href="/resource" className="block hover:text-red-500  my-2">Resources</Link>
-        {
-          user ? <Link href="/dashboard" className="block hover:text-red-500  my-2">dashboard</Link> : <Link href="/adminDashboard" className="block hover:text-red-500  my-2">dashboard</Link>
-        }
+        <Link href="/trades" className="block hover:text-red-500  my-2">
+          Trades
+        </Link>
+        <Link href="/markets" className="block hover:text-red-500  my-2">
+          Markets
+        </Link>
+        <Link href="/blogs" className="block hover:text-red-500  my-2">
+          Blogs
+        </Link>
+        <Link href="/about" className="block hover:text-red-500  my-2">
+          About Us
+        </Link>
+        <Link href="/resource" className="block hover:text-red-500  my-2">
+          Resources
+        </Link>
 
-        {
-          user ? <div>
-          <Link href="/"><button onClick={handleLogout} className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Logout</button></Link></div> :
-          <Link href="/login"><button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">Login</button></Link>        
-          }
+        {user ? (
+          <div>
+            <Link href="/dashboard" className="block hover:text-red-500  my-2">
+              dashboard
+            </Link>
+            <Link href="/">
+              <button
+                onClick={handleLogout}
+                className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold"
+              >
+                Logout
+              </button>
+            </Link>
+          </div>
+        ) : (
+          <Link href="/login">
+            <button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </nav>
   );
