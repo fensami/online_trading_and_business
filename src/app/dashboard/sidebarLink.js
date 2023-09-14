@@ -13,6 +13,7 @@ import {
   AiOutlineToTop,
   AiFillSetting,
 } from "react-icons/ai";
+import { MdConnectWithoutContact } from "react-icons/md";
 // import { usePathname } from 'next/navigation'
 
 const SidebarLink = () => {
@@ -23,7 +24,7 @@ const SidebarLink = () => {
       <div className="sidebar-link mt-5">
         <BiSolidDashboard className="icon" />
         <Link href="/dashboard" >
-          
+
           Dashboard
         </Link>
       </div>
@@ -38,7 +39,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <AiOutlineAreaChart className="icon" />
         <Link className=" " href="/dashboard/forex">
-        
+
           Forex
         </Link>
       </div>
@@ -47,7 +48,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <AiOutlineDollar className="icon" />
         <Link href="/dashboard/prices" className="">
-         
+
           Prices
         </Link>
       </div>
@@ -62,7 +63,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <AiOutlineToTop className="icon" />
         <Link href="/dashboard/promotions" className="">
-         
+
           Promotions
         </Link>
       </div>
@@ -70,7 +71,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <VscVmActive className="icon" />
         <Link href="/dashboard/activities" className="">
-       
+
           Activities
         </Link>
       </div>
@@ -78,7 +79,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <IoMdNotifications className="icon" />
         <Link href="/dashboard/notifications" className="">
-         
+
           Notifications
         </Link>
       </div>
@@ -86,7 +87,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <AiFillSetting className="icon" />
         <Link href="/dashboard/settings" className="">
-          
+
           Settings
         </Link>
       </div>
@@ -94,7 +95,7 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <FcSupport className="icon" />
         <Link href="/dashboard/utilities" className="">
-          
+
           Utilities
         </Link>
       </div>
@@ -102,8 +103,16 @@ const SidebarLink = () => {
       <div className="sidebar-link">
         <SiSpringsecurity className="icon" />
         <Link href="/dashboard/authentication" className="">
-       
+
           Authentication
+        </Link>
+      </div>
+
+      <div className="sidebar-link">
+        <MdConnectWithoutContact className="icon" />
+        <Link href="/dashboard/expertise" className="">
+
+          Expert
         </Link>
       </div>
     </div>
