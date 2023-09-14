@@ -15,7 +15,7 @@ const Contact = () => {
         <div>
             <div className='p-4 md:flex grid gap-4'>
                 <div className="card md:w-1/2 w-96 h-72 card-side bg-base-100 shadow-xl p-3">
-                    <figure><Image className='rounded-lg' width={300} src={expert} alt="Movie" /></figure>
+                    <figure><Image className='rounded-lg' width={300} height={300} src={expert} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-black">Asadur Jaman Nur</h2>
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/profile.php?id=100081583921609"> <FaFacebook></FaFacebook> Facebook </Link>
@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
 
                 <div className="card md:w-1/2 w-96 h-72 card-side bg-base-100 shadow-xl p-3">
-                    <figure><Image className='rounded-lg' width={300} src={expert1} alt="Movie" /></figure>
+                    <figure><Image className='rounded-lg' width={300} height={300} src={expert1} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-black">Mahmud Preyom</h2>
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/mahmud.preyom"> <FaFacebook></FaFacebook> Facebook </Link>
@@ -42,7 +42,7 @@ const Contact = () => {
             </div>
             <div className='p-4 md:flex grid gap-4 -mt-3'>
                 <div className="card md:w-1/2 w-96 h-72 card-side bg-base-100 shadow-xl p-3">
-                    <figure><Image className='rounded-lg' width={300} src={expert2} alt="Movie" /></figure>
+                    <figure><Image className='rounded-lg' width={300} height={300} src={expert2} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-black">Md Rubel Masud</h2>
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/mdrubel.masud.7"> <FaFacebook></FaFacebook> Facebook </Link>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </div>
 
                 <div className="card md:w-1/2 w-96 h-72 card-side bg-base-100 shadow-xl p-3">
-                    <figure><Image className='rounded-lg' width={300} src={expert3} alt="Movie" /></figure>
+                    <figure><Image className='rounded-lg' width={300} height={300} src={expert3} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-black">Humaion Kobir</h2>
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/humaionkobir.humaionkobir"> <FaFacebook></FaFacebook> Facebook </Link>
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
             <div className='p-4 md:flex grid gap-4 -mt-3'>
                 <div className="card md:w-1/2 w-96 h-72 card-side bg-base-100 shadow-xl p-3">
-                    <figure><Image className='rounded-lg' width={300} src={expert4} alt="Movie" /></figure>
+                    <figure><Image className='rounded-lg' width={300} height={300} src={expert4} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-black">Abu Sayed</h2>
                         <Link className='text-blue-700 flex items-center gap-2' href="https://www.facebook.com/profile.php?id=100007603728596"> <FaFacebook></FaFacebook> Facebook </Link>
