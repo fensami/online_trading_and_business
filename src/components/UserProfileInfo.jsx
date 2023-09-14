@@ -53,6 +53,7 @@ const UserProfileInfo = () => {
             clearTimeout(timer);
         };
     }, [user, updateData]);
+    console.log(updateData.userName)
 
     return (
         <div className="md:w-4/12 w-auto h-fit bg-[#171f2a] p-8 rounded-md">
@@ -67,7 +68,7 @@ const UserProfileInfo = () => {
                             </div>
                         </div>
                         <h1 className="md:text-2xl text-1xl font-semibold my-2">
-                            EndGameTeam99
+                            ${updateData.userName}
                         </h1>
                         <h3 className="text-1xl  text-gray-300">
                             Amet minim Developer
