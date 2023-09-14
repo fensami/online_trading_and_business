@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from "next/link";
-import expert from "../../../assets/sabbir.jpg"
-import expert2 from "../../../assets/rubel.jpg"
-import expert3 from "../../../assets/hk.jpg"
+import expert from "../../../assets/sabbir_copy_460x460.jpg"
+import expert2 from "../../../assets/mrm.jpg"
+import expert3 from "../../../assets/hk2.jpg"
 import expert4 from "../../../assets/110084857.png"
-import expert1 from "../../../assets/377124378_326021693284891_5072274285400806362_n.jpg"
+import expert1 from "../../../assets/mp.jpg"
 import Image from 'next/image';
 import { FaFacebook, FaFacebookMessenger } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
