@@ -2,11 +2,11 @@
 import useAuth from "@/hooks/useAuth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-import {useRouter, useSearchParams} from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 const SignUpForm = () => {
 
-const {createUser, profileUpdate} = useAuth();
+    const { createUser, profileUpdate } = useAuth();
     const {
         register,
         handleSubmit,
@@ -21,34 +21,34 @@ const {createUser, profileUpdate} = useAuth();
 
 
     const onSubmit = async (data) => {
-      const { name, email , password} = data;
-      try {
-        await createUser(email, password);
-        await profileUpdate({
-          displayName: name,
-        });
-        
-        const userData = {"userName": name, "email": email, "role": "admin"};
-         await fetch('/api/users', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(userData),
-        }).then(res => res.json()).then(data => {
-            console.log("add user data", data)
-            toast.success("User signed in successfully");
-            replace(from)
-        })
-      } catch (error) {
-        toast.error(error.message || "User not signed in");
-      }
+        const { name, email, password } = data;
+        try {
+            await createUser(email, password);
+            await profileUpdate({
+                displayName: name,
+            });
+
+            const userData = { "userName": name, "email": email, "role": "admin" };
+            await fetch('/api/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userData),
+            }).then(res => res.json()).then(data => {
+                console.log("add user data", data)
+                toast.success("User signed in successfully");
+                replace(from)
+            })
+        } catch (error) {
+            toast.error(error.message || "User not signed in");
+        }
 
 
-      };
-      
-      
-      
+    };
+
+
+
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="card-body text-white">

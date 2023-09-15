@@ -12,7 +12,7 @@ const UserProfileInfo = () => {
     const [updateData, setUpdateData] = useState(null);
     const { user } = useAuth();
     const [loading, setLoading] = useState(true);
-
+    console.log(updateData);
     const fetchData = async () => {
         try {
             const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
@@ -74,7 +74,7 @@ const UserProfileInfo = () => {
                     <div className="text-gray-300">
                         <h2 className="font-semibold">BIO</h2>
                         <p className="mb-4">
-                            {updateData && updateData.bio ? updateData.bio : "No data"}
+                            {updateData && updateData.Description ? updateData.Description : "No data"}
                         </p>
                         <h4 className="border-t border-gray-700 pt-4 font-semibold">
                             Social media
