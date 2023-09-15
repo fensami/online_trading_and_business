@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import useAuth from "@/hooks/useAuth";
+// import useAuth from "@/hooks/useAuth";
 import { toast } from "react-hot-toast";
 import useTheme from "@/hooks/useTheme";
 import Image from "next/image";
 import "./Navbar.css";
+import useAuth from "@/hooks/useAuth";
 // import { useRouter } from "next/router";
 
 

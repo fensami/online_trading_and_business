@@ -7,11 +7,11 @@ const useAuth = () => {
 
   if (!isClient && !auth) return {};
 
-  if (!auth) {
-    throw new Error(
-      "You must wrap your application with AuthProvider ot use the useAuth"
-    );
-  }
+  // if (!auth) {
+  //   throw new Error(
+  //     "You must wrap your application with AuthProvider ot use the useAuth"
+  //   );
+  // }
   return auth;
 };
 

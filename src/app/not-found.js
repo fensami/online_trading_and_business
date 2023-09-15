@@ -6,7 +6,7 @@ import img from "../assets/e2.jpg"
 const NotFound = () => {
     return (
         <div>
-            <Image className='align-middle text-center' src={img} alt=''></Image>
+            <Image className='align-middle text-center' height={400} width={400} src={img} alt=''></Image>
         </div>
     );
 };
