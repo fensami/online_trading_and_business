@@ -1,4 +1,7 @@
-import SocialLogin from "../components/SocialLogin";
+import React, { lazy, Suspense } from "react";
+
+// Lazy load the SocialLogin component
+const LazySocialLogin = lazy(() => import("../components/SocialLogin"));
 
 const SubLogin = () => {
   return (
@@ -36,13 +39,16 @@ const SubLogin = () => {
             <p>
               I agree to the{" "}
               <a className="text-blue-100" href="">
-                Trams and conditions
+                Terms and conditions
               </a>
             </p>
           </div>
         </form>
         <div className="">
-          <SocialLogin />
+          {/* Wrap the SocialLogin component with Suspense */}
+          <Suspense fallback={<div>Loading SocialLogin...</div>}>
+            <LazySocialLogin />
+          </Suspense>
         </div>
       </div>
       <div className="p-6">
