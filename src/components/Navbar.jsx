@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const isAdmin = role === 'admin';
   const isUser = role === 'user';
-  console.log(role, isAdmin, isUser);
+  // console.log(role, isAdmin, isUser);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -141,14 +141,14 @@ const Navbar = () => {
           </div>
         ) : (
           <Link href="/login">
-            <button className="text-red-500 border-[3px] border-red-500 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">
+            <button className="text-red-500 border-[3px] border-slate-200 hover:bg-red-100 py-1 px-4 rounded-2xl font-semibold">
               Login
             </button>
           </Link>
         )}
-        <button className="text-white hidden font-semibold md:block bg-red-500  px-4 py-2 rounded-2xl">
+        {/* <button className="text-white hidden font-semibold md:block bg-red-500  px-4 py-2 rounded-2xl">
           Create Demo Account
-        </button>
+        </button> */}
         <label className="swap swap-rotate lg:ml-2">
           <input
             onChange={toggleTheme}
@@ -181,7 +181,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? "transform translate-y-full" : "-transform -translate-y-24"
+        className={`md: hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? 'transform translate-y-full' : '-transform -translate-y-24'
           }`}
       >
         <Link href="/trades" className="block hover:text-red-500  my-2">

@@ -70,44 +70,44 @@ const TAbSection = () => {
                                 {activeTab1 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image src={t1}></Image>
+                                        <Image src={t1} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t2}></Image>
+                                        <Image src={t2} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t3}></Image>
+                                        <Image src={t3} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t4}></Image>
+                                        <Image src={t4} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t5}></Image>
+                                        <Image src={t5} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t6}></Image>
+                                        <Image src={t6} alt=''></Image>
                                     </div>
                                 )}
 
                             </div>
                             {/* Tabs */}
                             <div className="md:flex md:space-x-4 grid grid-cols-4">
-                                {/* <Image src={t1}></Image> */}
+                                {/* <Image src={t1} alt=''></Image> */}
                                 <button
                                     className={`px-4 py-2 ${activeTab1 === 1 ? 'bg-[#212b39] text-white' : 'text-gray-600'
                                         }`}
@@ -236,37 +236,37 @@ const TAbSection = () => {
                                 {activeTab2 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image src={t3}></Image>
+                                        <Image  src={t3} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t6}></Image>
+                                        <Image width={300} height={300} src={t6} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t5}></Image>
+                                        <Image src={t5} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t2}></Image>
+                                        <Image src={t2} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t1}></Image>
+                                        <Image src={t1} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t4}></Image>
+                                        <Image src={t4} alt=''></Image>
                                     </div>
                                 )}
 
@@ -399,37 +399,37 @@ const TAbSection = () => {
                                 {activeTab3 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image src={t5}></Image>
+                                        <Image src={t5} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t3}></Image>
+                                        <Image src={t3} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t4}></Image>
+                                        <Image src={t4} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t1}></Image>
+                                        <Image src={t1} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t6}></Image>
+                                        <Image src={t6} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image src={t2}></Image>
+                                        <Image src={t2} alt=''></Image>
                                     </div>
                                 )}
 

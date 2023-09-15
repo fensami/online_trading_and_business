@@ -76,7 +76,7 @@ function CurrencyConverter() {
     setToCurrency(e.target.value);
   };
 
-  console.log("first", flagIcons);
+  // console.log("first", flagIcons);
 
   return (
     <div className="currency-converter text-center bg-slate-900 md:p-12 p-6 lg:w-1/2 lg:mx-auto mx-6">

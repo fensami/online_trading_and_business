@@ -84,22 +84,7 @@ const AdminHome = () => {
                 {/* <TopCrytoTable></TopCrytoTable> */}
             </div>
 
-            {/* <div className='my-20'>
-                slider section
-                <div className="w-1/2 md:w-full">
-
-                    <div className="flex flex-row overflow-x-auto gap-4">
-
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-                        <Image className='h-full rounded-lg' width={200} height={200} src='https://static.vecteezy.com/system/resources/thumbnails/007/145/466/small/bitcoin-on-dark-background-banner-template-design-bitcoin-currency-international-stock-exchange-network-bitcoin-marketing-vector.jpg' alt=''></Image>
-
-                    </div>
-                </div>
-            </div> */}
+            
 
         </>
     );

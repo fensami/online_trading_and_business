@@ -12,7 +12,9 @@ const UserProfileInfo = () => {
     const [updateData, setUpdateData] = useState(null);
     const { user } = useAuth();
     const [loading, setLoading] = useState(true);
-    console.log(updateData);
+
+    console.log(updateData)
+
     const fetchData = async () => {
         try {
             const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
@@ -68,7 +70,7 @@ const UserProfileInfo = () => {
                             {user.email}
                         </h1>
                         <h3 className="text-1xl  text-gray-300">
-                            {updateData && updateData.jobTitle ? updateData.jobTitle : "Amet minim Developer"}
+                            {updateData && updateData.City ? updateData.City : "Amet minim Developer"}
                         </h3>
                     </div>
                     <div className="text-gray-300">
