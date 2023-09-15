@@ -11,24 +11,24 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 const SocialLogin = () => {
-    const {googleLogin} = useAuth();
+    const { googleLogin } = useAuth();
     const auth = getAuth(app);
     const search = useSearchParams();
     const from = search.get("redirectUrl") || "/";
     const { replace } = useRouter();
-    
+
     const handleGoogleLogin = async () => {
         try {
             const user = await googleLogin()
             console.log(user)
-            const userData = {"userName": user.user.displayName, "email": user.user.email, "role": "user"};
+            const userData = { "userName": user.user.displayName, "email": user.user.email, "role": "user" };
             console.log(userData)
             await fetch('/api/users', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(userData),
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userData),
             }).then(res => res.json()).then(data => {
                 console.log("add user data", data)
                 toast.success("User signed in successfully");
@@ -40,15 +40,15 @@ const SocialLogin = () => {
         }
     }
 
-    const signInWithFacebook = async() => {
+    const signInWithFacebook = async () => {
         try {
-        const provider = await new FacebookAuthProvider();
-        await signInWithPopup(auth, provider)
-        .then((re) => {
-            console.log(re)
-            replace(from)
-        })
-        }catch (error) {
+            const provider = await new FacebookAuthProvider();
+            await signInWithPopup(auth, provider)
+                .then((re) => {
+                    console.log(re)
+                    replace(from)
+                })
+        } catch (error) {
             toast.error(error.message || "User not signed in");
         }
     }
@@ -70,7 +70,7 @@ const SocialLogin = () => {
                     </button>
                 </div>
             </div>
-           
+
         </div>
     );
 };

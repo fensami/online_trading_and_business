@@ -43,15 +43,7 @@ const UpCommingOther = async () => {
         <div className="carousel-item h-full">
           <Image width={700} height={300} src={img1} alt='' />
         </div>
-        {/* <div className="carousel-item h-full">
-          <Image src={img1} />
-        </div> */}
-        {/* <div className="carousel-item h-full">
-          <Image src={img1} />
-        </div> */}
-        {/* <div className="carousel-item h-full">
-          <Image src={img1} />
-        </div> */}
+       
       </div>
     </div>
   );

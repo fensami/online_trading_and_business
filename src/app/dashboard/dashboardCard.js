@@ -13,31 +13,31 @@ const DashboardCard = () => {
                   
                  <div >
                  <h1 >Bitcoin</h1>
-                  <p >$1200</p>
+                  <p >$1200.00</p>
                  </div>
                   
-                   <BiCoin className='text-7xl'></BiCoin>
+                   <BiCoin className='text-5xl'></BiCoin>
                  </article>
           <article className={style.cards}>
                   <div>
-                   <h1 >Bitcoin</h1>
-                  <p >$1200</p>
+          <h1 >Ethereum</h1>
+                  <p >$100.00</p>
                    </div>
-                   <LiaEthereum className='text-7xl'></LiaEthereum>
+                   <LiaEthereum className='text-5xl'></LiaEthereum>
                  </article>
           <article className={style.cards}>
                   <div>
-                   <h1 >Bitcoin</h1>
-                  <p >$1200</p>
+          <h1 >Dogecoin</h1>
+          <p >$2500.00</p>
                    </div>
-                   <SiDogecoin className='text-7xl'></SiDogecoin>
+                   <SiDogecoin className='text-5xl'></SiDogecoin>
                  </article>
           <article className={style.cards}>
                   <div>
-                   <h1 >Bitcoin</h1>
-                  <p >$1200</p>
+          <h1 >Binance</h1>
+          <p >$3200.00</p>
                    </div>
-                   <SiBinance className='text-7xl'></SiBinance>
+                   <SiBinance className='text-5xl'></SiBinance>
                  </article>
 
       </div>
