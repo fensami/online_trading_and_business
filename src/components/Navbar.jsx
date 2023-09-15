@@ -82,10 +82,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-slate-200 p-4 flex justify-between items-center z-10 sticky top-0 bg-[#212b39] navbar ${isNavbarVisible ? "navbar-visible" : ""
+      className={` text-slate-200 p-4 flex justify-between bg-slate-200 items-center relative dark:bg-slate-900 navbar ${isNavbarVisible ? "navbar-visible" : ""
         }`}
     >
-      <Link href="/" className={'text-3xl font-bold'}>
+      <Link href="/" className={'text-3xl white font-bold'}>
         {" "}
         OTAB{" "}
       </Link>
@@ -182,7 +182,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? "transform translate-y-full" : "-transform -translate-y-24"
+        className={`md: hidden absolute -top-[170px] right-0 bg-slate-950 p-4 shadow-lg rounded w-full transition-transform ${menuOpen ? 'transform translate-y-full' : '-transform -translate-y-24'
           }`}
       >
         <Link href="/trades" className="block hover:text-red-500  my-2">
