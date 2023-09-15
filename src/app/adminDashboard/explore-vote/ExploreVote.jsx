@@ -15,7 +15,7 @@ const ExploreVote = () => {
                                 <Image alt="Vote Pool" loading="lazy" width="129" height="128" decoding="async" data-nimg="1" src="https://criptic.vercel.app/_next/static/media/vote-pool.b7007dec.svg"> 
                                 </Image>
                                 <h3 className="mb-2 mt-6 text-sm font-medium uppercase text-gray-800 dark:text-gray-100 sm:text-base 3xl:text-lg">Vote with Criptic</h3>
-                                <p className="leading-loose text-gray-600 dark:text-gray-400">Vote with criptic tokens held <br class="hidden xs:inline-block"></br> in your wallet or delegated <br className="hidden xs:inline-block"></br> to you.</p>
+                                <p className="leading-loose text-gray-600 dark:text-gray-400">Vote with criptic tokens held <br className="hidden xs:inline-block"></br> in your wallet or delegated <br className="hidden xs:inline-block"></br> to you.</p>
                             </div>
                         </Link>
 
