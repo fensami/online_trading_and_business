@@ -81,10 +81,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`container mx-auto p-4 flex justify-between items-center relative dark:bg-[#212b39] navbar ${isNavbarVisible ? "navbar-visible" : ""
+      className={` text-slate-200 p-4 flex justify-between bg-slate-200 items-center relative dark:bg-slate-900 navbar ${isNavbarVisible ? "navbar-visible" : ""
         }`}
     >
-      <Link href="/" className={'text-3xl font-bold'}>
+      <Link href="/" className={'text-3xl white font-bold'}>
         {" "}
         OTAB{" "}
       </Link>
