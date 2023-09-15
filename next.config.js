@@ -1,17 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  reactStrictMode: true,
   images: {
-      // protocol: 'https',
-      domains: ['images.unsplash.com', 'plus.unsplash.com', 'cryptdash.vercel.app','localhost']
-      
-  }
-     
-}
- 
-
-module.exports = nextConfig;
-// module.exports = {
-  // Your modified configuration settings
-  // someConfig: false,
-  // anotherConfig: true,
-// };
+    domains: ['images.unsplash.com','slimhamdi.net','encrypted-tbn0.gstatic.com', 'plus.unsplash.com', 'cryptdash.vercel.app','t4.ftcdn.net', 'localhost','static.vecteezy.com','cdn.coingape.com'],
+  },
+};

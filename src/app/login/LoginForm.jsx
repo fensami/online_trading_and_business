@@ -73,7 +73,7 @@ const LoginForm = () => {
                 <div className="w-full flex justify-between mt-1">
                     <div className="">
                         <input type="checkbox" name="remember" className="form-checkbox text-green-500 outline-none" />
-                        <span class="ml-2 text-white">Remember me</span>
+                        <span className="ml-2 text-white">Remember me</span>
                     </div>
                     <div className="">
                         <p className="text-green-400 hover:text-white">Forgot password?</p>
