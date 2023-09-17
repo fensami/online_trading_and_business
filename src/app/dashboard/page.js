@@ -15,19 +15,19 @@ const DashboardPage = () => {
 
   return (
     <>
-      
+
       <DashboardCard></DashboardCard>
-     
+
       <div className='grid md:grid-cols-2 grid-cols-1  my-3 md:px-5 px-3  gap-5'>
-      <UsingChart></UsingChart>
-      <DashboardUserTotal ></DashboardUserTotal>
+        <UsingChart></UsingChart>
+        <DashboardUserTotal ></DashboardUserTotal>
       </div>
 
       <div className='mb-8 px-5'>
-      <TableDashboard></TableDashboard>
-      {/* <RecentTransaction></RecentTransaction> */}
+        <TableDashboard></TableDashboard>
+        {/* <RecentTransaction></RecentTransaction> */}
       </div>
-      
+
 
     </>
   );

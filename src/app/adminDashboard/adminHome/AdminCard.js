@@ -25,7 +25,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -43,7 +43,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
+                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -61,7 +61,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -79,7 +79,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
+                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -97,7 +97,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
+                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>
@@ -115,7 +115,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -133,7 +133,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                            <BsGraphUpArrow style={{fontSize:"2.5rem"}} className='text-green-500'></BsGraphUpArrow>
+                            <BsGraphUpArrow style={{ fontSize: "2.5rem" }} className='text-green-500'></BsGraphUpArrow>
                         </div>
                     </div>
                 </article>
@@ -151,7 +151,7 @@ const AdminCard = () => {
                             </span>
                         </div>
                         <div>
-                        <BsGraphDownArrow style={{fontSize:"2.5rem"}} className='text-red-500'></BsGraphDownArrow>
+                            <BsGraphDownArrow style={{ fontSize: "2.5rem" }} className='text-red-500'></BsGraphDownArrow>
                         </div>
                     </div>
                 </article>

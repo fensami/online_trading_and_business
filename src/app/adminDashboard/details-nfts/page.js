@@ -4,7 +4,7 @@ import DetailsNfts from './DetailsNfts';
 const page = () => {
         return (
                 <div>
-                      <DetailsNfts></DetailsNfts>
+                        <DetailsNfts></DetailsNfts>
                 </div>
         );
 };

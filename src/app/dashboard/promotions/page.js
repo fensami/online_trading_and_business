@@ -1,10 +1,10 @@
- 
+
 import Promotion from "./Promotion";
 
 const PromotionsPage = () => {
   return (
     <div>
-        <Promotion></Promotion>
+      <Promotion></Promotion>
     </div>
   );
 };
