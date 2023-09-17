@@ -236,7 +236,7 @@ const TAbSection = () => {
                                 {activeTab2 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image  src={t3} alt=''></Image>
+                                        <Image src={t3} alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 2 && (
