@@ -106,7 +106,7 @@ const DashboardNav = () => {
             </ul>
           </div>
           <article className='ml-3'>
-            <h1>Abu Sayed</h1>
+            <h1>Fen Sami</h1>
             <p>User</p>
           </article>
         </div>
