@@ -8,7 +8,7 @@ import Mail from "../HomePage/Mail";
 import MarqueeCard from "../HomePage/MarqueeCard";
 import OfferService from "../HomePage/OfferService";
 import OtherSection from "../HomePage/OtherSection";
-import SliderOffer from "../HomePage/SliderOffer";
+// import SliderOffer from "../HomePage/SliderOffer";
 import TAbSection from "../HomePage/TAbSection";
 import TabSection1 from "../HomePage/TabSection1";
 import TradeTypes from "../HomePage/TradeTypes";
