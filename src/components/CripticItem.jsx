@@ -5,26 +5,26 @@ import { useState } from "react";
 import NoData from "./NoData";
 
 const CripticItem = () => {
-    const [activeTab, setActiveTab] = useState(1);
-    const [showButtons, setShowButtons] = useState(false);
-    const [showContent, setShowContent] = useState(false);
+  const [activeTab, setActiveTab] = useState(1);
+  const [showButtons, setShowButtons] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
-    const handleVoteClick = () => {
-      setShowButtons(true);
-      setShowContent(false); 
-    };
+  const handleVoteClick = () => {
+    setShowButtons(true);
+    setShowContent(false);
+  };
 
-    const handleAcceptClick = () => {
-      setShowContent(true); 
-    };
+  const handleAcceptClick = () => {
+    setShowContent(true);
+  };
 
-    const handleRejectClick = () => {
-      setShowContent(true);
-    };
+  const handleRejectClick = () => {
+    setShowContent(true);
+  };
 
-    const handleTabClick = (tabNumber) => {
-      setActiveTab(tabNumber);
-    };
+  const handleTabClick = (tabNumber) => {
+    setActiveTab(tabNumber);
+  };
 
   return (
     <div className="container mx-auto p-4">
@@ -34,18 +34,17 @@ const CripticItem = () => {
             <button
               key={tabNumber}
               onClick={() => handleTabClick(tabNumber)}
-              className={`${
-                activeTab === tabNumber
+              className={`${activeTab === tabNumber
                   ? "border-b-2 border-green-500 text-white"
                   : "text-gray-500 hover:text-green-500"
-              } px-4 py-2 transition-all duration-300 ease-in-out`}
+                } px-4 py-2 transition-all duration-300 ease-in-out`}
             >
               {tabNumber}
             </button>
           ))}
         </div>
       </div>
-      <hr  className="bg-gray-400"/>
+      <hr className="bg-gray-400" />
       <div className="mt-4">
         {activeTab === "ACTIVE 4" && (
           <>
@@ -55,312 +54,312 @@ const CripticItem = () => {
                 <p className="text-gray-600">Proposal #1</p>
 
                 {!showButtons ? (
-                <button
-                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
-                  onClick={handleVoteClick}
-                >
-                  Vote Now
-                </button>
-              ) : (
-                <>
-                <div className="space-x-2 mt-4">
                   <button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
-                    onClick={handleAcceptClick}
+                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
+                    onClick={handleVoteClick}
                   >
-                    Accept
+                    Vote Now
                   </button>
-                  <button
-                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-                    onClick={handleRejectClick}
-                  >
-                    Reject
-                  </button>
-                </div>
+                ) : (
+                  <>
+                    <div className="space-x-2 mt-4">
+                      <button
+                        className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                        onClick={handleAcceptClick}
+                      >
+                        Accept
+                      </button>
+                      <button
+                        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+                        onClick={handleRejectClick}
+                      >
+                        Reject
+                      </button>
+                    </div>
 
-                <div className="mt-4">
-                  <p>This is the additional content to display.</p>
-                  <h3 className="text-2xl font-semibold">Vote</h3>
-                  <div className="w-full h-2 rounded-md my-2 flex">
-                    <div className="bg-green-500 w-5/6"></div>
-                    <div className="bg-red-500 w-1/6"></div>
+                    <div className="mt-4">
+                      <p>This is the additional content to display.</p>
+                      <h3 className="text-2xl font-semibold">Vote</h3>
+                      <div className="w-full h-2 rounded-md my-2 flex">
+                        <div className="bg-green-500 w-5/6"></div>
+                        <div className="bg-red-500 w-1/6"></div>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <div>
+                          <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
+                          <h4 className="text-green-500">10140 (90%)</h4>
+                        </div>
+                        <div>
+                          <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
+                          <h4 className="text-red-500">303 (10%)</h4>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p>Voter</p>
+                        </div>
+                        <div>
+                          <p>Voting weight</p>
+                        </div>
+                        <div>
+                          <p>Decision</p>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">32125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+                      <div className="border border-dotted h-1 w-full p-4"></div>
+
+                      <div className="mt-5 text-gray-200">
+                        <h3 className="text-lg uppercase ">Description</h3>
+                        <p className="text-lg mt-5">SIMPLE SUMMARY</p>
+                        <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
+                        <br />
+                        <p className="text-lg mt-5">MOTIVATION</p>
+                        <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
+                        <br />
+                        <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
+                        <br />
+                        <div className="flex justify-center items-center text-center">
+                          <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </>
+                )}
+
+                {showContent && (
+                  <div className="mt-4">
+                    <h2>data not found</h2>
                   </div>
-
-                  <div className="flex justify-between">
-                    <div>
-                      <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
-                      <h4 className="text-green-500">10140 (90%)</h4>
-                    </div>
-                    <div>
-                      <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
-                      <h4 className="text-red-500">303 (10%)</h4>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p>Voter</p>
-                    </div>
-                    <div>
-                      <p>Voting weight</p>
-                    </div>
-                    <div>
-                      <p>Decision</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">32125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-                  <div className="border border-dotted h-1 w-full p-4"></div>
-
-                  <div className="mt-5 text-gray-200">
-                    <h3 className="text-lg uppercase ">Description</h3>
-                    <p className="text-lg mt-5">SIMPLE SUMMARY</p>
-                    <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
-                    <br />
-                    <p className="text-lg mt-5">MOTIVATION</p>
-                    <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
-                    <br />
-                    <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
-                    <br />
-                    <div className="flex justify-center items-center text-center">
-                      <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                
-                </>
-              )}
-
-              {showContent && (
-                <div className="mt-4">
-                  <h2>data not found</h2>
-                </div>
-              )}
+                )}
               </div>
 
               {/* Right Section (30%) */}
               <div className="col-span-2">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
-                  <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-3xl">
-                        <span style={{"--value":15}}></span>
-                      </span>
-                      days
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":10}}></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":24}}></span>
-                      </span>
-                      min
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":50}}></span>
-                      </span>
-                      sec
-                    </div>
+                <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
+                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-3xl">
+                      <span style={{ "--value": 15 }}></span>
+                    </span>
+                    days
                   </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 10 }}></span>
+                    </span>
+                    hours
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 24 }}></span>
+                    </span>
+                    min
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 50 }}></span>
+                    </span>
+                    sec
+                  </div>
+                </div>
               </div>
             </div>
 
-            
+
             <div className="p-4 mt-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
                 <h2 className="text-2xl font-semibold">PTIP 63 - Claim Rewards from Locked Staking</h2>
                 <p className="text-gray-600">Proposal #5</p>
 
                 {!showButtons ? (
-                <button
-                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
-                  onClick={handleVoteClick}
-                >
-                  Vote Now
-                </button>
-              ) : (
-                <>
-                <div className="space-x-2 mt-4">
                   <button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
-                    onClick={handleAcceptClick}
+                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
+                    onClick={handleVoteClick}
                   >
-                    Accept
+                    Vote Now
                   </button>
-                  <button
-                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-                    onClick={handleRejectClick}
-                  >
-                    Reject
-                  </button>
-                </div>
+                ) : (
+                  <>
+                    <div className="space-x-2 mt-4">
+                      <button
+                        className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                        onClick={handleAcceptClick}
+                      >
+                        Accept
+                      </button>
+                      <button
+                        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+                        onClick={handleRejectClick}
+                      >
+                        Reject
+                      </button>
+                    </div>
 
-                <div className="mt-4">
-                  <p>This is the additional content to display.</p>
-                  <h3 className="text-2xl font-semibold">Vote</h3>
-                  <div className="w-full h-2 rounded-md my-2 flex">
-                    <div className="bg-green-500 w-5/6"></div>
-                    <div className="bg-red-500 w-1/6"></div>
+                    <div className="mt-4">
+                      <p>This is the additional content to display.</p>
+                      <h3 className="text-2xl font-semibold">Vote</h3>
+                      <div className="w-full h-2 rounded-md my-2 flex">
+                        <div className="bg-green-500 w-5/6"></div>
+                        <div className="bg-red-500 w-1/6"></div>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <div>
+                          <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
+                          <h4 className="text-green-500">10140 (90%)</h4>
+                        </div>
+                        <div>
+                          <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
+                          <h4 className="text-red-500">303 (10%)</h4>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p>Voter</p>
+                        </div>
+                        <div>
+                          <p>Voting weight</p>
+                        </div>
+                        <div>
+                          <p>Decision</p>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">32125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+                      <div className="border border-dotted h-1 w-full p-4"></div>
+
+                      <div className="mt-5 text-gray-200">
+                        <h3 className="text-lg uppercase ">Description</h3>
+                        <p className="text-lg mt-5">SIMPLE SUMMARY</p>
+                        <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
+                        <br />
+                        <p className="text-lg mt-5">MOTIVATION</p>
+                        <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
+                        <br />
+                        <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
+                        <br />
+                        <div className="flex justify-center items-center text-center">
+                          <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </>
+                )}
+
+                {showContent && (
+                  <div className="mt-4">
+                    <h1>data not found</h1>
                   </div>
-
-                  <div className="flex justify-between">
-                    <div>
-                      <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
-                      <h4 className="text-green-500">10140 (90%)</h4>
-                    </div>
-                    <div>
-                      <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
-                      <h4 className="text-red-500">303 (10%)</h4>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p>Voter</p>
-                    </div>
-                    <div>
-                      <p>Voting weight</p>
-                    </div>
-                    <div>
-                      <p>Decision</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">32125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-                  <div className="border border-dotted h-1 w-full p-4"></div>
-
-                  <div className="mt-5 text-gray-200">
-                    <h3 className="text-lg uppercase ">Description</h3>
-                    <p className="text-lg mt-5">SIMPLE SUMMARY</p>
-                    <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
-                    <br />
-                    <p className="text-lg mt-5">MOTIVATION</p>
-                    <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
-                    <br />
-                    <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
-                    <br />
-                    <div className="flex justify-center items-center text-center">
-                      <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                
-                </>
-              )}
-
-              {showContent && (
-                <div className="mt-4">
-                  <h1>data not found</h1>
-                </div>
-              )}
+                )}
               </div>
 
               {/* Right Section (30%) */}
               <div className="col-span-2">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
-                  <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":15}}></span>
-                      </span>
-                      days
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":10}}></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":24}}></span>
-                      </span>
-                      min
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":50}}></span>
-                      </span>
-                      sec
-                    </div>
+                <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
+                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 15 }}></span>
+                    </span>
+                    days
                   </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 10 }}></span>
+                    </span>
+                    hours
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 24 }}></span>
+                    </span>
+                    min
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 50 }}></span>
+                    </span>
+                    sec
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -370,158 +369,158 @@ const CripticItem = () => {
                 <p className="text-gray-600">Proposal #7</p>
 
                 {!showButtons ? (
-                <button
-                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
-                  onClick={handleVoteClick}
-                >
-                  Vote Now
-                </button>
-              ) : (
-                <>
-                <div className="space-x-2 mt-4">
                   <button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
-                    onClick={handleAcceptClick}
+                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
+                    onClick={handleVoteClick}
                   >
-                    Accept
+                    Vote Now
                   </button>
-                  <button
-                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-                    onClick={handleRejectClick}
-                  >
-                    Reject
-                  </button>
-                </div>
+                ) : (
+                  <>
+                    <div className="space-x-2 mt-4">
+                      <button
+                        className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                        onClick={handleAcceptClick}
+                      >
+                        Accept
+                      </button>
+                      <button
+                        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+                        onClick={handleRejectClick}
+                      >
+                        Reject
+                      </button>
+                    </div>
 
-                <div className="mt-4">
-                  <p>This is the additional content to display.</p>
-                  <h3 className="text-2xl font-semibold">Vote</h3>
-                  <div className="w-full h-2 rounded-md my-2 flex">
-                    <div className="bg-green-500 w-5/6"></div>
-                    <div className="bg-red-500 w-1/6"></div>
+                    <div className="mt-4">
+                      <p>This is the additional content to display.</p>
+                      <h3 className="text-2xl font-semibold">Vote</h3>
+                      <div className="w-full h-2 rounded-md my-2 flex">
+                        <div className="bg-green-500 w-5/6"></div>
+                        <div className="bg-red-500 w-1/6"></div>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <div>
+                          <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
+                          <h4 className="text-green-500">10140 (90%)</h4>
+                        </div>
+                        <div>
+                          <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
+                          <h4 className="text-red-500">303 (10%)</h4>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p>Voter</p>
+                        </div>
+                        <div>
+                          <p>Voting weight</p>
+                        </div>
+                        <div>
+                          <p>Decision</p>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">32125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+                      <div className="border border-dotted h-1 w-full p-4"></div>
+
+                      <div className="mt-5 text-gray-200">
+                        <h3 className="text-lg uppercase ">Description</h3>
+                        <p className="text-lg mt-5">SIMPLE SUMMARY</p>
+                        <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
+                        <br />
+                        <p className="text-lg mt-5">MOTIVATION</p>
+                        <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
+                        <br />
+                        <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
+                        <br />
+                        <div className="flex justify-center items-center text-center">
+                          <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </>
+                )}
+
+                {showContent && (
+                  <div className="mt-4">
+                    <h1>data not found</h1>
                   </div>
-
-                  <div className="flex justify-between">
-                    <div>
-                      <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
-                      <h4 className="text-green-500">10140 (90%)</h4>
-                    </div>
-                    <div>
-                      <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
-                      <h4 className="text-red-500">303 (10%)</h4>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p>Voter</p>
-                    </div>
-                    <div>
-                      <p>Voting weight</p>
-                    </div>
-                    <div>
-                      <p>Decision</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">32125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-                  <div className="border border-dotted h-1 w-full p-4"></div>
-
-                  <div className="mt-5 text-gray-200">
-                    <h3 className="text-lg uppercase ">Description</h3>
-                    <p className="text-lg mt-5">SIMPLE SUMMARY</p>
-                    <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
-                    <br />
-                    <p className="text-lg mt-5">MOTIVATION</p>
-                    <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
-                    <br />
-                    <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
-                    <br />
-                    <div className="flex justify-center items-center text-center">
-                      <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                
-                </>
-              )}
-
-              {showContent && (
-                <div className="mt-4">
-                  <h1>data not found</h1>
-                </div>
-              )}
+                )}
               </div>
 
               {/* Right Section (30%) */}
               <div className="col-span-2">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
-                  <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":15}}></span>
-                      </span>
-                      days
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":10}}></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":24}}></span>
-                      </span>
-                      min
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":50}}></span>
-                      </span>
-                      sec
-                    </div>
+                <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
+                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 15 }}></span>
+                    </span>
+                    days
                   </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 10 }}></span>
+                    </span>
+                    hours
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 24 }}></span>
+                    </span>
+                    min
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 50 }}></span>
+                    </span>
+                    sec
+                  </div>
+                </div>
               </div>
             </div>
 
-            
+
 
             <div className="p-4 mt-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
@@ -529,158 +528,158 @@ const CripticItem = () => {
                 <p className="text-gray-600">Card Description</p>
 
                 {!showButtons ? (
-                <button
-                  className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
-                  onClick={handleVoteClick}
-                >
-                  Vote Now
-                </button>
-              ) : (
-                <>
-                <div className="space-x-2 mt-4">
                   <button
-                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
-                    onClick={handleAcceptClick}
+                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md"
+                    onClick={handleVoteClick}
                   >
-                    Accept
+                    Vote Now
                   </button>
-                  <button
-                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-                    onClick={handleRejectClick}
-                  >
-                    Reject
-                  </button>
-                </div>
+                ) : (
+                  <>
+                    <div className="space-x-2 mt-4">
+                      <button
+                        className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                        onClick={handleAcceptClick}
+                      >
+                        Accept
+                      </button>
+                      <button
+                        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+                        onClick={handleRejectClick}
+                      >
+                        Reject
+                      </button>
+                    </div>
 
-                <div className="mt-4">
-                  <p>This is the additional content to display.</p>
-                  <h3 className="text-2xl font-semibold">Vote</h3>
-                  <div className="w-full h-2 rounded-md my-2 flex">
-                    <div className="bg-green-500 w-5/6"></div>
-                    <div className="bg-red-500 w-1/6"></div>
+                    <div className="mt-4">
+                      <p>This is the additional content to display.</p>
+                      <h3 className="text-2xl font-semibold">Vote</h3>
+                      <div className="w-full h-2 rounded-md my-2 flex">
+                        <div className="bg-green-500 w-5/6"></div>
+                        <div className="bg-red-500 w-1/6"></div>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <div>
+                          <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
+                          <h4 className="text-green-500">10140 (90%)</h4>
+                        </div>
+                        <div>
+                          <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
+                          <h4 className="text-red-500">303 (10%)</h4>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p>Voter</p>
+                        </div>
+                        <div>
+                          <p>Voting weight</p>
+                        </div>
+                        <div>
+                          <p>Decision</p>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">32125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+
+                      <div className="flex mt-2 justify-between text-gray-600">
+                        <div>
+                          <p className="text-lg">0x9aba...0bd8</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">25125</p>
+                        </div>
+                        <div>
+                          <p className="text-lg">ACCEPTED</p>
+                        </div>
+                      </div>
+                      <div className="border border-dotted h-1 w-full p-4"></div>
+
+                      <div className="mt-5 text-gray-200">
+                        <h3 className="text-lg uppercase ">Description</h3>
+                        <p className="text-lg mt-5">SIMPLE SUMMARY</p>
+                        <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
+                        <br />
+                        <p className="text-lg mt-5">MOTIVATION</p>
+                        <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
+                        <br />
+                        <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
+                        <br />
+                        <div className="flex justify-center items-center text-center">
+                          <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </>
+                )}
+
+                {showContent && (
+                  <div className="mt-4">
+                    <h1>data not found</h1>
                   </div>
-
-                  <div className="flex justify-between">
-                    <div>
-                      <h3 className="text-green-500 text-xl md:text-2xl">ACCEPTED</h3>
-                      <h4 className="text-green-500">10140 (90%)</h4>
-                    </div>
-                    <div>
-                      <h3 className="text-red-500 text-xl md:text-2xl">REJECTED</h3>
-                      <h4 className="text-red-500">303 (10%)</h4>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p>Voter</p>
-                    </div>
-                    <div>
-                      <p>Voting weight</p>
-                    </div>
-                    <div>
-                      <p>Decision</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">32125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-
-                  <div className="flex mt-2 justify-between text-gray-600">
-                    <div>
-                      <p className="text-lg">0x9aba...0bd8</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">25125</p>
-                    </div>
-                    <div>
-                      <p className="text-lg">ACCEPTED</p>
-                    </div>
-                  </div>
-                  <div className="border border-dotted h-1 w-full p-4"></div>
-
-                  <div className="mt-5 text-gray-200">
-                    <h3 className="text-lg uppercase ">Description</h3>
-                    <p className="text-lg mt-5">SIMPLE SUMMARY</p>
-                    <p className="mt-2">Extend POOL drip for UNI, COMP, Dai, USDC, and SUSHI Ethereum criptic until the end of October. Extend prizes and drip for the POOL pool as well.</p>
-                    <br />
-                    <p className="text-lg mt-5">MOTIVATION</p>
-                    <p className="mt-2">The POOL drips for most Ethereum criptic will be ending within the next 2 weeks (see details here). This proposal serves to maintain the statusquo of POOL incentives on Ethereum. However, it only extends the status quo for a relatively short amount of additional time. This is becausethe V4 prize pool will be launching in mid October and a larger incentive overhaul will be. WHERE CAN I GET SOME? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text.</p>
-                    <br />
-                    <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Show more</button>
-                    <br />
-                    <div className="flex justify-center items-center text-center">
-                      <button className="bg-green-500 rounded-lg px-3 py-1 text-white">Add POOL token to MetaMask</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                
-                </>
-              )}
-
-              {showContent && (
-                <div className="mt-4">
-                  <h1>data not found</h1>
-                </div>
-              )}
+                )}
               </div>
 
               {/* Right Section (30%) */}
               <div className="col-span-2">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
-                  <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":15}}></span>
-                      </span>
-                      days
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":10}}></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":24}}></span>
-                      </span>
-                      min
-                    </div> 
-                    <div className="flex flex-col">
-                      <span className="countdown font-mono text-xl">
-                        <span style={{"--value":50}}></span>
-                      </span>
-                      sec
-                    </div>
+                <h3 className="text-xl md:text-2xl font-semibold mb-5 md:mb-10">VOTING ENDS IN</h3>
+                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 15 }}></span>
+                    </span>
+                    days
                   </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 10 }}></span>
+                    </span>
+                    hours
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 24 }}></span>
+                    </span>
+                    min
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="countdown font-mono text-xl">
+                      <span style={{ "--value": 50 }}></span>
+                    </span>
+                    sec
+                  </div>
+                </div>
               </div>
             </div>
 
-              
+
           </>
         )}
         {activeTab === "OFF-CHAIN" && (
@@ -723,7 +722,7 @@ const CripticItem = () => {
         )}
         {activeTab === "PAST 3" && (
           <div className="p-4 bg-[#212b39] text-white rounded-md  grid grid-cols-7 gap-4 transform transition-transform hover:scale-105 shadow-md hover:shadow-lg">
-             <div className="col-span-5">
+            <div className="col-span-5">
               <h2 className="text-2xl font-semibold">Card Title</h2>
               <p className="text-gray-600">Card Description</p>
 
@@ -748,7 +747,7 @@ const CripticItem = () => {
               <p className="text-gray-600">Right Section Description</p>
             </div>
           </div>
-          
+
         )}
       </div>
     </div>

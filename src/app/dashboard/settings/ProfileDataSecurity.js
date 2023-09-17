@@ -11,7 +11,7 @@ import { MdManageHistory } from 'react-icons/md';
 
 
 const ProfileDataSecurity = () => {
-  const [activeTab, setActiveTab] = useState("profile"); 
+  const [activeTab, setActiveTab] = useState("profile");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -21,42 +21,38 @@ const ProfileDataSecurity = () => {
     <div className="">
       <div className="flex gap-3  font-semibold mb-4">
         <h4
-          className={`cursor-pointer flex gap-1 items-center ${
-            activeTab === "profile" ? "text-green-300 underline" : "text-white"
-          } mr-4`}
+          className={`cursor-pointer flex gap-1 items-center ${activeTab === "profile" ? "text-green-300 underline" : "text-white"
+            } mr-4`}
           onClick={() => handleTabClick("profile")}
         >
-        <CgProfile/>  Profile
+          <CgProfile />  Profile
         </h4>
         <h4
-          className={`cursor-pointer flex gap-1 items-center ${
-            activeTab === "password" ? "text-green-300 underline" : "text-white"
-          } mr-4`}
+          className={`cursor-pointer flex gap-1 items-center ${activeTab === "password" ? "text-green-300 underline" : "text-white"
+            } mr-4`}
           onClick={() => handleTabClick("password")}
         >
-        <RiLockPasswordFill/> Change Password
+          <RiLockPasswordFill /> Change Password
         </h4>
         <h4
-          className={`cursor-pointer flex gap-1 items-center ${
-            activeTab === "twoFactor"
-              ? "text-green-300 underline"
-              : "text-white"
-          }`}
+          className={`cursor-pointer flex gap-1 items-center ${activeTab === "twoFactor"
+            ? "text-green-300 underline"
+            : "text-white"
+            }`}
           onClick={() => handleTabClick("twoFactor")}
         >
-        <BiScan/>  Two Factor
+          <BiScan />  Two Factor
         </h4>
       </div>
       <div className="">
         <h4
-          className={`cursor-pointer font-semibold flex gap-1 items-center ${
-            activeTab === "DeviceHistory"
-              ? "text-green-300 underline"
-              : "text-white"
-          }`}
+          className={`cursor-pointer font-semibold flex gap-1 items-center ${activeTab === "DeviceHistory"
+            ? "text-green-300 underline"
+            : "text-white"
+            }`}
           onClick={() => handleTabClick("DeviceHistory")}
         >
-         <MdManageHistory/> Login Device History
+          <MdManageHistory /> Login Device History
         </h4>
       </div>
       {/* Show content based on activeTab */}
@@ -67,17 +63,17 @@ const ProfileDataSecurity = () => {
       )}
       {activeTab === "password" && (
         <div className="mt-4 text-white">
-          <ChangePasswordForm/>
+          <ChangePasswordForm />
         </div>
       )}
       {activeTab === "twoFactor" && (
         <div className="mt-4 text-white">
-          <ScanSection/>
+          <ScanSection />
         </div>
       )}
       {activeTab === "DeviceHistory" && (
         <div className="mt-4 text-white">
-          <DeviceHistory/>
+          <DeviceHistory />
         </div>
       )}
     </div>
