@@ -11,7 +11,7 @@ const DashboardNav = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#212b39]">
+      <div className="navbar bg-[#212b39] w-full">
         <div className="flex-1">
           {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
         </div>
@@ -106,7 +106,7 @@ const DashboardNav = () => {
             </ul>
           </div>
           <article className='ml-3'>
-            <h1>Abu Sayed</h1>
+            <h1>Fen Sami</h1>
             <p>User</p>
           </article>
         </div>

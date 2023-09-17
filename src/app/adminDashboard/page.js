@@ -13,8 +13,6 @@ const AdminDashboardPage = () => {
     <div>
       <AdminHome></AdminHome>
     </div>
-      
-
     </>
   );
 };

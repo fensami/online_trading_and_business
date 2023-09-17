@@ -10,7 +10,7 @@ export const metadata = {
 
 const AdminDashboardLayout = ({children}) => {
   return (
-    <div className='flex bg-[#131720] h-full  text-slate-300 
+    <div className='flex bg-[#131720] h-full  text-slate-200 
     '>
       <div className=''>
         <AdminSidebar></AdminSidebar>

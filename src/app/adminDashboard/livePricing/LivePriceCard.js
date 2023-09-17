@@ -1,15 +1,18 @@
 import React from 'react';
 import { LiaEthereum } from 'react-icons/lia';
 import { SiDogecoin, SiBinance } from 'react-icons/si';
-import style from '../../dashboard/dashboardUser.module.css'
+// import style from '../../dashboard/dashboardUser.module.css'
+import style from '../../adminDashboard/livePricing/dashboardUser.module.css'
 import { FaBitcoin } from 'react-icons/fa';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 
 const LivePriceCard = () => {
     return (
-        <div className="md:w-3/4 w-64 ml-10 mb-6">
-            <div className='overflow-x-auto md:w-3/4 flex gap-4'>
+        <div className="w-[1080px] mb-6 px-8">
+            <div className='overflow-x-auto flex gap-4 pb-3'>
+
+
                 <article className={style.cards}>
 
                     <div className='flex justify-between' >
@@ -28,6 +31,10 @@ const LivePriceCard = () => {
                         </div>
                     </div>
                 </article>
+
+
+
+                
 
                 <article className={style.cards}>
                     <div className='flex justify-between'>

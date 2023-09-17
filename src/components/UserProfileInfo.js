@@ -6,7 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { BiLogoLinkedin } from "react-icons/bi";
 import useAuth from "@/hooks/useAuth";
 import Link from "next/link";
-import img from "../../public/Bitcoin.png";
+// import img from "../../public/Bitcoin.png";
 
 const UserProfileInfo = () => {
     const [updateData, setUpdateData] = useState(null);
@@ -17,7 +17,7 @@ const UserProfileInfo = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
+            const response = await fetch(`https://online-trading-and-business-five.vercel.app/api/allUsers/${user.email}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -63,20 +63,24 @@ const UserProfileInfo = () => {
                     <div className="text-center mx-auto mb-4">
                         <div className="avatar">
                             <div className="w-40 rounded-full">
-                                <Image width={30} height={30} alt="" src={img} />
+                                <Image width={30} height={30} alt="" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn1vKaWhtVyD5P7_-1CATcpNU79Ssf2LBxuQ&usqp=CAU' />
                             </div>
                         </div>
+
+                        <h1 className="md:text-2xl text-1xl font-semibold my-2">
+                            Fen Sami
+                        </h1>
                         <h1 className="md:text-2xl text-1xl font-semibold my-2">
                             {user.email}
                         </h1>
-                        <h3 className="text-1xl  text-gray-300">
+                        {/* <h3 className="text-1xl  text-gray-300">
                             {updateData && updateData.City ? updateData.City : "Amet minim Developer"}
-                        </h3>
+                        </h3> */}
                     </div>
                     <div className="text-gray-300">
-                        <h2 className="font-semibold">BIO</h2>
+                        <h2 className="font-semibold">Bio</h2>
                         <p className="mb-4">
-                            {updateData && updateData.Description ? updateData.Description : "No data"}
+                            {updateData && updateData.Description ? updateData.Description : "This is fen sami frontend Developer"}
                         </p>
                         <h4 className="border-t border-gray-700 pt-4 font-semibold">
                             Social media
