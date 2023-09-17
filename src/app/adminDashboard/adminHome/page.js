@@ -13,9 +13,9 @@ const AdminHome = () => {
     return (
         <>
             <div className='flex justify-between m-5 '>
-                <div><BiSearch className='text-5xl'></BiSearch></div>
+                <div><BiSearch className='text-4xl'></BiSearch></div>
                 <div className='flex gap-3 items-center'>
-                    <Link href='/adminDashboard/notification'><AiFillThunderbolt className='text-5xl'></AiFillThunderbolt></Link>
+                    <Link href='/adminDashboard/notification'><AiFillThunderbolt className='text-4xl'></AiFillThunderbolt></Link>
                     <Link href='' className='px-3 py-2 border rounded-lg'>Connect</Link>
                 </div>
             </div>

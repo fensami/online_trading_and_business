@@ -8,7 +8,7 @@ import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 
 const LivePriceCard = () => {
     return (
-        <div className="md:w-3/4 w-64 ml-10 mb-6">
+        <div className="w-full mb-6">
             <div className='overflow-x-auto md:w-3/4 flex gap-4'>
                 <article className={style.cards}>
 
