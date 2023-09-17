@@ -6,8 +6,8 @@ import LivePriceCard from './LivePriceCard';
 const LivePrices = () => {
     return (
 
-        <div className=' mx-5 py-2 my-5 text-slate-200 md:w-screen w-80'>
-            <div className=''>
+        <div className='py-2 my-5 text-slate-200'>
+            <div>
                 <LivePriceCard></LivePriceCard>
             </div>
 
@@ -29,14 +29,14 @@ const LivePrices = () => {
 
 
                     <article className=''>
-                        <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch className=''></FaSearch> <input className='' type="text" /></span>
+                        <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch></FaSearch> <input type="text" className='bg-white border border-black' /></span>
                     </article>
                 </div>
 
 
 
                 <div className="overflow-x-auto">
-                    <table className="table md:w-11/12 w-80 md:mx-auto">
+                    <table className="table">
                         {/* head */}
                         <thead className='text-slate-100'>
                             <tr>
