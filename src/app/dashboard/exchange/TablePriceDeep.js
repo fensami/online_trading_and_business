@@ -25,19 +25,19 @@ const TablePriceDeep = () => {
 
   return (
     <div className="md:text-[16px] text-[10px]">
-      <header className="flex justify-between items-center p-4 bg-slate-800">
+      <header className="flex justify-between items-center p-4 bg-slate-800 ">
         <p>Time</p>
         <p>Price (USDT)</p>
         <p>Amount (BTC)</p>
         <p>Total (USDT)</p>
       </header>
-      <div className="pb-4">
+      <div className="pb-4 text-left">
         {PriceData.map((data) => (
           <div
-            className="flex justify-between items-center border-b text-left my-3"
+            className="flex justify-between items-center border-b  my-3"
             key={data.id}
           >
-            <p>{data.Time}</p>
+            <p className="text-left">{data.Time}</p>
             <p>{data.Price}</p>
             <p>{data.Amount}</p>
             <p>{data.Total}</p>
