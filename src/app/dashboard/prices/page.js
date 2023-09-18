@@ -3,14 +3,13 @@
 import Prices from "./Prices";
 
 export const metadata = {
-  title: 'Prices | OTAB',
-}
- 
+  title: "Prices | OTAB",
+};
 
 const PricePage = () => {
   return (
-    <div> 
-      <Prices></Prices> 
+    <div>
+      <Prices></Prices>
     </div>
   );
 };

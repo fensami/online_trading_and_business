@@ -4,7 +4,7 @@ import RoundCharts from "./RoundCharts";
 import ChartSection from "./chartSection";
 import TablePriceDeep from "./TablePriceDeep";
 // import UserBalanceSection from "./serbalancesection";
-import UserBalanceSection from './Userbalancesection'
+import UserBalanceSection from "./Userbalancesection";
 export const metadata = {
   title: "Exchange | OTAB",
 };
@@ -12,8 +12,8 @@ export const metadata = {
 const ExchangePage = () => {
   return (
     <div className="m-6 text-gray-300">
-      <header className="w-full grid lg:grid-cols-3 grid-cols-2 gap-4 items-center justify-between lg:justify-around p-4 font-semibold md:text-center rounded-md shadow-md">
-        <div className="md:border-r border-gray-700 pr-4 lg:pr-20 md:bg-transparent bg-gray-700 py-4 px-2 rounded-sm h-full md:text-left text-center">
+      <header className="w-full grid lg:grid-cols-3 grid-cols-2  bg-[#171f2a] gap-4 items-center justify-between lg:justify-around p-4 font-semibold md:text-center rounded-md shadow-md">
+        <div className="md:border-r border-gray-700 pr-6 lg:pr-20 md:bg-transparent bg-gray-700 py-4 px-2 rounded-sm h-full md:text-left text-center">
           <Dropdown />
           <div className="mt-6">
             <h2 className="text-[18px] font-bold">24h high</h2>

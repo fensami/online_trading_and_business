@@ -1,18 +1,18 @@
-"use client"
+"use client";
 // TradingViewWidget.jsx
 
-import { useEffect, useRef, memo } from 'react';
+import { useEffect, useRef, memo } from "react";
 
 function TradingViewWidget() {
   const container = useRef();
 
-  useEffect(
-    () => {
-      const script = document.createElement("script");
-      script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
-      script.type = "text/javascript";
-      script.async = true;
-      script.innerHTML = `
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+    script.type = "text/javascript";
+    script.async = true;
+    script.innerHTML = `
         {
           "symbols": [
             [
@@ -61,19 +61,18 @@ function TradingViewWidget() {
             "all|1M"
           ]
         }`;
-      container.current.appendChild(script);
-    },
-    []
-  );
+    container.current.appendChild(script);
+  }, []);
 
   return (
-    <div className="tradingview-widget-container  container mx-auto md:w-full w-[300px]" ref={container}>
-      <h1 className='text-4xl font-bold text-center my-5'>This The Forex Update</h1>
+    <div
+      className="tradingview-widget-container mx-2 min-w-fit"
+      ref={container}
+    >
+      <h1 className="md:text-4xl text-1xl font-bold text-center my-5">
+        This The Forex Update
+      </h1>
       <div className="tradingview-widget-container__widget"></div>
-      {/* <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span className="blue-text">Track all markets on TradingView</span></a></div> */}
-      <div>
-        {/* <TradingViewWidget></TradingViewWidget> */}
-      </div>
     </div>
   );
 }

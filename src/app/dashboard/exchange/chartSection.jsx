@@ -24,7 +24,7 @@ const ChartSection = () => {
           Price Chart
         </button>
         <button
-          className={`cursor-pointer ${
+          className={`cursor-pointer btn-style ${
             selectedChart === "deep"
               ? " btn btn-sm btn-success"
               : "btn btn-sm btn-success btn-outline"
@@ -44,7 +44,6 @@ const ChartSection = () => {
       {selectedChart === "deep" && (
         <div>
           <DeepChart />
-          hi
         </div>
       )}
     </div>
