@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` text-slate-200 p-4 flex justify-between bg-slate-200 items-center relative dark:bg-slate-900 navbar ${isNavbarVisible ? "navbar-visible" : ""
+      className={` p-4 flex justify-between items-center relative bg-slate-800 text-white navbar ${isNavbarVisible ? "navbar-visible" : ""
         }`}
     >
       <Link href="/" className={'text-3xl white font-bold'}>
