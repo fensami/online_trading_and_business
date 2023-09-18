@@ -5,7 +5,7 @@ import SignUpForm from "./SignUpForm";
 // import Link from "next/link";
 
 const SingUpPage = () => {
-    
+
     return (
         <div className=" md:flex gap-4 md:px-52 items-center container mx-auto  bg-[#131720]  p-4 shadow-lg ">
             {/* svg image section */}
@@ -30,7 +30,7 @@ const SingUpPage = () => {
                     <div className=" w-full h-[1px]  bg-gray-500"></div>
                 </div>
                 <SignUpForm />
-                 
+
             </div>
         </div>
     );

@@ -8,16 +8,16 @@ import Mail from "../HomePage/Mail";
 import MarqueeCard from "../HomePage/MarqueeCard";
 import OfferService from "../HomePage/OfferService";
 import OtherSection from "../HomePage/OtherSection";
-import SliderOffer from "../HomePage/SliderOffer";
+// import SliderOffer from "../HomePage/SliderOffer";
+// import TabSection1 from "../HomePage/TabSection1";
 import TAbSection from "../HomePage/TAbSection";
-import TabSection1 from "../HomePage/TabSection1";
 import TradeTypes from "../HomePage/TradeTypes";
 import UpCommingOther from "../HomePage/UpCommingOther";
 import AboutPage from "./about/page";
 
 const Home = () => {
   return (
-    <main className=" bg-[#131720] text-white">
+    <main className=" dark:bg-[#131720]">
       <Banner></Banner>
       <MarqueeCard></MarqueeCard>
       <CheckTradingSped></CheckTradingSped>

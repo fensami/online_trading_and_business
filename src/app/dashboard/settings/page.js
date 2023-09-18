@@ -1,8 +1,3 @@
-import Image from "next/image";
-import img from "../../../../public/Bitcoin.png";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { BiLogoLinkedin } from "react-icons/bi";
 import ProfileDataSecurity from "./ProfileDataSecurity";
 import "./Setting.css";
 
