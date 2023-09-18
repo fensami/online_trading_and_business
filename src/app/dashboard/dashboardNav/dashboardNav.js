@@ -5,15 +5,10 @@ import { IoMdNotifications } from 'react-icons/io';
 
 
 const DashboardNav = () => {
-
-
-  
-
   return (
     <div>
       <div className="navbar bg-[#212b39] w-full">
         <div className="flex-1">
-          {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">

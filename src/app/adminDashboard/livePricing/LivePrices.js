@@ -18,7 +18,7 @@ const LivePrices = () => {
 
 
 
-            <div className='bg-[#171f2a] py-6 md:w-[1080px]'>
+            <div className='bg-[#171f2a] py-6 md:w-[1080px] px-8 mx-8'>
 
 
 

@@ -12,7 +12,7 @@ const AdminDashboardLayout = ({children}) => {
   return (
     <div className='flex bg-[#131720] h-full  text-slate-200 
     '>
-      <div className=''>
+      <div>
         <AdminSidebar></AdminSidebar>
 
       {/* <SidebarLink></SidebarLink> */}
