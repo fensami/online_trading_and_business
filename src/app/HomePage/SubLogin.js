@@ -4,7 +4,7 @@ const SubLogin = () => {
   return (
     // main div
     <div
-      className="grid md:grid-cols-2 gap-2 justify-between items-center lg:px-6 lg:mx-6 bg-cover mx-4 bg-center rounded-sm opacity-50 font-sans  to-blue-500 bg-gradient-to-br from-red-500 via-transparent "
+      className="grid md:grid-cols-2 gap-2 justify-between items-center lg:px-6 lg:mx-6 bg-cover mx-4 bg-center rounded-sm opacity-50 font-sans  to-blue-500 dark:bg-gradient-to-br from-red-500 via-transparent "
       style={{
         backgroundImage:
           'url("https://i.ibb.co/Q6k4RBV/hands-with-gift-box-204757-1481.jpg")',
