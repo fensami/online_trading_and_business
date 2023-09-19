@@ -17,7 +17,7 @@ import AboutPage from "./about/page";
 
 const Home = () => {
   return (
-    <main className=" bg-[#131720] text-white">
+    <main className=" dark:bg-[#131720]">
       <Banner></Banner>
       <MarqueeCard></MarqueeCard>
       <CheckTradingSped></CheckTradingSped>
