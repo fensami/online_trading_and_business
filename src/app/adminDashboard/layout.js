@@ -1,5 +1,3 @@
-// import Sidebar from './Sidebar';
-
 import DashboardNav from "../dashboard/dashboardNav/dashboardNav";
 import AdminSidebar from "./adminSidebar";
 
@@ -12,10 +10,9 @@ const AdminDashboardLayout = ({children}) => {
   return (
     <div className='flex bg-[#131720] h-full  text-slate-200 
     '>
-      <div className=''>
+      <div>
+       
         <AdminSidebar></AdminSidebar>
-
-      {/* <SidebarLink></SidebarLink> */}
       </div>
 
       <div className='flex-1'>

@@ -48,14 +48,14 @@ const AdminHome = () => {
                 <Charts></Charts>
             </div>
 
-            <div className=' mt-20 px-5 container mx-auto'>
+            {/* <div className=' mt-20 px-5 container mx-auto'>
                 <div className='bg-[#171f2a]'>
                     <h1>TOP CRYPTOCURRENCY</h1>
 
                 </div>
 
                 {/* <TopCrytoTable></TopCrytoTable> */}
-            </div>
+            {/* </div> */}
 
             
 
