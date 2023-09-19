@@ -1,5 +1,8 @@
+import Image from "next/image";
 import ProfileDataSecurity from "./ProfileDataSecurity";
 import "./Setting.css";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { BsInstagram } from "react-icons/bs";
 
 const SettingsPage = () => {
   return (
@@ -27,8 +30,8 @@ const SettingsPage = () => {
             Social media
           </h4>
           <div className="flex gap-4 my-4 ">
-            <FaFacebookF className="user-icon" />
-            <FaTwitter className="user-icon" />
+            {/* <FaFacebook className="user-icon" /> */}
+            {/* <Fa className="user-icon" /> */}
             <BsInstagram className="user-icon" />
             <BiLogoLinkedin className="user-icon" />
           </div>

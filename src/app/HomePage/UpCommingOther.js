@@ -1,14 +1,6 @@
 import wait from '@/utils/wait';
 import Image from 'next/image';
 import React from 'react';
-import img1 from '../../assets/a.jpg'
-import img2 from '../../assets/b.png'
-// import img3 from '../../assets/c.avif'
-import img4 from '../../assets/unnamed-10.png'
-import img5 from '../../assets/e.avif'
-import img6 from '../../assets/f.png'
-import img7 from '../../assets/g.avif'
-import img8 from '../../assets/g.jpg'
 
 
 const UpCommingOther = async () => {
@@ -29,13 +21,13 @@ const UpCommingOther = async () => {
         </div> */}
 
         <div className="carousel-item h-full">
-          <Image width={700} height={300} src={img5} alt='' />
+          <Image width={700} height={300} src="https://i.ibb.co/XFbRKfq/e.jpg" alt='' />
         </div>
         <div className="carousel-item h-full">
           <Image width={700} height={300} src="https://i.ibb.co/rp5v8CF/f.png" alt='' />
         </div>
         <div className="carousel-item h-full">
-          <Image width={700} height={300} src={img7} alt='' />
+          <Image width={700} height={300} src="https://i.ibb.co/GJ9jnMG/g2.jpg" alt='' />
         </div>
         <div className="carousel-item h-full">
           <Image width={700} height={300} src="https://i.ibb.co/VvTKQNL/g.jpg" alt='' />

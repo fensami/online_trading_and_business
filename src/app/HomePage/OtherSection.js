@@ -9,7 +9,7 @@ const OtherSection = () => {
     return (
         <div className='mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 container mx-auto mb-24 p-4'>
             <div className="card md:w-72 w-full bg-base-100 shadow-xl image-full">
-                <figure><Image  src={img1} alt="" /></figure>
+                <figure><Image width={300} height={300} src="https://i.ibb.co/YQT8Lyx/Bitcoin.webp" alt="" /></figure>
                 <div className="card-body hover:bg-[#171f2a]">
                     <h2 className="card-title text-3xl font-bold">Wide Product Range</h2>
                     <p className='font-bold bg-gray-500 rounded-lg p-2'>Diverse crypto offerings enable extensive trading options and investment opportunities.</p>
@@ -19,7 +19,7 @@ const OtherSection = () => {
                 </div>
             </div>
             <div className="card md:w-72 w-full bg-base-100 shadow-xl image-full">
-                <figure><Image  src={img2} alt="" /></figure>
+                <figure><Image width={300} height={300} src="https://i.ibb.co/ssPs8cL/images.jpg" alt="" /></figure>
                 <div className="card-body hover:bg-[#171f2a]">
                     <h2 className="card-title text-3xl font-bold">Transparent Pricing</h2>
                     <p className='font-bold bg-gray-500 rounded-lg p-2'>Visible crypto values ensure fairness, honesty, and well-informed trading choices.</p>
@@ -29,7 +29,7 @@ const OtherSection = () => {
                 </div>
             </div>
             <div className="card md:w-72 w-full bg-base-100 shadow-xl image-full">
-                <figure><Image  src={img3} alt="" /></figure>
+                <figure><Image width={300} height={300} src="https://i.ibb.co/tmHVk4Z/Crypto.png" alt="" /></figure>
                 <div className="card-body hover:bg-[#171f2a]">
                     <h2 className="card-title text-3xl font-bold">Innovactive Tools</h2>
                     <p className='font-bold bg-gray-500 rounded-lg p-2'>Tech aids like AI analysis, algorithmic trading enhance cryptocurrency market participation.</p>
@@ -39,7 +39,7 @@ const OtherSection = () => {
                 </div>
             </div>
             <div className="card md:w-72 w-full bg-base-100 shadow-xl image-full">
-                <figure><Image  src={img4} alt="" /></figure>
+                <figure><Image width={300} height={300} src="https://i.ibb.co/vdyMYkw/pic.webp" alt="" /></figure>
                 <div className="card-body hover:bg-[#171f2a]">
                     <h2 className="card-title text-3xl font-bold">Dedicated Support</h2>
                     <p className='font-bold bg-gray-500 rounded-lg p-2'>Expert assistance ensures smooth transactions and issue resolution in cryptocurrency trading.</p>
