@@ -12,9 +12,9 @@ export const metadata = {
 
 const DashboardPage = () => {
   return (
-    <>
+    <div className="md:px-5 px-3 py-3">
       <DashboardCard></DashboardCard>
-      <div className="grid md:grid-cols-2 grid-cols-1  my-3 md:px-5 px-3  gap-5">
+      <div className="grid md:grid-cols-2 grid-cols-1    px-3 my-4   gap-5">
         <UsingChart></UsingChart>
         <DashboardUserTotal></DashboardUserTotal>
       </div>
@@ -23,7 +23,7 @@ const DashboardPage = () => {
         <TableDashboard></TableDashboard>
         {/* <RecentTransaction></RecentTransaction> */}
       </div>
-    </>
+    </div>
   );
 };
 
