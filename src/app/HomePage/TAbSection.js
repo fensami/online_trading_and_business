@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import t1 from "../../assets/tab5.1.png"
-import t2 from "../../assets/tab1.webp"
-import t3 from "../../assets/tab2.png"
-import t4 from "../../assets/tab3.jpg"
-import t5 from "../../assets/tab4.jpg"
-import t6 from "../../assets/t6_copy_1280x640.png"
 import Image from 'next/image';
 
 const TAbSection = () => {
@@ -70,37 +64,37 @@ const TAbSection = () => {
                                 {activeTab1 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab1 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
                                     </div>
                                 )}
 
@@ -236,37 +230,37 @@ const TAbSection = () => {
                                 {activeTab2 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab2 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
                                     </div>
                                 )}
 
@@ -399,37 +393,37 @@ const TAbSection = () => {
                                 {activeTab3 === 1 && (
                                     <div>
                                         {/* Content for Tab 1 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/w6Q1Ncf/tab4.jpg" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 2 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/HNps0Jc/tab2.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 3 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/mFWX8Gy/tab3.jpg" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 4 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/YLxngtt/tab5-1.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 5 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/zVGtBKc/t6-copy-1280x640.png" alt=''></Image>
                                     </div>
                                 )}
                                 {activeTab3 === 6 && (
                                     <div>
                                         {/* Content for Tab 2 */}
-                                        <Image width={700} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
+                                        <Image width={600} height={300} src="https://i.ibb.co/Qp5gXQT/tab1.webp" alt=''></Image>
                                     </div>
                                 )}
 
