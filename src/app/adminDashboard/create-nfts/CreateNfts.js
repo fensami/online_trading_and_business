@@ -7,29 +7,17 @@ import { FaHourglass, FaInfinity, FaTag } from 'react-icons/fa';
 // import { FiAlertTriangle } from 'react-icons/fi';
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
 
 
 
 const CreateNfts = () => {
         return (
                 <div className='mb-20'>
-<<<<<<< HEAD
                         <div className='md:flex md:items-center md:justify-evenly'>
                                 <div className='text-2xl font-bold text-center'>CREATE NEW ITEM</div>
                                 <div>
                                         {/* The button to open modal */}
                                         <p className="btn bg-slate-800 text-white w-32 mx-auto mt-5 flex justify-center">PREVIEW</p>
-=======
-                        <div className='md:flex items-center justify-evenly'>
-                                <div className='text-2xl font-bold'>CREATE NEW ITEM</div>
-                                <div>
-                                        {/* The button to open modal */}
-                                        <label htmlFor="my_modal_6" className="btn bg-slate-800 text-white">PREVIEW</label>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
 
                                         {/* Put this part before </body> tag */}
                                         <input type="checkbox" id="my_modal_6" className="modal-toggle" />
@@ -37,11 +25,7 @@ const CreateNfts = () => {
                                                 <div className="modal-box bg-[#171f2a]">
                                                         <div className="card card-compact shadow-xl">
                                                                 <div className='flex items-center py-2 justify-center'>
-<<<<<<< HEAD
                                                                         <Image className='h-8 w-8 rounded-full' src={person} alt=''></Image>
-=======
-                                                                        <Image width={32} height={32} className='h-8 w-8 rounded-full' src="https://i.ibb.co/sVdVFpQ/person.jpg" alt=''></Image>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                                                                         <p>@Cameronwilliamson</p>
                                                                 </div>
                                                                 <figure> <Image className='w-full' src={nftp} alt=''></Image> </figure>
@@ -63,29 +47,17 @@ const CreateNfts = () => {
 
                         <section>
                                 <div className='md:flex items-center mt-12'>
-<<<<<<< HEAD
                                         <div className='md:w-[70%] border-r-2'>
                                                 <div className='card bg-[#171f2a] border border-slate-600 w-[80%] mx-auto '>
                                                         <div className=' w-4/5 md:p-16 py-5 text-center m-10 border mx-auto border-slate-600 rounded '>
                                                                 <p className='w-32 mx-auto'>PNG, GIF, WEBP, MP4 or MP3. Max 100mb.</p>
                                                                 <input className='text-xl mt-4 w-32 mx-auto font-semibold ' type="file" id="file" />
-=======
-                                        <div className='md:w-[70%] w-[50%] border-r-2'>
-                                                <div className='card bg-[#171f2a] border border-slate-600 w-[80%] mx-auto '>
-                                                        <div className=' w-4/5 p-16 text-center m-10 border mx-auto border-slate-600 rounded '>
-                                                                <p>PNG, GIF, WEBP, MP4 or MP3. Max 100mb.</p>
-                                                                <input className='text-xl mt-4 cursor-pointer font-semibold ' type="file" id="file" />
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                                                         </div>
 
                                                 </div>
                                                 <div className='md:w-[80%] mx-auto '>
                                                         <Accordion className="mt-6">
-<<<<<<< HEAD
                                                                 <AccordionItem className='text-center' header='CLICK ME'>
-=======
-                                                                <AccordionItem header='PUT ON MARKETPLACE >>>>>>> CLICK ME <<<<<<<'>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                                                                         <div className='grid md:grid-cols-3 gap-3 mt-5'>
                                                                                 <div className='bg-[#171f2a] text-center rounded p-10'>
                                                                                         <p className='flex justify-center'><FaTag></FaTag></p>
@@ -106,19 +78,11 @@ const CreateNfts = () => {
                                                         </Accordion>
                                                 </div>
                                         </div>
-<<<<<<< HEAD
                                         <div className='md:w-4/12 w-full mr-4'>
                                                 {/* <h1 className=' text-center font-semibold'>PREVIEW</h1> */}
                                                 <div className="card bg-[#171f2a] card-compact shadow-xl">
                                                         <div className='flex items-center py-2 justify-center'>
                                                                 <Image className='h-8 w-8 rounded-full' src={person} alt=''></Image>
-=======
-                                        <div className='md:w-[30%] w-[50%] mr-4'>
-                                                <h1 className=' text-center font-semibold'>PREVIEW</h1>
-                                                <div className="card bg-[#171f2a] card-compact shadow-xl">
-                                                        <div className='flex items-center py-2 justify-center'>
-                                                                <Image className='h-8 w-8 rounded-full' width={32} height={32} src="https://i.ibb.co/sVdVFpQ/person.jpg" alt=''></Image>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                                                                 <p>@Cameronwilliamson</p>
                                                         </div>
                                                         <figure> <Image className='w-full' src={nftp} alt=''></Image> </figure>
@@ -129,41 +93,6 @@ const CreateNfts = () => {
                                                         </div>
                                                 </div>
                                         </div>
-<<<<<<< HEAD
-=======
-                                </div>
-                        </section>
-                        <div className='mt-8 md:w-[90%] mx-auto'>
-                                <p>PRICE *</p>
-                                <input className='bg-[#171f2a] rounded-xl border border-slate-700 shadow-lg w-full p-5 text-white' type="number" placeholder='Enter Your Price' name="" id="" />
-                        </div>
-                        <div className='mt-8 md:w-[90%] mx-auto'>
-                                <p>NAME *</p>
-                                <input className='bg-[#171f2a] rounded-xl border border-slate-700 shadow-lg w-full p-5 text-white' type="text" placeholder='Item Name' name="" id="" />
-                        </div>
-                        <div className='mt-8 md:w-[90%] mx-auto'>
-                                <p>EXTRERNAL LINK *</p>
-                                <p>We will include a link to this URL on this items detail page, so that users can click to learn more about it.</p>
-                                <input className='bg-[#171f2a] rounded-xl border border-slate-700 shadow-lg w-full p-5 text-white' type="text" placeholder='https://criptic.vercel.app/create-nft' name="" id="" />
-                        </div>
-                        <div className='mt-8 md:w-[90%] mx-auto'>
-                                <p>DESCRIPTION *</p>
-                                <p>The description will be included on the item s detail page underneath its image.</p>
-                                <textarea className='bg-[#171f2a] rounded-xl border border-slate-700 shadow-lg w-full p-5 text-white' name="area" id="" cols="20" rows="5" placeholder='Privide a detailed description of your Item'></textarea>
-
-                                <div className='border mt-8 bg-[#171f2a] border-slate-700 p-3 rounded-xl'>
-                                        <details>
-
-                                                <summary className='cursor-pointer flex items-center justify-between'> <p className='flex items-center gap-2'><FaUnlockAlt></FaUnlockAlt> UNLOCKABLE CONTENT <br /> Include unlockable content that can only be revealed by the owner of the item.
-                                                </p> <FaChevronCircleDown /></summary>
-
-                                                <ul className="p-2 text-right">
-                                                        <textarea className='bg-[#171f2a] rounded-xl border border-slate-700 shadow-lg w-full p-5 text-white' name="area" id="" cols="20" rows="5" placeholder='Enter content (access key, code to redeem, link to a file, etc.)'></textarea>
-
-
-                                                </ul>
-                                        </details>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                                 </div>
                         </section>
 
@@ -212,7 +141,6 @@ const CreateNfts = () => {
                                 <button className=" px-8 py-3 my-10 shadow-2xl rounded text-white font-bold border border-slate-700 bg-[#171f2a]">CREATE</button>
                         </div>
 
-<<<<<<< HEAD
 
 
                         {/* <div className='mt-8 md:w-10/12 mx-auto'>
@@ -259,8 +187,6 @@ const CreateNfts = () => {
                                 <button className=" px-8 py-3 my-10 shadow-2xl rounded text-white font-bold border border-slate-700 bg-[#171f2a]">CREATE</button>
                         </div> */}
 
-=======
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                 </div>
         );
 };
