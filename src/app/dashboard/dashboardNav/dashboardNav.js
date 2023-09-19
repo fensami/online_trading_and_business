@@ -2,11 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { IoMdNotifications } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import AdminSidebar from "@/app/adminDashboard/adminSidebar";
 
 const DashboardNav = () => {
   return (
-    <div>
-      <div className="navbar bg-[#212b39]  justify-end h-[56px]">
+    <>
+    
+      <div className="navbar bg-[#212b39] justify-end h-[56px]">
+      {/* <AdminSidebar></AdminSidebar> */}
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -133,7 +136,7 @@ const DashboardNav = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
