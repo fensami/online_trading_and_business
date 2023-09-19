@@ -9,6 +9,7 @@
   /* margin: 10px; */
   padding: 5x;
 }
+
 .cards {
   background-color: #171f2a;
   padding: 10px 20px;
@@ -18,14 +19,17 @@
   align-items: center;
   /* width: 25%; */
 }
+
 .cards p {
   font-size: x-large;
   font-weight: bold;
 }
+
 .cards h1 {
   font-size: larger;
   font-weight: 400;
 }
+
 /* .flex{
     display: flex;
 } */

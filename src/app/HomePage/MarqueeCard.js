@@ -1,11 +1,5 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import bitcoin from "../../../public/Bitcoin.png";
-import dogecoin from "../../../public/dugecoin.png";
-import binance from "../../../public/binance.png";
-import ethereum from "../../../public/ethereum.jpg";
-import litecoin from "../../../public/litecoin.jpg";
-
 import Image from "next/image";
 
 const MarqueeCard = () => {
@@ -17,9 +11,9 @@ const MarqueeCard = () => {
       >
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={bitcoin}
+              src="https://i.ibb.co/wwvDH9X/Bitcoin.png"
               alt=""
             ></Image>
             <h1>Bitcoin</h1>
@@ -29,9 +23,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={dogecoin}
+              src="https://i.ibb.co/qB3x4g5/dugecoin.png"
               alt=""
             ></Image>
             <h1>Dogecoin</h1>
@@ -41,9 +35,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={binance}
+              src="https://i.ibb.co/q7ZN979/binance.png"
               alt=""
             ></Image>
             <h1>Binance</h1>
@@ -53,9 +47,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={ethereum}
+              src="https://i.ibb.co/FVq1C5B/ethereum.jpg"
               alt=""
             ></Image>
             <h1>Ethereum</h1>
@@ -65,9 +59,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={bitcoin}
+              src="https://i.ibb.co/wwvDH9X/Bitcoin.png"
               alt=""
             ></Image>
             <h1>Bitcoin</h1>
@@ -77,9 +71,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={litecoin}
+              src="https://i.ibb.co/7KtT4ZY/litecoin.jpg"
               alt=""
             ></Image>
             <h1>Litecoin</h1>
@@ -89,9 +83,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={binance}
+              src="https://i.ibb.co/q7ZN979/binance.png"
               alt=""
             ></Image>
             <h1>Binance</h1>
@@ -101,9 +95,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={ethereum}
+              src="https://i.ibb.co/FVq1C5B/ethereum.jpg"
               alt=""
             ></Image>
             <h1>Ethereum</h1>
@@ -113,9 +107,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={binance}
+              src="https://i.ibb.co/q7ZN979/binance.png"
               alt=""
             ></Image>
             <h1>Binance</h1>
@@ -125,9 +119,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={litecoin}
+              src="https://i.ibb.co/7KtT4ZY/litecoin.jpg"
               alt=""
             ></Image>
             <h1>Litecoin</h1>
@@ -137,9 +131,9 @@ const MarqueeCard = () => {
         </div>
         <div className="ml-2 hover:bg-slate-800 p-5 border-r-2 border-slate-700">
           <div className="flex items-center justify-evenly mb-3">
-            <Image
+            <Image width={24} height={24}
               className="h-6 w-6 rounded-full"
-              src={dogecoin}
+              src="https://i.ibb.co/qB3x4g5/dugecoin.png"
               alt=""
             ></Image>
             <h1>Dogecoin</h1>

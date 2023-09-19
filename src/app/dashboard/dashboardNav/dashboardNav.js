@@ -2,16 +2,18 @@ import Image from "next/image";
 import React from "react";
 import { IoMdNotifications } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import AdminSidebar from "@/app/adminDashboard/adminSidebar";
 
 const DashboardNav = () => {
   return (
-    <div className="navbar bg-[#212b39]  justify-end h-[56px] w-auto sticky z-10 top-0">
+    <div className="navbar bg-[#212b39] justify-end h-[56px]">
+      {/* <AdminSidebar></AdminSidebar> */}
       <div className="flex-none">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
               <AiOutlineShoppingCart size={28} />
-              <span className="badge badge-sm indicator-item">0</span>
+              <span className="badge badge-sm indicator-item">8</span>
             </div>
           </label>
 

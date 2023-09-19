@@ -6,37 +6,47 @@ const Farm = () => {
 
 
     return (
-        <div className='md:mx-5 mx-1 md:py-2 p-1 my-5 text-slate-200 md:w-11/12 w-96'>
-            <div className='md:flex md:justify-evenly grid justify-items-center md:gap-0 gap-5 mb-6'>
+        <div className='md:mx-5 mx-1 md:py-2 p-1 my-5 text-slate-200'>
+
+
+
+            <div className='md:flex md:justify-between grid grid-cols-1 gap-5 mb-6 md:px-5'>
+
                 <article className='flex gap-3'>
                     <button className='btn'>LIVE</button>
                     <button className='btn'>FINISHED</button>
                 </article>
-                <article className='w-32'>
-                    <div className="form-control">
-                        <label className="label cursor-pointer">
-                            <input type="checkbox" className="toggle" checked />
-                            <span className="text-white text-sm">STACKED ONLY</span>
-                        </label>
-                    </div>
-                </article>
-                <article className='w-36'>
-                    <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch className=''></FaSearch> <input className='w-24' type="text" /></span>
-                </article>
+
+             
                 <article>
-                    <select className="select text-black w-24 max-w-xs">
-                        <option disabled selected className='text-black bg-slate-200'>Pick Category</option>
-                        <option className='text-black'>HOT</option>
-                        <option className='text-black'>APR</option>
-                        <option className='text-black'>EARNED</option>
-                        <option className='text-black'>TOTAL STACKED</option>
-                        <option className='text-black'>LATEST</option>
+                    <span className='flex items-center gap-4 bg-[#131720]  border border-white p-2 text-gray-700 rounded-lg'> <FaSearch className='text-slate-200'></FaSearch> <input className='md:px-3 md:py-1 w-52 md:w-full rounded-md bg-[#131720]' type="text" placeholder='Search Farm' /></span>
+
+                </article>
+
+
+
+
+                <article className='text-slate-200 bg-[#171f2a]'>
+                    <select className="select">
+                        <option disabled selected className=' text-slate-200'>Pick Category</option>
+                        <option>HOT</option>
+                        <option>APR</option>
+                        <option>EARNED</option>
+                        <option>TOTAL STACKED</option>
+                        <option >LATEST</option>
                     </select>
                 </article>
             </div>
+
+
+
+
+
+
+
             <div >
-                <div className="overflow-x-auto">
-                    <table className="table md:w-11/12 w-full md:mx-auto">
+                <div className="overflow-x-auto w-screen">
+                    <table className="table">
                         {/* head */}
                         <thead className='text-slate-100'>
                             <tr>
