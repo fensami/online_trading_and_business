@@ -9,7 +9,7 @@ import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 
 const LivePriceCard = () => {
     return (
-        <div className="md:w-[1080px] w-80  mb-6 px-2 md:px-8">
+        <div className="md:w-[1080px] w-72  mb-6 px-2 md:px-8">
             <div className='overflow-x-auto flex gap-5 pb-3'>
 
 
