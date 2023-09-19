@@ -1,42 +1,50 @@
 import React from 'react';
-import { FaArrowAltCircleRight, FaArrowRight } from 'react-icons/fa';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 const Swap = () => {
   return (
     <div className='md:w-full'>
-      <div className='mt-16 card bg-[#171f2a] py-8 w-72 md:w-[70%] mx-auto'>
+      <div className='mt-16 card bg-[#171f2a] py-8 w-72 md:w-3/4 mx-auto'>
         <h1 className='text-2xl text-center mb-4'>Swap</h1>
-        <div className='flex items-center md:ml-32 text-orange-400'>
-          <h1>From</h1>
-          <FaArrowAltCircleRight></FaArrowAltCircleRight>
-        </div>
-        <div className="join md:w-[60%] mx-auto mb-4 md:mb-6">
 
-          <select className="select select-bordered bg-[#131720] md:h-28 join-item w-28 md:w-36">
-            <option disabled selected>Filter</option>
-            <option>Bitcoin</option>
-            <option>ETHEREUM</option>
-            <option>TETHER USD</option>
-            <option>BINANCE COIN</option>
-            <option>USD COIN</option>
-            <option>CARDANO</option>
-            <option>DOGE COIN</option>
-          </select>
-          <div>
-            <div >
-              <input className="input bg-[#131720] md:h-28 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00" />
-              <p className='text-green-500 text-right'>= $0.00</p>
+
+
+        <>
+          <div className="join md:w-2/4 mx-auto mb-4 md:mb-6">
+
+            <select className="select select-bordered bg-[#131720] join-item w-28 md:w-36">
+
+              <option disabled selected>Filter</option>
+              <option>Bitcoin</option>
+              <option>ETHEREUM</option>
+              <option>TETHER USD</option>
+              <option>BINANCE COIN</option>
+              <option>USD COIN</option>
+              <option>CARDANO</option>
+              <option>DOGE COIN</option>
+            </select>
+            <div>
+              <div >
+                <input className="input bg-[#131720] input-bordered text-end join-item md:w-full w-44" placeholder="$0.00" />
+                <p className='text-green-500 text-right'>= $0.00</p>
+              </div>
             </div>
-          </div>
 
-        </div>
+          </div>
+        </>
+
+
+
+
+
+
+
+
 
         <div className='flex items-center md:ml-32 text-orange-400'>
-          <h1>To</h1>
-          <FaArrowAltCircleRight></FaArrowAltCircleRight>
         </div>
-        <div className="join md:w-[60%] mx-auto">
-          <select className="select select-bordered bg-[#131720] md:h-28 join-item w-28 md:w-36">
+        <div className="join md:w-1/2 mx-auto">
+          <select className="select select-bordered bg-[#131720] join-item w-28 md:w-36">
             <option disabled selected>Filter</option>
             <option>Bitcoin</option>
             <option>ETHEREUM</option>
@@ -48,7 +56,7 @@ const Swap = () => {
           </select>
           <div>
             <div>
-              <input className="input bg-[#131720] md:h-28 input-bordered text-end join-item md:w-full w-44" placeholder="$0.00" />
+              <input className="input bg-[#131720] input-bordered text-end join-item md:w-full w-44" placeholder="$0.00" />
               <p className='text-green-500 text-right'>= $0.00</p>
             </div>
           </div>

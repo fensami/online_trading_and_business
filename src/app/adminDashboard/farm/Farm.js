@@ -1,5 +1,5 @@
 // import  {useState}  from 'react';
-import { FaBitcoin, FaEthereum, FaRegStar, FaSearch } from 'react-icons/fa';
+import { FaBitcoin, FaEthereum, FaSearch } from 'react-icons/fa';
 import { SiCardano, SiDogecoin, SiTether } from 'react-icons/si';
 
 const Farm = () => {
@@ -7,26 +7,24 @@ const Farm = () => {
 
     return (
         <div className='md:mx-5 mx-1 md:py-2 p-1 my-5 text-slate-200'>
+            <div className='md:flex md:justify-between md:w-[980px] grid grid-cols-1 gap-5 mb-6 md:px-5'>
 
-
-
-            <div className='md:flex md:justify-between grid grid-cols-1 gap-5 mb-6 md:px-5'>
-
-                <article className='flex gap-3'>
+                <article className='flex gap-3 w-10'>
                     <button className='btn'>LIVE</button>
                     <button className='btn'>FINISHED</button>
                 </article>
 
              
-                <article>
-                    <span className='flex items-center gap-4 bg-[#131720]  border border-white p-2 text-gray-700 rounded-lg'> <FaSearch className='text-slate-200'></FaSearch> <input className='md:px-3 md:py-1 w-52 md:w-full rounded-md bg-[#131720]' type="text" placeholder='Search Farm' /></span>
+                
+                    {/* <FaSearch className='text-slate-200'></FaSearch>  */}
+                    
+                    <input className='px-3 py-1 w-52 rounded-md bg-[#131720] border border-slate-200' type="text" placeholder='Search Farm' />
+                
 
-                </article>
 
 
 
-
-                <article className='text-slate-200 bg-[#171f2a]'>
+                <article className='text-slate-200 bg-[#171f2a] w-10'>
                     <select className="select">
                         <option disabled selected className=' text-slate-200'>Pick Category</option>
                         <option>HOT</option>
@@ -44,11 +42,11 @@ const Farm = () => {
 
 
 
-            <div >
-                <div className="overflow-x-auto w-screen">
+            <>
+                <div className="overflow-x-auto w-72 md:w-[1000px]">
                     <table className="table">
                         {/* head */}
-                        <thead className='text-slate-100'>
+                        <thead className='text-slate-100 '>
                             <tr>
                                 <th>POOL</th>
                                 <th>EARNED</th>
@@ -108,7 +106,7 @@ const Farm = () => {
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </>
         </div>
     );
 };
