@@ -91,14 +91,14 @@ const SidebarLink = () => {
         <div className="sidebar-link">
           <MdHowToVote className="icon" />
          <details>
-          <summary className="cursor-pointer">NFTs</summary>
+          <summary className="cursor-pointer">Vote</summary>
           <ul className="p-2 text-right">
             <li>
               <Link
                 href="/adminDashboard/explore-vote"
                 className="flex items-center"
               >
-                {" "}
+                
                 <FaDotCircle></FaDotCircle>Explore Vote
               </Link>
             </li>
@@ -107,7 +107,7 @@ const SidebarLink = () => {
                 href="/adminDashboard/criptic-vote"
                 className="flex items-center my-2"
               >
-                {" "}
+                
                 <FaDotCircle></FaDotCircle>Vote Criptic
               </Link>
             </li>
@@ -116,7 +116,7 @@ const SidebarLink = () => {
                 href="/adminDashboard/create-proposal"
                 className="flex items-center"
               >
-                {" "}
+                
                 <FaDotCircle></FaDotCircle>Create proposal
               </Link>
             </li>
