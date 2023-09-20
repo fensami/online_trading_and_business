@@ -2,7 +2,7 @@ import React from 'react';
 import Explore from './Explore';
 
 
-const page = () => {
+const ExplorePage = () => {
         return (
                 <div>
                         <Explore></Explore>
@@ -10,4 +10,4 @@ const page = () => {
         );
 };
 
-export default page;
+export default ExplorePage;

@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
-import React from 'react';
-import nftp from '../../../../public/nfts image.jpg'
+import nftp from '../../../../public/nftsImage.jpg'
+import person from '../../../../public/person.jpg'
 import { FaCheckCircle } from 'react-icons/fa';
 
 const nfts = [
@@ -25,47 +25,8 @@ const nfts = [
     "description": "pulses of imagination #453",
     "rate": "768.097",
     "image": "https://images.unsplash.com/photo-1672911640817-d2902754be5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-<<<<<<< HEAD
   }
 
-=======
-  },
-  {
-    "name": "@Camerown...",
-    "id": 1,
-    "description": "pulses of imagination #453",
-    "rate": "768.097",
-    "image": "https://images.unsplash.com/photo-1672911640817-d2902754be5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-  },
-  {
-    "name": "@Camerown...",
-    "id": 1,
-    "description": "pulses of imagination #453",
-    "rate": "768.097",
-    "image": "https://images.unsplash.com/photo-1672911640817-d2902754be5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-  },
-  {
-    "name": "@Camerown...",
-    "id": 1,
-    "description": "pulses of imagination #453",
-    "rate": "768.097",
-    "image": "https://images.unsplash.com/photo-1672911640817-d2902754be5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-  },
-  {
-    "name": "@Camerown...",
-    "id": 1,
-    "description": "pulses of imagination #453",
-    "rate": "768.097",
-    "image": "https://images.unsplash.com/photo-1672911640817-d2902754be5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-  },
-  {
-    "name": "@Camerown...",
-    "id": 1,
-    "description": "pulses of imagination #453",
-    "rate": "768.097",
-
-  },
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
 
 ]
 
@@ -120,15 +81,9 @@ const Explore = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div className='md:w-3/4 w-full'>
           <div className='md:flex items-center justify-evenly md:ml-0 ml-5 my-5'>
             <p className='mb-5 md:mb-0'>5,686,066 items</p>
-=======
-        <div className='md:w-[70%] w-full'>
-          <div className='md:flex items-center justify-evenly'>
-            <p>5,686,066 items</p>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
             <select className="select bg-slate-800 w-full max-w-xs">
               <option className='mt-4' disabled selected>Date Listed:Newest</option>
               <option>Date Listed:Newest</option>
@@ -145,11 +100,7 @@ const Explore = () => {
                 <div key={nft.id}>
                   <div className="card card-compact bg-[#171f2a] shadow-xl">
                     <div className='flex items-center py-2 justify-center'>
-<<<<<<< HEAD
                       <Image className='h-8 w-8 rounded-full' src={person} alt=''></Image>
-=======
-                      <Image className='h-8 w-8 rounded-full' width={32} height={32} src="https://i.ibb.co/sVdVFpQ/person.jpg" alt=''></Image>
->>>>>>> 7bfaa224949e1563917ee2032fe0966f1b7dc539
                       <p>{nft.name}</p>
                     </div>
                     <figure> <Image className='w-full' src={nftp} alt=''></Image> </figure>
