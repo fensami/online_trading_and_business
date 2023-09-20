@@ -29,9 +29,9 @@ const Mail = () => {
             <h1 className='md:text-5xl text-4xl font-semibold md:font-bold mb-15 text-center'>Mail For Service</h1>
             <p className='text-center mb-20 mt-10'>This mail is for knowing somthing without account. If you have an account you can contact this site expertise.</p>
             <form ref={form} className='grid gap-5' onSubmit={sendEmail}>
-                <input type="text" name="name" className='p-3 rounded-lg text-black' placeholder='Your Full Name' />
-                <input type="email" name='email' className='p-3 rounded-lg text-black' placeholder='Your Email' required />
-                <textarea name="message" rows="7" className='p-3 rounded-lg text-black' placeholder='Your Message' required></textarea>
+                <input type="text" name="name" className='p-3 rounded-lg text-white border border-black bg-gray-600' placeholder='Your Full Name' />
+                <input type="email" name='email' className='p-3 rounded-lg text-white border border-black bg-gray-600' placeholder='Your Email' required />
+                <textarea name="message" rows="7" className='p-3 rounded-lg text-white border border-black bg-gray-600' placeholder='Your Message' required></textarea>
                 <button type='submit' className='btn btn-outline btn-error w-56'>Send Mail</button>
             </form>
 

@@ -8,13 +8,16 @@ const Activities = () => {
         <div className="flex justify-between mb-4">
           <p className="font-bold">History</p>
           <div className="flex justify-between gap-4">
-            <p className=" rounded p-2">All</p>
-            <p className="border-2 border-orange-400 rounded-lg p-2">
-              Withdraw
-            </p>
-            <p className="border-2 border-orange-400 rounded-lg p-2">
-              All Time
-            </p>
+            <p className=" btn-style bg-slate-500 p-2">ALL</p>
+            <select className="select select-bordered outline-none select-warning select-sm w-full max-w-xs">
+              <option>WithDraw</option>
+              <option>Deposide</option>
+            </select>
+            <select className="select select-bordered select-warning select-sm w-full max-w-xs">
+              <option>Last Month</option>
+              <option>Last Week</option>
+              <option>Last Year</option>
+            </select>
           </div>
         </div>
       </div>
@@ -24,7 +27,7 @@ const Activities = () => {
           <table className="table w-11/12 mx-auto">
             {/* head */}
             <thead className="text-slate-100">
-              <tr>
+              <tr className="text-[17px]">
                 <th> Transaction ID </th>
                 <th>Type</th>
                 <th>Date</th>

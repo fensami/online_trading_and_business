@@ -6,20 +6,37 @@ import LivePriceCard from './LivePriceCard';
 const LivePrices = () => {
     return (
 
-        <div className=' mx-5 py-2 my-5 text-slate-200 md:w-screen w-80'>
-            <div className=''>
+        <div className='py-2 my-5 text-slate-200'>
+            <div>
                 <LivePriceCard></LivePriceCard>
             </div>
-            <div className='md:flex md:justify-between grid gap-4 justify-items-center md:w-1/2 w-96 mb-6'>
-                <p className='text-xl font-bold md:ml-10 ml-0 md:inline-flex inline-grid'>CRYPTOCURRENCY PRICES</p>
-                {/* <p className='text-xl font-bold md:ml-10 ml-0'>CRYPTOCURRENCY PRICES</p> */}
-                <article className='w-36'>
-                    <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg rounded-t-lg'> <FaSearch className=''></FaSearch> <input className='w-24' type="text" /></span>
-                </article>
-            </div>
-            <div >
-                <div className="md:overflow-hidden overflow-x-auto md:w-2/3 w-80">
-                    <table className="table md:w-11/12 w-80 md:mx-auto">
+
+
+
+         
+
+
+
+
+            <div className='bg-[#171f2a] py-6 md:w-[1080px] w-72 overflow-x-auto px-8 mx-8'>
+
+
+
+
+                <div className='md:flex md:justify-between grid gap-4 mb-6 px-5'>
+                    <p className='md:text-xl font-bold md:ml-10 ml-0 md:inline-flex'>CRYPTOCURRENCY PRICES</p>
+                    {/* <p className='text-xl font-bold md:ml-10 ml-0'>CRYPTOCURRENCY PRICES</p> */}
+
+
+                    <article className=''>
+                        <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg'> <FaSearch></FaSearch> <input type="text" className='bg-white border border-black w-1/2 md:w-full' /></span>
+                    </article>
+                </div>
+
+
+
+                <div className="overflow-x-auto">
+                    <table className="table">
                         {/* head */}
                         <thead className='text-slate-100'>
                             <tr>
