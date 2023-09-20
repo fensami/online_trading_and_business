@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 
 const WalletTable = ({ wallete }) => {
+  // console.log(wallete)
   console.log(wallete)
   const { coin_name, order, available_balance, total_balance
     , market, id } = wallete;
