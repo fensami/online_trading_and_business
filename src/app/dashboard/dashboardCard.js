@@ -2,7 +2,6 @@ import React from "react";
 import { BiCoin } from "react-icons/bi";
 import { LiaEthereum } from "react-icons/lia";
 import { SiDogecoin, SiBinance } from "react-icons/si";
-// import { SiBinance } from 'react-icons/si';
 import style from "./dashboardUser.module.css";
 
 const DashboardCard = () => {
