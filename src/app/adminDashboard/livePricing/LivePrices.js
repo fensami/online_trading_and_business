@@ -11,29 +11,16 @@ const LivePrices = () => {
                 <LivePriceCard></LivePriceCard>
             </div>
 
-
-
-         
-
-
-
-
             <div className='bg-[#171f2a] py-6 md:w-[1080px] w-72 overflow-x-auto px-8 mx-8'>
-
-
-
 
                 <div className='md:flex md:justify-between grid gap-4 mb-6 px-5'>
                     <p className='md:text-xl font-bold md:ml-10 ml-0 md:inline-flex'>CRYPTOCURRENCY PRICES</p>
                     {/* <p className='text-xl font-bold md:ml-10 ml-0'>CRYPTOCURRENCY PRICES</p> */}
 
-
                     <article className=''>
                         <span className='flex items-center gap-4 bg-white p-2 text-gray-700 rounded-lg'> <FaSearch></FaSearch> <input type="text" className='bg-white border border-black w-1/2 md:w-full' /></span>
                     </article>
                 </div>
-
-
 
                 <div className="overflow-x-auto">
                     <table className="table">

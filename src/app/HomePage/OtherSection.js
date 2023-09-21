@@ -1,9 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import img1 from '../../assets/Bitcoin.webp'
-import img2 from "../../assets/images.jpg";
-import img3 from "../../assets/Crypto.png"
-import img4 from "../../assets/pic.webp"
 
 const OtherSection = () => {
     return (
