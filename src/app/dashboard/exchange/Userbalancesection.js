@@ -10,7 +10,7 @@ const UserBalanceSection = () => {
   console.log("first", user);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/exchange")
+    fetch("https://online-trading-and-business-five.vercel.app/api/exchange")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");

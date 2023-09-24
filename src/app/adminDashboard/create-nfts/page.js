@@ -1,4 +1,4 @@
-import CreateNfts from './CreateNfts';
+import CreateNfts from "./CreateNfts";
 
 
 const page = () => {

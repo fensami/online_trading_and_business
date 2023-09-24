@@ -35,8 +35,8 @@ const CripticItem = () => {
               key={tabNumber}
               onClick={() => handleTabClick(tabNumber)}
               className={`${activeTab === tabNumber
-                  ? "border-b-2 border-green-500 text-white"
-                  : "text-gray-500 hover:text-green-500"
+                ? "border-b-2 border-green-500 text-white"
+                : "text-gray-500 hover:text-green-500"
                 } px-4 py-2 transition-all duration-300 ease-in-out`}
             >
               {tabNumber}
@@ -48,9 +48,11 @@ const CripticItem = () => {
       <div className="mt-4">
         {activeTab === "ACTIVE 4" && (
           <>
-            <div className="p-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
+
+
+            <div className="p-4 bg-[#212b39] text-white rounded-md grid md:grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
-                <h2 className="text-2xl font-semibold">PTIP 50 - Treasury Assets Management #1</h2>
+                <h2 className="md:text-2xl font-semibold">PTIP 50 - Treasury Assets Management #1</h2>
                 <p className="text-gray-600">Proposal #1</p>
 
                 {!showButtons ? (
@@ -206,9 +208,9 @@ const CripticItem = () => {
             </div>
 
 
-            <div className="p-4 mt-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
+            <div className="p-4 bg-[#212b39] text-white rounded-md grid md:grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
-                <h2 className="text-2xl font-semibold">PTIP 63 - Claim Rewards from Locked Staking</h2>
+                <h2 className="md:text-2xl font-semibold">PTIP 63 - Claim Rewards from Locked Staking</h2>
                 <p className="text-gray-600">Proposal #5</p>
 
                 {!showButtons ? (
@@ -363,9 +365,9 @@ const CripticItem = () => {
               </div>
             </div>
 
-            <div className="p-4 mt-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
+            <div className="p-4 bg-[#212b39] text-white rounded-md grid md:grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
-                <h2 className="text-2xl font-semibold">PTIP 64 - Loan and/or fixed term with the Cake</h2>
+                <h2 className="md:text-2xl font-semibold">PTIP 64 - Loan and/or fixed term with the Cake</h2>
                 <p className="text-gray-600">Proposal #7</p>
 
                 {!showButtons ? (
@@ -522,9 +524,9 @@ const CripticItem = () => {
 
 
 
-            <div className="p-4 mt-4 bg-[#212b39] text-white rounded-md grid grid-cols-7 gap-4 hover:bg-[#18202a]">
+            <div className="p-4 bg-[#212b39] text-white rounded-md grid md:grid-cols-7 gap-4 hover:bg-[#18202a]">
               <div className="col-span-5 border-r-2 pr-3">
-                <h2 className="text-2xl font-semibold">Card Title</h2>
+                <h2 className="md:text-2xl font-semibold">Card Title</h2>
                 <p className="text-gray-600">Card Description</p>
 
                 {!showButtons ? (

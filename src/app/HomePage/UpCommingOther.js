@@ -1,10 +1,9 @@
-import wait from '@/utils/wait';
 import Image from 'next/image';
 import React from 'react';
 
 
 const UpCommingOther = async () => {
-  // await wait()
+
   return (
     <div className='mt-24 mb-24'>
       <div className='flex justify-center mb-24'><h1 className=' md:text-5xl text-4xl font-bold'>Comming soon Offer</h1><span className="loading loading-dots loading-lg"></span></div>
@@ -16,9 +15,7 @@ const UpCommingOther = async () => {
         <div className="carousel-item h-full">
           <Image width={700} height={300} src='https://i.ibb.co/fN56VcW/b.png' alt='' />
         </div>
-        {/* <div className="carousel-item h-full">
-          <Image width={700} height={300} src={img3} />
-        </div> */}
+
 
         <div className="carousel-item h-full">
           <Image width={700} height={300} src="https://i.ibb.co/XFbRKfq/e.jpg" alt='' />

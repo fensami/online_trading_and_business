@@ -1,7 +1,7 @@
 import React from 'react';
 import DetailsNfts from './DetailsNfts';
 
-const page = () => {
+const DetailsNftsPage = () => {
         return (
                 <div>
                         <DetailsNfts></DetailsNfts>
@@ -9,4 +9,4 @@ const page = () => {
         );
 };
 
-export default page;
+export default DetailsNftsPage;

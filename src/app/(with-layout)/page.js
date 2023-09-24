@@ -21,10 +21,10 @@ const Home = () => {
       <Banner></Banner>
       <MarqueeCard></MarqueeCard>
       <CheckTradingSped></CheckTradingSped>
-      {/* <SliderOffer></SliderOffer> */}
+
       <SubLogin></SubLogin>
       <TAbSection></TAbSection>
-      {/* <TabSection1></TabSection1> */}
+
       <BitcoinConverter />
       <UpCommingOther></UpCommingOther>
       <OtherSection></OtherSection>

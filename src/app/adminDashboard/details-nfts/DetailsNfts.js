@@ -1,4 +1,3 @@
-import React from 'react';
 import down from '../../../../public/hand.png'
 import Image from 'next/image';
 

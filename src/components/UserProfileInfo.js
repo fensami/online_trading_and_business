@@ -17,7 +17,7 @@ const UserProfileInfo = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/allUsers/${user.email}`);
+            const response = await fetch(`https://online-trading-and-business-five.vercel.app/api/allUsers/${user.email}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

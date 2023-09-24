@@ -1,6 +1,4 @@
-// import Image from "next/image";
 import ProfileDataSecurity from "./ProfileDataSecurity";
-// import "./Setting.css";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 
@@ -12,7 +10,6 @@ const SettingsPage = () => {
         <div className="text-center mx-auto mb-4">
           <div class="avatar">
             <div class="w-40 rounded-full">
-              {/* <Image width={30} height={30} alt="" src={img} /> */}
             </div>
           </div>
           <h1 className="md:text-2xl text-1xl font-semibold my-2">
