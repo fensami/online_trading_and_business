@@ -1,133 +1,107 @@
-'use client'
+"use client";
 
+import React from "react";
 import {
-  LineChart,
+  ResponsiveContainer,
+  ComposedChart,
   Line,
+  Area,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
 } from "recharts";
 
 const data = [
   {
     name: "January",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400
+    uv: 590,
+    pv: 800,
+    amt: 1400,
   },
   {
     name: "February",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210
+    uv: 868,
+    pv: 967,
+    amt: 1506,
   },
   {
     name: "March",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290
+    uv: 1397,
+    pv: 1098,
+    amt: 989,
   },
   {
     name: "April",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000
+    uv: 1480,
+    pv: 200,
+    amt: 1228,
   },
   {
     name: "May",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181
+    uv: 1520,
+    pv: 1108,
+    amt: 1100,
   },
   {
     name: "June",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500
+    uv: 1400,
+    pv: 680,
+    amt: 1700,
   },
-  {
-    name: "July",
-    uv: 3490,
-    pv: 400,
-    amt: 2100
-  },
-  {
-    name: "August",
-    uv: 3490,
-    pv: 400,
-    amt: 2100
-  },
-  {
-    name: "September",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
-  },
-  {
-    name: "Octobor",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
-  },
-  {
-    name: "November",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
-  },
-  {
-    name: "December",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
-  }
 ];
-
 
 const UsingChart = () => {
   return (
-   <div className='text-white overflow-auto md:w-1/2 bg-[#171f2a] my-5 rounded-lg px-5'>
-    <div className="flex items-center justify-between">
-      <h1 className="my-10 px-5">Monthly Overall Growth</h1>
-
-
-
-      <article>
-        <ul className="flex gap-5">
-          <li>Week</li>
-          <li>Month</li>
-          <li>Year</li>
-        </ul>
-      </article>
-
+    <div className="bg-[#171f2a] rounded-lg p-4 md:mx-0 mx-2">
+      <div>
+        <h1 className=" text-center text-2xl mb-3 font-semibold">
+          Monthly Overall Growth
+        </h1>
+        <article className="flex justify-around ">
+          <button className="bg-gray-700 px-4 py-1 rounded-tl-md rounded-br-md">
+            Week
+          </button>
+          <button className="bg-gray-700 px-4 py-1 rounded-tl-md rounded-br-md">
+            Month
+          </button>
+          <button className="bg-gray-700 px-4 py-1 rounded-tl-md rounded-br-md">
+            Year
+          </button>
+        </article>
+      </div>
+      <div style={{ width: "100%", height: 300 }}>
+        <ResponsiveContainer>
+          <ComposedChart
+            width={500}
+            height={400}
+            data={data}
+            margin={{
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            }}
+          >
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis dataKey="name" scale="band" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Area
+              type="monotone"
+              dataKey="amt"
+              fill="#8884d8"
+              stroke="#8884d8"
+            />
+            <Bar dataKey="pv" barSize={20} fill="#413ea0" />
+            <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+          </ComposedChart>
+        </ResponsiveContainer>
+      </div>
     </div>
-   
-
-
-    <LineChart
-      width={600}
-      height={300}
-      data={data}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Line
-        type="monotone"
-        dataKey="pv"
-        stroke="#8884d8"
-        activeDot={{ r: 8 }}
-      />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-    </LineChart>
-    
-
-   
-   </div>
   );
 };
 
