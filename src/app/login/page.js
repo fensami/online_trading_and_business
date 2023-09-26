@@ -5,9 +5,9 @@ import SocialLogin from "../components/SocialLogin";
 
 const LoginPage = () => {
     return (
-        <div className=" md:flex gap-4 items-center container mx-auto  bg-[#131720] py-4 md:px-52  px-4 shadow-lg ">
+        <div className=" md:flex gap-4 items-center container mx-auto  bg-[#131720] py-4 md:px-52  px-4 shadow-lg  ">
             {/* svg image section */}
-            <div className=" p-6 md:p-7 bg-gradient-to-tr from-green-600 to-green-900 rounded-lg text-white ">
+            <div className=" p-6 md:p-7 bg-gradient-to-tr my-5 rounded-lg text-white bg-[#171f2a]">
                 <p href="/" className="text-2xl font-semibold ">Logo</p>
                 <h2 className="text-3xl font-bold my-2 ">Welcome</h2>
                 <p>Create an account to enjoy all the services without any ads for free!</p>
@@ -17,7 +17,7 @@ const LoginPage = () => {
                 <Image className="h-96 bg-opacity-95" src={CartImg} alt="" />
             </div>
             {/* login form*/}
-            <div className="md:w-7/12 border border-gray-600  rounded-lg my-4">
+            <div className="md:w-7/12 border border-gray-600 bg-[#171f2a]  rounded-lg my-4">
                 <div className=" text-white text-center">
                     <h2 className=" text-3xl font-semibold  my-4">Sign In</h2>
                     <SocialLogin />
